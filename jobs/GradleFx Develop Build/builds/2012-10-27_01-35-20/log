@@ -1,0 +1,27 @@
+Started by GitHub push by 
+Started by GitHub push by 
+Started by GitHub push by 
+Building in workspace /var/lib/jenkins/workspace/GradleFx Develop Build
+Checkout:GradleFx Develop Build / /var/lib/jenkins/workspace/GradleFx Develop Build - hudson.remoting.LocalChannel@4e2ab877
+Using strategy: Default
+Last Built Revision: Revision 0a966057fde13d24e5dbabc1dec5f57808f5aadd (origin/develop)
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from git@github.com:GradleFx/GradleFx.git
+Commencing build of Revision 63231815427dd8a78ada879b2f226c43faa5a1b4 (origin/develop)
+Checking out Revision 63231815427dd8a78ada879b2f226c43faa5a1b4 (origin/develop)
+[GradleFx Develop Build] $ "/var/lib/jenkins/workspace/GradleFx Develop Build/gradlew" --stacktrace clean build uploadArchives -Pci
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:compileJava UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:compileGroovy UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:processResources UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:classes UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:jar UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:assemble UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:compileTestJava UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:compileTestGroovy UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:processTestResources UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:testClasses UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:test UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:check UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:build UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:clean
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:compileJava UP-TO-DATE

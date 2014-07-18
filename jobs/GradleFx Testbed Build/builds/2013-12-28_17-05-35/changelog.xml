@@ -1,0 +1,14 @@
+Changes in branch origin/master, between 6f8bdaacfadb0dbb5fb1bd4ba27ed59de52ec273 and 02dda0bc259146e517d71573a12537de396597a2
+commit 02dda0bc259146e517d71573a12537de396597a2
+tree a5d4cb2d343f136f6a3114d4156dae2af187fddd
+parent 6f8bdaacfadb0dbb5fb1bd4ba27ed59de52ec273
+author Yennick Trevels <yennick.trevels@gmail.com> 1388246727 +0100
+committer Yennick Trevels <yennick.trevels@gmail.com> 1388246727 +0100
+
+    updated the testbed for the FlexUnit integration changes
+
+:100644 100644 3f5ae5d885fbeeb23ac789b3a75864f46ddd1336 e4bb57f6460340361b93ec69b67937af724d6c9f M	air-single-project/build.gradle
+:000000 100644 0000000000000000000000000000000000000000 43e1378c78fa3af3b1df6b521b045c797a1776c3 A	air-single-project/src/test/actionscript/org/gradlefx/airsingleproject/AirTest.as
+:100755 100755 ac84975afd6743ecb77ec6f3fcc172360c96f357 fafc1c962c045582a4406185e5c95e9f14b340c0 M	build.gradle
+:100644 100644 6edab1a9dd709802c7dab4255391c24d2bbbbc0a b2e469228107ae485f457c81163642bc2b3f6c6b M	flexunit-single-project/build.gradle
+:000000 100644 0000000000000000000000000000000000000000 a3110bfe9108eeb4c00d9c866cffb9399475532e A	flexunit-single-project/src/test/resources/CustomFlexUnitRunner.mxml

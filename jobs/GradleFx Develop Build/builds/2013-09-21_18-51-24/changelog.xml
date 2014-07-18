@@ -1,0 +1,1780 @@
+Changes in branch origin/develop, between f4e2ee7683218add893d2c93ac2ff553b2a6959c and 5d7e409d1e5ffba0eaa4844b881058d45e6025b1
+commit 10143663ad69dc469a3d189a8cf529374e89aa9b
+tree 825eb382f7018bfb9685820dafe4fa6849004dd1
+parent 2a1b301d7d0e4e73a4e124214f6f7a9bccd7c471
+author Yennick Trevels <yennick.trevels@gmail.com> 1379687814 +0200
+committer Yennick Trevels <yennick.trevels@gmail.com> 1379687814 +0200
+
+    removing the 'app' suffix from the mobile task names
+
+:100644 100644 7bd93821abe5e0e2dbb8d1aa3b96ea6fb7471af5 5476d7cf37480a1240bb1714e748e6bca5856709 M	src/main/groovy/org/gradlefx/tasks/Tasks.groovy
+
+commit 2a1b301d7d0e4e73a4e124214f6f7a9bccd7c471
+tree dd87b3c3def7406f99abc1d6e10f099a6dcc8577
+parent eeb18e3bbc088c8eb801de1d30e69432539018f4
+author Yennick Trevels <yennick.trevels@gmail.com> 1379586610 +0200
+committer Yennick Trevels <yennick.trevels@gmail.com> 1379586610 +0200
+
+    cleaning up the error handling when the adt task fails
+
+:100644 100644 e003c453feec6eb400c73f9152e535e0f0418e99 5651f38dbea48f8174e2cec2f03ab1be8f4f906b M	src/main/groovy/org/gradlefx/tasks/adt/AdtTask.groovy
+
+commit eeb18e3bbc088c8eb801de1d30e69432539018f4
+tree d31d5d98e4648d7a4105d42effcde82f95f3ddac
+parent d3150c3d6e59350a10520cd85e015663b63feded
+author Yennick Trevels <yennick.trevels@gmail.com> 1378932512 +0200
+committer Yennick Trevels <yennick.trevels@gmail.com> 1378932512 +0200
+
+    platformSdk and targetDevice are optional, so only adding them as arguments when they are specified
+
+:100644 100644 9e5fdcc31b8ed9e521a9caed8d04742111f1b9b4 dbec603319046b76314e25ef0eb3bd1e6d93c7fb M	src/main/groovy/org/gradlefx/tasks/mobile/InstallApp.groovy
+:100644 100644 35321174e2cef5e0971fc6bb17589c6dd2a1523f 1637f0e46921f095ca6cbcd5f86bb526e6f2c87b M	src/main/groovy/org/gradlefx/tasks/mobile/LaunchApp.groovy
+:100644 100644 39f1e275f588f42c94643cbe6b50227f44532773 543bbb834cf8f004f514d20c0af414a707bcecfb M	src/main/groovy/org/gradlefx/tasks/mobile/UninstallApp.groovy
+
+commit d3150c3d6e59350a10520cd85e015663b63feded
+tree 08f1d4f806a773348615380edf32fab3c4b61a5a
+parent 39c942eecd397cf2cdf131f2110a81f1da14fd84
+author Yennick Trevels <yennick.trevels@gmail.com> 1378932433 +0200
+committer Yennick Trevels <yennick.trevels@gmail.com> 1378932433 +0200
+
+    using a logger instead of println to show adt messages
+
+:100644 100644 70f3ce733ab40d791cd35d53a57a91381a4d4130 e003c453feec6eb400c73f9152e535e0f0418e99 M	src/main/groovy/org/gradlefx/tasks/adt/AdtTask.groovy
+
+commit 39c942eecd397cf2cdf131f2110a81f1da14fd84
+tree 864c4b5d13f8deb09688d5eac179dce58673e3c1
+parent eb61b451463300d0c159bb9d7d0fc0a3d7849b16
+author Yennick Trevels <yennick.trevels@gmail.com> 1378897503 +0200
+committer Yennick Trevels <yennick.trevels@gmail.com> 1378897503 +0200
+
+    adding the output swf to the mobile packaging task without changing directories so that it has the same behaviour as the other air tasks
+
+:100644 100644 a032cf75c8a0ed13e4070b288e649ce601af75e8 8d415d20b9e744514e01c365a74dc6575bcef811 M	src/main/groovy/org/gradlefx/tasks/mobile/BaseAirMobilePackage.groovy
+
+commit eb61b451463300d0c159bb9d7d0fc0a3d7849b16
+tree 3c965e33e57a9cb574cd35c9253502e6ff239c07
+parent 2d931641f9ba49d7374ca3d56c3e96c2408e9c72
+author Yennick Trevels <yennick.trevels@gmail.com> 1378897441 +0200
+committer Yennick Trevels <yennick.trevels@gmail.com> 1378897441 +0200
+
+    only adding the simulator platform sdk when it has been specified
+
+:100644 100644 109c2e507f5725fde57b47d9bfb9b33fabe9c3ee 1c5df71f4de451d8d39ccc75da83f1866747523a M	src/main/groovy/org/gradlefx/tasks/mobile/SimulatorAirMobilePackage.groovy
+
+commit 2d931641f9ba49d7374ca3d56c3e96c2408e9c72
+tree e6a97a6177d446b1b04325f5ca9d1a2f22bcbf30
+parent b0effe4db91354e26bdb06166f750df443529c9d
+author Yennick Trevels <yennick.trevels@gmail.com> 1378897407 +0200
+committer Yennick Trevels <yennick.trevels@gmail.com> 1378897407 +0200
+
+    using constant for compiler argument
+
+:100644 100644 bdd82d0b3178bafbd7abb75058be9933fb7afd0e af13bee8bd8350632b89bf7f334cf93495a761d6 M	src/main/groovy/org/gradlefx/tasks/AirPackage.groovy
+
+commit b0effe4db91354e26bdb06166f750df443529c9d
+tree ff64e2201b26dc0d7ff8eccd428200063bca0ff0
+parent c3a34edc4671895d923fd9609b04e612edba0e87
+author Yennick Trevels <yennick.trevels@gmail.com> 1378803747 +0200
+committer Yennick Trevels <yennick.trevels@gmail.com> 1378803747 +0200
+
+    adding a unit test for the simulatorTarget default option
+
+:100644 100644 75559f2d433f7ddc757c2c1026541ca5337153bd 79b2dd5f1d66f523931dcf7685ab1948bf59d454 M	src/test/groovy/org/gradlefx/conventions/GradleFxConventionTest.groovy
+
+commit c3a34edc4671895d923fd9609b04e612edba0e87
+tree 7666924b0f48667a94c58ce8098f4a8f653a7acc
+parent 374e9d9ca471610e1dbed01946e2c044f3d6c726
+author Yennick Trevels <yennick.trevels@gmail.com> 1378803488 +0200
+committer Yennick Trevels <yennick.trevels@gmail.com> 1378803488 +0200
+
+    simulatorTarget and target should have the same default value
+
+:100644 100644 faa7908a7e44665e06056abcb1231b4c24eb15b6 dc2b1da51ed520aab47c04aa2bc07f5728bca2e2 M	src/main/groovy/org/gradlefx/conventions/AIRMobileConvention.groovy
+
+commit 374e9d9ca471610e1dbed01946e2c044f3d6c726
+tree d7a6bab99b1f03f2b452dff0d8f49d68bb98f231
+parent 60959ba62c7adef382d7138ee17c371a491e0314
+author Yennick Trevels <yennick.trevels@gmail.com> 1378753679 +0200
+committer Yennick Trevels <yennick.trevels@gmail.com> 1378753679 +0200
+
+    mobile packaging tasks should depend on the compile task
+
+:100644 100644 b95be66ed6c0c491120501f46f85aff391924760 a032cf75c8a0ed13e4070b288e649ce601af75e8 M	src/main/groovy/org/gradlefx/tasks/mobile/BaseAirMobilePackage.groovy
+
+commit 60959ba62c7adef382d7138ee17c371a491e0314
+tree 626b9b278c7bd220e0a1a9eb86fb493f5d34a141
+parent 22faa7df132078a405f93155c8aa9e6f2e12ede0
+author Yennick Trevels <yennick.trevels@gmail.com> 1378666910 +0200
+committer Yennick Trevels <yennick.trevels@gmail.com> 1378666910 +0200
+
+    issue #101: making the Scaffold plugin use the air.applicationDescriptor property instead of some imaginative name for the app descriptor file
+
+:100644 100644 cac407fe5f62c5685cbb6d4057004bd006232577 ba7fcc7e988e95f15c5de4b58022280bc67587bc M	src/main/groovy/org/gradlefx/ide/tasks/FlashBuilderProject.groovy
+:100644 100644 6c2d7441ac12010c7c46cf398405779d1d9e5ff6 1aa172655a9e99710f15809c21440dadab194a3a M	src/main/groovy/org/gradlefx/templates/tasks/Scaffold.groovy
+:100755 100755 222e74bce62553ae3d6031d9b9b7ddb69aa12575 abe37cde8116bc15a55184046e681fd1adf3d568 M	src/main/groovy/org/gradlefx/util/TemplateUtil.groovy
+
+commit 22faa7df132078a405f93155c8aa9e6f2e12ede0
+tree 3194d2118cb2945a60b24c18530b06d50b4e4be6
+parent 74147758a673d6c88936f1db0a36d3e5acbf92c9
+author Yennick Trevels <yennick.trevels@gmail.com> 1378662687 +0200
+committer Yennick Trevels <yennick.trevels@gmail.com> 1378662687 +0200
+
+    filling in the initialWindow.content property in an AIR descriptor file when generating it with the scaffolding plugin
+
+:100755 100755 7c545200c5787b844b841058831689e19b3277cb 222e74bce62553ae3d6031d9b9b7ddb69aa12575 M	src/main/groovy/org/gradlefx/util/TemplateUtil.groovy
+:100644 100644 f51531dde27d3fc62f3455750eb31fb32eaa9a60 8be365213919ae6ed5b7af09bfadcef29760bf5b M	src/main/resources/templates/air-app.xml
+:100644 100644 eb7e05706d9166dc8d272470f60d4f674e643db2 00542f6bd1144944066c77951de4dc61da3ad265 M	src/main/resources/templates/mobile-app.xml
+
+commit 74147758a673d6c88936f1db0a36d3e5acbf92c9
+tree 23328a98588006fb19d31cf5fd92e63ae767e2ab
+parent f7bf5ad78749c97a6c3d1a56f42bd7c22e88a825
+author Yennick Trevels <yennick.trevels@gmail.com> 1378318361 +0200
+committer Yennick Trevels <yennick.trevels@gmail.com> 1378318361 +0200
+
+    grouping mobile task names
+
+:100644 100644 777d59fd72e68c9bd0b1cd59c23febc2352f17dd 7bd93821abe5e0e2dbb8d1aa3b96ea6fb7471af5 M	src/main/groovy/org/gradlefx/tasks/Tasks.groovy
+
+commit f7bf5ad78749c97a6c3d1a56f42bd7c22e88a825
+tree c7c4fb013777cba03b84bc3d054f0c0937ea8a89
+parent 3f0fd7d89e059ee097186493fa2328470489445a
+author Yennick Trevels <yennick.trevels@gmail.com> 1378318326 +0200
+committer Yennick Trevels <yennick.trevels@gmail.com> 1378318326 +0200
+
+    fixing the logic which determines whether the Main class file is in valid location. Logic was inverted incorrectly.
+
+:100644 100644 c3b597ae2f47e29a1a8e7b8420073a66644f3567 cac407fe5f62c5685cbb6d4057004bd006232577 M	src/main/groovy/org/gradlefx/ide/tasks/FlashBuilderProject.groovy
+
+commit 3f0fd7d89e059ee097186493fa2328470489445a
+tree 9edc06a9e02bc1a92e70edbecd659fdd003b54fc
+parent 175bd907f4dd36604aaef26bffec0212fe0e12c8
+author Yennick Trevels <yennick.trevels@gmail.com> 1378217660 +0200
+committer Yennick Trevels <yennick.trevels@gmail.com> 1378217660 +0200
+
+    removing the AdtTask from the tasks list
+
+:100644 100644 820f85873e5f240277daf937db2d3264dc36fb68 5f6582152168530e5c2cd5c185f50e83d86447a2 M	src/main/groovy/org/gradlefx/plugins/GradleFxPlugin.groovy
+:100644 100644 5566ab60a1fb87ea01ba2d28916516db60315126 70f3ce733ab40d791cd35d53a57a91381a4d4130 M	src/main/groovy/org/gradlefx/tasks/adt/AdtTask.groovy
+
+commit 175bd907f4dd36604aaef26bffec0212fe0e12c8
+tree 17a110de4c61e997e9d2c7cb10a37154648f5873
+parent 029a68606101c80af5eb581ffa094eaa7f43890a
+author Yennick Trevels <yennick.trevels@gmail.com> 1378217501 +0200
+committer Yennick Trevels <yennick.trevels@gmail.com> 1378217501 +0200
+
+    code cleanup
+
+:100644 100644 e369e4040fb867ce3e92d1a948e9ddbc46dec387 820f85873e5f240277daf937db2d3264dc36fb68 M	src/main/groovy/org/gradlefx/plugins/GradleFxPlugin.groovy
+:100644 000000 c4b5b839d61928be8584a4fae9b24204f49ce17a 0000000000000000000000000000000000000000 D	src/main/groovy/org/gradlefx/plugins/PackageAneFxPlugin.groovy
+:100644 100644 d7cfafb424baa1ac14352ad94bcd39d565b298b6 bdd82d0b3178bafbd7abb75058be9933fb7afd0e M	src/main/groovy/org/gradlefx/tasks/AirPackage.groovy
+:100644 100644 be0628e43fdaaee4738cff0924f0aa2c65698983 b2b503a4288c0959bd413ef2caf94ad95a4f53f5 M	src/main/groovy/org/gradlefx/tasks/adl/AdlTask.groovy
+:100644 100644 448d1db9a701e341e7cdf81f696450ab9aef6cfd 5566ab60a1fb87ea01ba2d28916516db60315126 R094	src/main/groovy/org/gradlefx/tasks/AdtTask.groovy	src/main/groovy/org/gradlefx/tasks/adt/AdtTask.groovy
+:100644 000000 f2a2b620c8e2f7f256c7827e6d2866a8df243cc4 0000000000000000000000000000000000000000 D	src/main/groovy/org/gradlefx/tasks/ane/PackageAne.groovy
+:100644 100644 758039b037bf938cfc0f51555282e9a596af9d78 b95be66ed6c0c491120501f46f85aff391924760 M	src/main/groovy/org/gradlefx/tasks/mobile/BaseAirMobilePackage.groovy
+:100644 100644 3e07d6c155f1b8640101ed9b4e1ffef7d7acaa8b 9e5fdcc31b8ed9e521a9caed8d04742111f1b9b4 M	src/main/groovy/org/gradlefx/tasks/mobile/InstallApp.groovy
+:100644 100644 1d4d1e8b4bad480bd63fed7d5c60911d5f04053e 92bf4614592b6dbc30cf370ab129cf1c0fb71765 M	src/main/groovy/org/gradlefx/tasks/mobile/InstallSimulatorApp.groovy
+:100644 100644 fa17f08158a57ced2041fce16c26fd558773bf95 35321174e2cef5e0971fc6bb17589c6dd2a1523f M	src/main/groovy/org/gradlefx/tasks/mobile/LaunchApp.groovy
+:100644 100644 2c8bfdc9494e817c8b6ca599370747a4f7f2718c ecfdfd74d4973551ad39b1e7a73f405b7e294354 M	src/main/groovy/org/gradlefx/tasks/mobile/LaunchSimulatorApp.groovy
+:100644 100644 29f09026fef53427d7391f6750c69419711bf678 44d30478b7f1ff3c309fee03909fe0397e188a63 M	src/main/groovy/org/gradlefx/tasks/mobile/ReleaseAirMobilePackage.groovy
+:100644 100644 e9836f9ac69f1a861ff1263369b472a595b42c78 109c2e507f5725fde57b47d9bfb9b33fabe9c3ee M	src/main/groovy/org/gradlefx/tasks/mobile/SimulatorAirMobilePackage.groovy
+:100644 100644 b9f95a54189d4361680cfa5b947adfedc9d0fb60 39f1e275f588f42c94643cbe6b50227f44532773 M	src/main/groovy/org/gradlefx/tasks/mobile/UninstallApp.groovy
+:100644 000000 9c248ac018e98f3e17a570ef061bb47211f99a3f 0000000000000000000000000000000000000000 D	src/main/resources/META-INF/gradle-plugins/packageanefx.properties
+
+commit 029a68606101c80af5eb581ffa094eaa7f43890a
+tree 578b62fbbf1405e5741eaccc06c0c2082082d711
+parent 924ae8be1f47779f91048abb9acf0fb84645c005
+author Yennick Trevels <yennick.trevels@gmail.com> 1378033146 +0200
+committer Yennick Trevels <yennick.trevels@gmail.com> 1378033146 +0200
+
+    Cleanup of mobile and Intellij code
+
+:100755 100755 9e8c7ec961d010be49b84e33757e67a8e6baa454 b7783d81f1a38edea0126007708f0474feddae79 M	src/main/groovy/org/gradlefx/ide/tasks/IdeaProject.groovy
+:100644 100644 a5205b690f2c4be389ff39dda543bd1fe959f39d c4b5b839d61928be8584a4fae9b24204f49ce17a M	src/main/groovy/org/gradlefx/plugins/PackageAneFxPlugin.groovy
+:100644 100644 3c1ab3e910c07876ccc7355bdeef892fe9634605 be0628e43fdaaee4738cff0924f0aa2c65698983 M	src/main/groovy/org/gradlefx/tasks/adl/AdlTask.groovy
+:100644 100644 2d8e0e5f4028bd871b2c7cefdd22bf0f1500b4d9 f2a2b620c8e2f7f256c7827e6d2866a8df243cc4 M	src/main/groovy/org/gradlefx/tasks/ane/PackageAne.groovy
+
+commit 924ae8be1f47779f91048abb9acf0fb84645c005
+tree e2e35ee00d9f3a8992f706101b9bfafd14889867
+parent daca929fed9447dc3d9beed752ae36cb13b203cb
+author Yennick Trevels <yennick.trevels@gmail.com> 1377950318 +0200
+committer Yennick Trevels <yennick.trevels@gmail.com> 1377950318 +0200
+
+    Adding flexSdkName as a convention property for when someone wants to give their sdk a custom name
+
+:100644 100644 6878f42068567cf37f11cb850ea3092b8070e0a0 6aeed9051616e0ab47ed357de9d6b7a67cec8418 M	src/main/groovy/org/gradlefx/conventions/GradleFxConvention.groovy
+:100755 100755 b981f3ff8f543d1e23c3ddb7ac83f6fb6245cbd9 9e8c7ec961d010be49b84e33757e67a8e6baa454 M	src/main/groovy/org/gradlefx/ide/tasks/IdeaProject.groovy
+:100644 100644 af989488551d19f82388dbbfb20cdd3e2de3d210 fe08ae9be61f2ca9286d98985bd4c456076f4a65 M	src/test/groovy/org/gradlefx/ide/tasks/IdeaProjectModuleTest.groovy
+
+commit daca929fed9447dc3d9beed752ae36cb13b203cb
+tree c92a3d55feb310a848e53adffd919db8bde414fc
+parent 197bf04738d00a3554e81ebdb4baed685031c1cb
+author Yennick Trevels <yennick.trevels@gmail.com> 1377937180 +0200
+committer Yennick Trevels <yennick.trevels@gmail.com> 1377937180 +0200
+
+    Adding documentation for all the convention properties
+
+:100644 100644 54642b684db64dd84e9f896f22c62d1ce6fc851f 0bedc6380999dc03113b174201a06dde798f0d80 M	src/main/groovy/org/gradlefx/conventions/AIRConvention.groovy
+:100644 100644 a3a3ed5fc484385960fb08713001d0b077cd727a faa7908a7e44665e06056abcb1231b4c24eb15b6 M	src/main/groovy/org/gradlefx/conventions/AIRMobileConvention.groovy
+:100644 100644 6627ec29deb60e8e63d49b6871e923dbdcd4d6fb 1997690ad9783fcc72a21b19aaad110197abc61b M	src/main/groovy/org/gradlefx/conventions/ASDocConvention.groovy
+:100644 100644 db6db706da595799b95b9fe2789745135bf944a6 dced5dee5253644f35d69fc64896c8f4ee3dbaeb M	src/main/groovy/org/gradlefx/conventions/FlexType.groovy
+:100644 100644 0d07915f27e075b6b41cb39b13104eee8e94fd08 12aa2fdbca027e57b6fa1254d4a1f455410b7c14 M	src/main/groovy/org/gradlefx/conventions/FlexUnitConvention.groovy
+:100644 100644 1ab6f4c41c6c1d181eae1697bf59e24b75d80677 c18ba0babbe98c971c9edd890e9b0297f589d89c M	src/main/groovy/org/gradlefx/conventions/FrameworkLinkage.groovy
+:100644 100644 cc98b32f1ad9441a8fe9c4f6208718741ace74e5 bb881d4cf3be448bf3ef15da7faf005616ac474e M	src/main/groovy/org/gradlefx/conventions/HtmlWrapperConvention.groovy
+:100644 100644 bb5661d7a27b843a2bab036dd68ebd3f6282a948 e160a96e1620598b7ab9154897f630e537d1ed3d M	src/main/groovy/org/gradlefx/conventions/SdkAutoInstallConvention.groovy
+:100644 100644 d3d130f26d3bc00aefb2ceebc4f0fcebd021a9f2 5cc0ed541b24b72310b09238a1edffeda3c84dce M	src/main/groovy/org/gradlefx/conventions/adl/AdlConvention.groovy
+:100755 100755 2cfca50187a06a25e4916039ed6f3676ef4a3cce b981f3ff8f543d1e23c3ddb7ac83f6fb6245cbd9 M	src/main/groovy/org/gradlefx/ide/tasks/IdeaProject.groovy
+:100644 100644 78dd417ee3ee675d52839c9be9aa04a68bd59e78 758039b037bf938cfc0f51555282e9a596af9d78 M	src/main/groovy/org/gradlefx/tasks/mobile/BaseAirMobilePackage.groovy
+:100644 100644 9cd5964c75242da76d16cb2e6c768d1f2a638b2f af989488551d19f82388dbbfb20cdd3e2de3d210 M	src/test/groovy/org/gradlefx/ide/tasks/IdeaProjectModuleTest.groovy
+
+commit 197bf04738d00a3554e81ebdb4baed685031c1cb
+tree a8fdc76c6598a5116517e67f24c189c035af77c5
+parent d3115cedd31c8f5d81dca27adb6bfd566a4df78c
+author Yennick Trevels <yennick.trevels@gmail.com> 1377933946 +0200
+committer Yennick Trevels <yennick.trevels@gmail.com> 1377933946 +0200
+
+    removing the ResourceEmbedFxPlugin. Leaving this out (for now)
+
+:100644 000000 8d0a77310ffab37b49aac28b1d571c22146c204e 0000000000000000000000000000000000000000 D	src/main/groovy/org/gradlefx/conventions/embed/EmbedConvention.groovy
+:100644 000000 fd081e7747a7aef57e677c4853d373adfd239449 0000000000000000000000000000000000000000 D	src/main/groovy/org/gradlefx/conventions/embed/EmbedRefClass.groovy
+:100644 000000 b29189ebe0c891966cbf2c170eedd91d3f6a85c4 0000000000000000000000000000000000000000 D	src/main/groovy/org/gradlefx/plugins/ResourceEmbedFxPlugin.groovy
+:100644 000000 1e26aa8ace01b74ddd0ba858b10a555146f00152 0000000000000000000000000000000000000000 D	src/main/groovy/org/gradlefx/tasks/embed/GenerateResourcesEmbedCode.groovy
+:100644 000000 15f7bd525d84747fa61485baa771630bc2d5f181 0000000000000000000000000000000000000000 D	src/main/resources/META-INF/gradle-plugins/resourceembedfx.properties
+
+commit d3115cedd31c8f5d81dca27adb6bfd566a4df78c
+tree 9c25aa27531bac67d16c3f3d0f7f3bf908a54afa
+parent 5c14569cb8121da959417f0fe0b7ec43b0eb93f3
+author Yennick Trevels <yennick.trevels@gmail.com> 1374919335 +0200
+committer Yennick Trevels <yennick.trevels@gmail.com> 1374919335 +0200
+
+    replacing todo with comment
+
+:100755 100755 d5feba4c11d53aa8aa9fd8d998861900db9145d1 2cfca50187a06a25e4916039ed6f3676ef4a3cce M	src/main/groovy/org/gradlefx/ide/tasks/IdeaProject.groovy
+
+commit 5c14569cb8121da959417f0fe0b7ec43b0eb93f3
+tree 35678728d3d14058baf1769d0fff40fec6e4f7ef
+parent bb2a8fb768fb56f8a0cbe5ef0a55c2cb454d16d7
+author Yennick Trevels <yennick.trevels@gmail.com> 1374918297 +0200
+committer Yennick Trevels <yennick.trevels@gmail.com> 1374918297 +0200
+
+    re-adding the actual deletion of the files in the IdeaClean task
+
+:100644 100644 534b4e21f5b20eef1b33f567aa0f4ed909e4446a 865748a3b9dbc3ac36bc33b68cb2e72f85868189 M	src/main/groovy/org/gradlefx/ide/tasks/IdeaClean.groovy
+
+commit bb2a8fb768fb56f8a0cbe5ef0a55c2cb454d16d7
+tree 25d0d2a0424696ca37cf9f213cbccaf83b80fc77
+parent e6ef8c802e48a77e536a7448a0ac828ab62dd84f
+author Yennick Trevels <yennick.trevels@gmail.com> 1374917876 +0200
+committer Yennick Trevels <yennick.trevels@gmail.com> 1374917876 +0200
+
+    replacing hard-coded compiler options with enum values + general cleanup
+
+:100644 100644 b58bcb4bb7867a0d55771419644046237d0ffe1d cf5b436c8a8586d6d0dec340a42f39e7f27ac49a M	src/main/groovy/org/gradlefx/cli/CompilerOption.groovy
+:100644 100644 dea45b738859a738e2906e1fdfb7fcb106d83a8e 928ceb6be8f8f053f9a90592b9a78fa010442343 M	src/main/groovy/org/gradlefx/conventions/GradleFxDerivedProperties.groovy
+:100644 100644 508d5cfd30cce076ae78acecd706c05bae12ee60 c3b597ae2f47e29a1a8e7b8420073a66644f3567 M	src/main/groovy/org/gradlefx/ide/tasks/FlashBuilderProject.groovy
+:100644 100644 7a6f05f89d649ff8c174db780b2ad7b1014403e3 78dd417ee3ee675d52839c9be9aa04a68bd59e78 M	src/main/groovy/org/gradlefx/tasks/mobile/BaseAirMobilePackage.groovy
+:100644 100644 4e5ec140035fe6995e90f32fc39d28679d6b4be0 3e07d6c155f1b8640101ed9b4e1ffef7d7acaa8b M	src/main/groovy/org/gradlefx/tasks/mobile/InstallApp.groovy
+:100644 100644 f9bee456194820a8d274295af56065816ec0aae2 fa17f08158a57ced2041fce16c26fd558773bf95 M	src/main/groovy/org/gradlefx/tasks/mobile/LaunchApp.groovy
+:100644 100644 b790550c3ad613c9c1bb6eed1f641d75e455ee9c b9f95a54189d4361680cfa5b947adfedc9d0fb60 M	src/main/groovy/org/gradlefx/tasks/mobile/UninstallApp.groovy
+
+commit e6ef8c802e48a77e536a7448a0ac828ab62dd84f
+tree 8e6f0b33c2227ff893b554ecf9d0ffcf8f27eed7
+parent 73d55c284f5d827b235a1e3a139f253c1bd0b6d3
+author Yennick Trevels <yennick.trevels@gmail.com> 1373798982 +0200
+committer Yennick Trevels <yennick.trevels@gmail.com> 1373798982 +0200
+
+    adding Apache License headers to all test classes
+
+:100644 100644 5dd677b7aade12919972d681c99742e30fff11e4 9386ef50b2b27f5057693ade438df9483439a602 M	src/test/groovy/org/gradlefx/conventions/FlexTypeTest.groovy
+:100644 100644 120527c4551e3c00930335717707816b6fad5479 29af2645171f9ee5a10a6d156bb8b8f1a28537fe M	src/test/groovy/org/gradlefx/conventions/FrameworkLinkageTest.groovy
+:100644 100644 d7ba82d3d3fd456de36ecf42e846c4e6cf9f9852 9cd5964c75242da76d16cb2e6c768d1f2a638b2f M	src/test/groovy/org/gradlefx/ide/tasks/IdeaProjectModuleTest.groovy
+:100755 100755 52eb0649facb674b560fcc3a147f4d4f62c9560e 76eaf42de4afdb7bd0bdcbd2c808029bf41d6417 M	src/test/groovy/org/gradlefx/ide/tasks/IdeaProjectTest.groovy
+
+commit 73d55c284f5d827b235a1e3a139f253c1bd0b6d3
+tree b22abfe0007afc7dd2789308cc1c83ba62698279
+parent 7eb2e99863cd8f819ab6615435efe2bc65303994
+author Yennick Trevels <yennick.trevels@gmail.com> 1373798812 +0200
+committer Yennick Trevels <yennick.trevels@gmail.com> 1373798812 +0200
+
+    quick cleanup
+
+:100644 100644 f974fbcb2b0bdfb2cac968e3abbf60d74a14f7a2 a3a3ed5fc484385960fb08713001d0b077cd727a M	src/main/groovy/org/gradlefx/conventions/AIRMobileConvention.groovy
+:100644 100644 0575bc14cb6d271dba4d121ffd7d2bbf49129fa0 6878f42068567cf37f11cb850ea3092b8070e0a0 M	src/main/groovy/org/gradlefx/conventions/GradleFxConvention.groovy
+:100644 100644 d63b739b12cb2bf8743bc67a65f7b63f25be7390 d3d130f26d3bc00aefb2ceebc4f0fcebd021a9f2 M	src/main/groovy/org/gradlefx/conventions/adl/AdlConvention.groovy
+:100644 100644 e20c0a46c9bfaebcff8871a1ef561bba41ef8303 508d5cfd30cce076ae78acecd706c05bae12ee60 M	src/main/groovy/org/gradlefx/ide/tasks/FlashBuilderProject.groovy
+:100644 100644 1d3becf2295941b90cc0e45669f2f2257b7ad405 534b4e21f5b20eef1b33f567aa0f4ed909e4446a M	src/main/groovy/org/gradlefx/ide/tasks/IdeaClean.groovy
+:100755 100755 07e0abb221fad93b5a0fc3ec2383f3f2943c0dd3 d5feba4c11d53aa8aa9fd8d998861900db9145d1 M	src/main/groovy/org/gradlefx/ide/tasks/IdeaProject.groovy
+:100644 100644 ce541a9cced6dc9c8ee7744bd73d0631b3d1932a 448d1db9a701e341e7cdf81f696450ab9aef6cfd M	src/main/groovy/org/gradlefx/tasks/AdtTask.groovy
+:100644 100644 3dc6c37e66af09a1fe1178afb3d611dfeb3d5bec 3c1ab3e910c07876ccc7355bdeef892fe9634605 M	src/main/groovy/org/gradlefx/tasks/adl/AdlTask.groovy
+:100644 100644 4550d78b6bdd6263d3fb4d8b4eeb90f02be79c80 2d8e0e5f4028bd871b2c7cefdd22bf0f1500b4d9 M	src/main/groovy/org/gradlefx/tasks/ane/PackageAne.groovy
+:100644 100644 de7e50728a235d598f6e17e17bfbc077c99bfdef 1e26aa8ace01b74ddd0ba858b10a555146f00152 M	src/main/groovy/org/gradlefx/tasks/embed/GenerateResourcesEmbedCode.groovy
+:100644 100644 21725a4cad3ab2f5354952ae53638c296ded86a9 7a6f05f89d649ff8c174db780b2ad7b1014403e3 M	src/main/groovy/org/gradlefx/tasks/mobile/BaseAirMobilePackage.groovy
+:100644 100644 b48f75a20cd6e1dbbe9901f4892bcf410e69de35 4e5ec140035fe6995e90f32fc39d28679d6b4be0 M	src/main/groovy/org/gradlefx/tasks/mobile/InstallApp.groovy
+:100644 100644 6fd36bf97d431471e78e8a8c213859aa65567ab4 a87e7e4dbfb45b5e68279d18fbad2e2f66b73657 M	src/main/groovy/org/gradlefx/tasks/mobile/InstallAppUtils.groovy
+:100644 100644 c72ffc31a12bc72c5ed9a02b5466a96a674e953e f9bee456194820a8d274295af56065816ec0aae2 M	src/main/groovy/org/gradlefx/tasks/mobile/LaunchApp.groovy
+:100644 100644 af3288e638979f22337f9503aa9777abefd8c905 2c8bfdc9494e817c8b6ca599370747a4f7f2718c M	src/main/groovy/org/gradlefx/tasks/mobile/LaunchSimulatorApp.groovy
+:100644 100644 103891773a5ea4bf833c133265da443ec019c5e0 e9836f9ac69f1a861ff1263369b472a595b42c78 M	src/main/groovy/org/gradlefx/tasks/mobile/SimulatorAirMobilePackage.groovy
+:100644 100644 5ab7184484ed0e8c97cc1b72c32f968e5ad39087 b790550c3ad613c9c1bb6eed1f641d75e455ee9c M	src/main/groovy/org/gradlefx/tasks/mobile/UninstallApp.groovy
+:100644 100644 d83e791dbaad8be1c7d365e7983ae4fd8bf38aa4 cfde1b58c2e5989cf781b9c06e0d9568a2435b8e M	src/main/groovy/org/gradlefx/tasks/mobile/UninstallSimulatorApp.groovy
+:100755 100755 4263d51b6a76aa26a419eaec04cfb13044021814 7c545200c5787b844b841058831689e19b3277cb M	src/main/groovy/org/gradlefx/util/TemplateUtil.groovy
+:100644 100644 61e26b8da27e2d1e278ce0db742432e09afe70f2 d7ba82d3d3fd456de36ecf42e846c4e6cf9f9852 M	src/test/groovy/org/gradlefx/ide/tasks/IdeaProjectModuleTest.groovy
+:100755 100755 8f510630382c41dc487f19b874138986fde5ea01 52eb0649facb674b560fcc3a147f4d4f62c9560e M	src/test/groovy/org/gradlefx/ide/tasks/IdeaProjectTest.groovy
+
+commit 7eb2e99863cd8f819ab6615435efe2bc65303994
+tree 61479db7549119f90b5915e4f9a1282086b899b4
+parent e993fdcf396e5a42367fa59bc9659be60070e4da
+author Yennick Trevels <yennick.trevels@gmail.com> 1373794760 +0200
+committer Yennick Trevels <yennick.trevels@gmail.com> 1373794760 +0200
+
+    adding Apache License headers at the top of each new air/mobile related file
+
+:100644 100644 e3ffe9156feb88a5cf3f81d11e9a082ead607cfb f974fbcb2b0bdfb2cac968e3abbf60d74a14f7a2 M	src/main/groovy/org/gradlefx/conventions/AIRMobileConvention.groovy
+:100644 100644 e762bef1061ba9b645b391848ae0b571dd15b130 d63b739b12cb2bf8743bc67a65f7b63f25be7390 M	src/main/groovy/org/gradlefx/conventions/adl/AdlConvention.groovy
+:100644 100644 7af930ff9e27db87dd0520670b8aa7072d832b17 8d0a77310ffab37b49aac28b1d571c22146c204e M	src/main/groovy/org/gradlefx/conventions/embed/EmbedConvention.groovy
+:100644 100644 824b861f016efaf360c87b78235c6368fdd5f4a5 fd081e7747a7aef57e677c4853d373adfd239449 M	src/main/groovy/org/gradlefx/conventions/embed/EmbedRefClass.groovy
+:100644 100644 7c912accd4c8c08466363b1f62a08e0037091253 a5205b690f2c4be389ff39dda543bd1fe959f39d M	src/main/groovy/org/gradlefx/plugins/PackageAneFxPlugin.groovy
+:100644 100644 7ce416bf6c7da6f461bca4efee5fef9862c5d101 b29189ebe0c891966cbf2c170eedd91d3f6a85c4 M	src/main/groovy/org/gradlefx/plugins/ResourceEmbedFxPlugin.groovy
+:100644 100644 56e244806dad54c9a1a2aa3dd803eca9919c3fcf ce541a9cced6dc9c8ee7744bd73d0631b3d1932a M	src/main/groovy/org/gradlefx/tasks/AdtTask.groovy
+:100644 100644 de05d91af38d5da8e6a0e8a2400ec2c10eff2c18 3dc6c37e66af09a1fe1178afb3d611dfeb3d5bec M	src/main/groovy/org/gradlefx/tasks/adl/AdlTask.groovy
+:100644 100644 253feeb33c1a90d9494dbc941172768fbd2dc456 4550d78b6bdd6263d3fb4d8b4eeb90f02be79c80 M	src/main/groovy/org/gradlefx/tasks/ane/PackageAne.groovy
+:100644 100644 dce23aae412b4bb9eaf6fda131b2db86167e30e8 de7e50728a235d598f6e17e17bfbc077c99bfdef M	src/main/groovy/org/gradlefx/tasks/embed/GenerateResourcesEmbedCode.groovy
+:100644 100644 97a4ab241ea6443564b6dcaffe53a86fe6fb9332 21725a4cad3ab2f5354952ae53638c296ded86a9 M	src/main/groovy/org/gradlefx/tasks/mobile/BaseAirMobilePackage.groovy
+:100644 100644 331fc62207f29e6350f151c2230dafed0ee90270 b48f75a20cd6e1dbbe9901f4892bcf410e69de35 M	src/main/groovy/org/gradlefx/tasks/mobile/InstallApp.groovy
+:100644 100644 fdbefcc186896f0e766a5c7d0fc4b1ac1b7eed70 6fd36bf97d431471e78e8a8c213859aa65567ab4 M	src/main/groovy/org/gradlefx/tasks/mobile/InstallAppUtils.groovy
+:100644 100644 7b176d77154e5c759e18ef0252ebfeaad1e362ee 1d4d1e8b4bad480bd63fed7d5c60911d5f04053e M	src/main/groovy/org/gradlefx/tasks/mobile/InstallSimulatorApp.groovy
+:100644 100644 80a97db042c3bca3af9b1920707bdeebd4b6dce3 c72ffc31a12bc72c5ed9a02b5466a96a674e953e M	src/main/groovy/org/gradlefx/tasks/mobile/LaunchApp.groovy
+:100644 100644 c56986220a9a4273939c5db7aab430ccd34ca5f0 af3288e638979f22337f9503aa9777abefd8c905 M	src/main/groovy/org/gradlefx/tasks/mobile/LaunchSimulatorApp.groovy
+:100644 100644 c77bce616184afa764d3282625ed66d80fb82418 29f09026fef53427d7391f6750c69419711bf678 M	src/main/groovy/org/gradlefx/tasks/mobile/ReleaseAirMobilePackage.groovy
+:100644 100644 548859a5727a991a7d6cb1769e6da9985539845a 103891773a5ea4bf833c133265da443ec019c5e0 M	src/main/groovy/org/gradlefx/tasks/mobile/SimulatorAirMobilePackage.groovy
+:100644 100644 e0d01bfef9c1117fe8ba322c0fc6c5d973a202dd 5ab7184484ed0e8c97cc1b72c32f968e5ad39087 M	src/main/groovy/org/gradlefx/tasks/mobile/UninstallApp.groovy
+:100644 100644 a445b767068d2178dac80b380f86618d9a74019f d83e791dbaad8be1c7d365e7983ae4fd8bf38aa4 M	src/main/groovy/org/gradlefx/tasks/mobile/UninstallSimulatorApp.groovy
+:100644 100644 5d7523752830346b778f3592b0b4d0f2c3dffd52 d918bf292b3e04b3752e495232680886ef05e1f7 M	src/main/groovy/org/gradlefx/validators/ProjectPropertyValidator.groovy
+:100644 100644 f173fe9eb0b57650d874e4feddec1dd626c91c3e 7f8dc7c4fd2ab8b755ec672534c0d259d2ecd2e6 M	src/main/groovy/org/gradlefx/validators/runner/ValidatorRunner.groovy
+
+commit e993fdcf396e5a42367fa59bc9659be60070e4da
+tree d69dfa708d429cdb69431d42d8524f107035feee
+parent a57ade74cd08204a6f2826e5ecdf128ac95d8153
+author Yennick Trevels <yennick.trevels@gmail.com> 1373493223 +0200
+committer Yennick Trevels <yennick.trevels@gmail.com> 1373493223 +0200
+
+    - upgraded to Gradle 1.6
+    - Fixed #issue92:"*Container.add() methods are deprecated since Gradle 1.6"
+    - stabilized unit tests
+
+:100644 100644 2bacedac469281bc45ec04b86d4c6c818ae7d790 c5d9bf5d140d0ff49df213752523ceb45177da9e M	build.gradle
+:100644 100644 f9c9bac4f587de81efea58fb07948f548831afb5 0464c33872c38c46d989f5df630649ca59896710 M	gradle/wrapper/gradle-wrapper.properties
+:100644 100644 bf7e9661725e46ba4a1e1b7c9caf1ab14fa5e408 5eff97153fd5ddec26e5fdcef8c1b29ef38713aa M	src/main/groovy/org/gradlefx/plugins/AbstractGradleFxPlugin.groovy
+:100644 100644 c989c07f517482c20a8371e55379fe15f2327544 7c912accd4c8c08466363b1f62a08e0037091253 M	src/main/groovy/org/gradlefx/plugins/PackageAneFxPlugin.groovy
+:100644 100644 ce7b1c8849a1ea24b974ab13b30f7d61d2aae6d3 7ce416bf6c7da6f461bca4efee5fef9862c5d101 M	src/main/groovy/org/gradlefx/plugins/ResourceEmbedFxPlugin.groovy
+:100644 100644 73868a60d9a2905b499352e39a5bffcadccd9262 c33572e712bc1b61d939a2e99506ac7e2ba20b81 M	src/test/groovy/org/gradlefx/ide/tasks/AbstractIDEProjectTest.groovy
+:100644 100644 749b7dcad09505e869017642151009abbedfa5ed 61e26b8da27e2d1e278ce0db742432e09afe70f2 M	src/test/groovy/org/gradlefx/ide/tasks/IdeaProjectModuleTest.groovy
+:100755 100755 82b7e3246fcbc67d77a70801c8d08fd0b96a9635 8f510630382c41dc487f19b874138986fde5ea01 M	src/test/groovy/org/gradlefx/ide/tasks/IdeaProjectTest.groovy
+
+commit 733d3a3f789a0ee44b5e0dc45f15a9b305888b57
+tree c8b3cf3127fadee6a8c138ee480d2e2e9d88e2a2
+parent f8ab6cfec5906a49e708bba90593bd8217dd83ec
+author Denis Rykovanov <denis.rykovanov@gmail.com> 1371372794 +0300
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1371372794 +0300
+
+    [fix] generate ios iml with correct signing options, sdk path and etc
+
+:100755 100755 2102d6875550e5013690e19a84b533b5cfd27468 07e0abb221fad93b5a0fc3ec2383f3f2943c0dd3 M	src/main/groovy/org/gradlefx/ide/tasks/IdeaProject.groovy
+:100644 100644 4ae6f9c48ed4d60f2cfdbf7385a2aa4d27bcef4d 749b7dcad09505e869017642151009abbedfa5ed M	src/test/groovy/org/gradlefx/ide/tasks/IdeaProjectModuleTest.groovy
+
+commit f8ab6cfec5906a49e708bba90593bd8217dd83ec
+tree 805548cd51f7b360ec1f35f5dc44efe666c04c3c
+parent d171f41a2aed8f2cf8680c879bb06c64a659ec8f
+author Denis Rykovanov <denis.rykovanov@gmail.com> 1371297814 +0300
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1371297814 +0300
+
+    [+] bef merge
+
+:000000 100644 0000000000000000000000000000000000000000 48c942aa45e1bd2712c636bf1c38ba17b2cbb2cb A	src/test/groovy/org/gradlefx/ide/tasks/test.html
+
+commit d171f41a2aed8f2cf8680c879bb06c64a659ec8f
+tree 2cd00f8d23884aedca6bc50834f33136b324d863
+parent 5ccfb213ac152ff178b1d3b5054635661a8dbe22
+author Denis Rykovanov <denis.rykovanov@gmail.com> 1369487623 +0300
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1369487623 +0300
+
+    [fix] embeding xml
+
+:100644 100644 acee4742501fad4d3dc62606d296408764c7cda2 dce23aae412b4bb9eaf6fda131b2db86167e30e8 M	src/main/groovy/org/gradlefx/tasks/embed/GenerateResourcesEmbedCode.groovy
+
+commit 5ccfb213ac152ff178b1d3b5054635661a8dbe22
+tree 1989586c72e08ef2c80faff1e34c20c6e65f4ea9
+parent 63ab2d4e6019a471d75215ef4d73a0c9c6c30917
+author Denis Rykovanov <denis.rykovanov@gmail.com> 1369332382 +0300
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1369332382 +0300
+
+    [fix] cert path
+
+:100755 100755 a029775114ab5b2f3febf31c945cb3f32a2486a1 2102d6875550e5013690e19a84b533b5cfd27468 M	src/main/groovy/org/gradlefx/ide/tasks/IdeaProject.groovy
+:100644 100644 0b83039562b8521c98ce5136c10da12114139df7 4ae6f9c48ed4d60f2cfdbf7385a2aa4d27bcef4d M	src/test/groovy/org/gradlefx/ide/tasks/IdeaProjectModuleTest.groovy
+
+commit 63ab2d4e6019a471d75215ef4d73a0c9c6c30917
+tree 4396645c515956cbe3c20242a969187025ea1695
+parent c064fb18a8e9866483b692d5453cd5860cfb41c0
+author chaos-adept <denis.rykovanov@gmail.com> 1369323083 +0400
+committer chaos-adept <denis.rykovanov@gmail.com> 1369323083 +0400
+
+    [+] include file in package, not completed
+
+:100755 100755 b75b3f53e77ff12fe3408f94a5c27d53198400bb a029775114ab5b2f3febf31c945cb3f32a2486a1 M	src/main/groovy/org/gradlefx/ide/tasks/IdeaProject.groovy
+:100644 100644 9ad9654e4b1205d672c181df1701284bee05a6d1 0b83039562b8521c98ce5136c10da12114139df7 M	src/test/groovy/org/gradlefx/ide/tasks/IdeaProjectModuleTest.groovy
+
+commit c064fb18a8e9866483b692d5453cd5860cfb41c0
+tree 74a5e7fa67790fc9c74e06e57eafd459717c3905
+parent 687a557cfd2d1e9c3db2a49a2464d53bf1c7a480
+author chaos-adept <denis.rykovanov@gmail.com> 1369317977 +0400
+committer chaos-adept <denis.rykovanov@gmail.com> 1369317977 +0400
+
+    [+] generation cert inf for descktop and ios
+
+:100755 100755 07c4aa684b1043ea613296a23fe66aa16d069d41 b75b3f53e77ff12fe3408f94a5c27d53198400bb M	src/main/groovy/org/gradlefx/ide/tasks/IdeaProject.groovy
+:100644 100644 64f7bb742592fdebbc353435ec02db52ab87cdee 9ad9654e4b1205d672c181df1701284bee05a6d1 M	src/test/groovy/org/gradlefx/ide/tasks/IdeaProjectModuleTest.groovy
+
+commit 687a557cfd2d1e9c3db2a49a2464d53bf1c7a480
+tree 36a89ad927afa4f6a43f243a83f95c714cb3043b
+parent fcebdfc42c1bb1f58982a5ebfc79c49eb0f312e9
+author chaos-adept <denis.rykovanov@gmail.com> 1369314864 +0400
+committer chaos-adept <denis.rykovanov@gmail.com> 1369314864 +0400
+
+    [fix] smallfix
+
+:100755 100755 ba161a05b05fec28f2db04cfb4937f6f02267f50 82b7e3246fcbc67d77a70801c8d08fd0b96a9635 M	src/test/groovy/org/gradlefx/ide/tasks/IdeaProjectTest.groovy
+
+commit fcebdfc42c1bb1f58982a5ebfc79c49eb0f312e9
+tree 92319ab78e800f4d6ebd719bfec8e17b9f53382b
+parent b7727825994a92e0a2cacb355590ab356fbeb79d
+author chaos-adept <denis.rykovanov@gmail.com> 1369314769 +0400
+committer chaos-adept <denis.rykovanov@gmail.com> 1369314769 +0400
+
+    [-] not actual todo
+
+:100644 100644 045aaa6ff93e87b91a869d1a6c9076803023d21d 64f7bb742592fdebbc353435ec02db52ab87cdee M	src/test/groovy/org/gradlefx/ide/tasks/IdeaProjectModuleTest.groovy
+
+commit b7727825994a92e0a2cacb355590ab356fbeb79d
+tree ffbb9f6f6f023476682e492319955a76dcc1a027
+parent 1d84791d064e353a705ea0f8f4d61603b2d8eb8e
+author chaos-adept <denis.rykovanov@gmail.com> 1369301325 +0400
+committer chaos-adept <denis.rykovanov@gmail.com> 1369301325 +0400
+
+    [fix] framework linkage
+
+:100755 100755 e05afaa1c51aec9689433f55a1004302c329ad95 07c4aa684b1043ea613296a23fe66aa16d069d41 M	src/main/groovy/org/gradlefx/ide/tasks/IdeaProject.groovy
+:100644 100644 e2896ffcd3edb335e5c96407f582df43851e3984 045aaa6ff93e87b91a869d1a6c9076803023d21d M	src/test/groovy/org/gradlefx/ide/tasks/IdeaProjectModuleTest.groovy
+
+commit 1d84791d064e353a705ea0f8f4d61603b2d8eb8e
+tree c7c88f69515e45f43ebf8ab5a8929b1bd0136165
+parent d1dc540071416c0760c8ef79a0c7beac1a2342de
+author chaos-adept <denis.rykovanov@gmail.com> 1369293736 +0400
+committer chaos-adept <denis.rykovanov@gmail.com> 1369293736 +0400
+
+    [+] additional compiler options
+
+:100755 100755 62f133a9b98f538a34a04c7f91cbb3f42a737ef3 e05afaa1c51aec9689433f55a1004302c329ad95 M	src/main/groovy/org/gradlefx/ide/tasks/IdeaProject.groovy
+:100644 100644 72273435db7a3377799c962f43fdd25fd4505db1 e2896ffcd3edb335e5c96407f582df43851e3984 M	src/test/groovy/org/gradlefx/ide/tasks/IdeaProjectModuleTest.groovy
+
+commit d1dc540071416c0760c8ef79a0c7beac1a2342de
+tree 505d4d99215cd4bf6993fbbc4bf93421a7d6e361
+parent 57d976810af97c2e86b9b1fcebad15adfc97e43e
+author chaos-adept <denis.rykovanov@gmail.com> 1369291925 +0400
+committer chaos-adept <denis.rykovanov@gmail.com> 1369291925 +0400
+
+    [fix] custom descriptor generation for air project
+
+:100755 100755 e66240d155d112ed7ae9b3c6bc0d6944cbccbc03 62f133a9b98f538a34a04c7f91cbb3f42a737ef3 M	src/main/groovy/org/gradlefx/ide/tasks/IdeaProject.groovy
+:100644 100644 68e3039eef823ff41bc91277fc73621c04af9e18 72273435db7a3377799c962f43fdd25fd4505db1 M	src/test/groovy/org/gradlefx/ide/tasks/IdeaProjectModuleTest.groovy
+
+commit 57d976810af97c2e86b9b1fcebad15adfc97e43e
+tree 3cb901cfbad6b6afed6d49ef452c3296d8809fd2
+parent 88485599cfcfe04e33a675b60e274ef112681996
+author chaos-adept <denis.rykovanov@gmail.com> 1369290149 +0400
+committer chaos-adept <denis.rykovanov@gmail.com> 1369290149 +0400
+
+    [fix] generation air mobile , descriptor file, platform enable
+
+:100644 100644 31ecb2836db158d026113e380af4f35b5913198a 7977191055030f76396aa3963a88aa1628b357fe M	.gitignore
+:100755 100755 11da57237024237f4835a1aedcb0b6f28d9774fb e66240d155d112ed7ae9b3c6bc0d6944cbccbc03 M	src/main/groovy/org/gradlefx/ide/tasks/IdeaProject.groovy
+:100644 100644 7dc6ed598866ff7643ae6f0e0237c2b1fe3d9b09 68e3039eef823ff41bc91277fc73621c04af9e18 M	src/test/groovy/org/gradlefx/ide/tasks/IdeaProjectModuleTest.groovy
+
+commit 88485599cfcfe04e33a675b60e274ef112681996
+tree 4b7c8a160f645e578a4549193cd29cea08bd9330
+parent 733c49a61a0d9834bdd7c33fb8c2d74e8416ec3a
+author Denis Rykovanov <denis.rykovanov@gmail.com> 1369285256 +0300
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1369285256 +0300
+
+    [fix] sdk linkage type
+
+:100755 100755 5aa98e4b7d45d08c500cc6dedf53221ad2dd1a52 4dd23eb7fde21c72447aff4a459f4fadfb87a6ee M	src/main/resources/templates/idea/template-iml.xml
+
+commit 733c49a61a0d9834bdd7c33fb8c2d74e8416ec3a
+tree 844435d2731fce03628963b0cbfccaf6a2a9627e
+parent 776e6006225554819ee940241e7496770a8d1e94
+author Denis Rykovanov <denis.rykovanov@gmail.com> 1369285188 +0300
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1369285188 +0300
+
+    [+] generate dependency according to linkage type
+
+:100644 100644 4865c5293d46240199a4ae0d28b633bd0522b334 08a9b1e3b36b479ad9e22a70fa9ce5aa5b29d45d M	build.gradle
+:100755 100755 789f4cd01a47183ebf19284d0d13a5ec8df540f2 11da57237024237f4835a1aedcb0b6f28d9774fb M	src/main/groovy/org/gradlefx/ide/tasks/IdeaProject.groovy
+:100644 100644 8eba6798b306039f4e8f9780ed95485fd79ca46b 7dc6ed598866ff7643ae6f0e0237c2b1fe3d9b09 M	src/test/groovy/org/gradlefx/ide/tasks/IdeaProjectModuleTest.groovy
+:100755 100755 fa36c965236ed881f15b0157a86144856692a906 ba161a05b05fec28f2db04cfb4937f6f02267f50 M	src/test/groovy/org/gradlefx/ide/tasks/IdeaProjectTest.groovy
+
+commit 776e6006225554819ee940241e7496770a8d1e94
+tree 34cae0f22dd0a33b4971d8ab34eef48a6101890a
+parent d9a143cece1d91486299d52cd6317f4e8a3468b6
+author chaos-adept <denis.rykovanov@gmail.com> 1369235088 +0400
+committer chaos-adept <denis.rykovanov@gmail.com> 1369235088 +0400
+
+    [fix] small fixes in air mobile proj generation
+
+:100755 100755 853cba095d05714bd208176f9c09cd315065bac2 789f4cd01a47183ebf19284d0d13a5ec8df540f2 M	src/main/groovy/org/gradlefx/ide/tasks/IdeaProject.groovy
+:100644 100644 53ed2a4f3b1f1641f2e2c156b9b2a809d738515a 8eba6798b306039f4e8f9780ed95485fd79ca46b M	src/test/groovy/org/gradlefx/ide/tasks/IdeaProjectModuleTest.groovy
+
+commit d9a143cece1d91486299d52cd6317f4e8a3468b6
+tree 518267583248b249a90a29039c1f438a0084615b
+parent 3814b6341d311d6d2db7a5033e8c00377ec6ad19
+author chaos-adept <denis.rykovanov@gmail.com> 1369233394 +0400
+committer chaos-adept <denis.rykovanov@gmail.com> 1369233394 +0400
+
+    [+] generation air project (not completed)
+
+:100755 100755 d93d19ee84896419a1999fbcc0d0502255b9616e 853cba095d05714bd208176f9c09cd315065bac2 M	src/main/groovy/org/gradlefx/ide/tasks/IdeaProject.groovy
+:100644 100644 f3f3485bc2a5956a8f7fc458d9d4187566743ce2 53ed2a4f3b1f1641f2e2c156b9b2a809d738515a M	src/test/groovy/org/gradlefx/ide/tasks/IdeaProjectModuleTest.groovy
+
+commit 3814b6341d311d6d2db7a5033e8c00377ec6ad19
+tree 598df0eeeec87452ac5e0cb9f1b220b3442d6670
+parent c123eabd94a0203237e24bb30d958fba6af8fb2a
+author chaos-adept <denis.rykovanov@gmail.com> 1369231566 +0400
+committer chaos-adept <denis.rykovanov@gmail.com> 1369231566 +0400
+
+    [+] generate web app project
+
+:100644 100644 f2ddeac2c36ffe156a03356c3df3978a0b8a370b 31ecb2836db158d026113e380af4f35b5913198a M	.gitignore
+:100755 100755 806e5ff02833a40bbfdf87766daf90514ec99740 d93d19ee84896419a1999fbcc0d0502255b9616e M	src/main/groovy/org/gradlefx/ide/tasks/IdeaProject.groovy
+:100644 100644 83132a04224987914483cefbcdba0e1e09f4e476 f3f3485bc2a5956a8f7fc458d9d4187566743ce2 M	src/test/groovy/org/gradlefx/ide/tasks/IdeaProjectModuleTest.groovy
+
+commit c123eabd94a0203237e24bb30d958fba6af8fb2a
+tree 2b1ee8681479dd1dbd62beb111635f7db6e5766b
+parent e4694d6491d880c6cb0e6c8f49893497e7ce0906
+author chaos-adept <denis.rykovanov@gmail.com> 1369227173 +0400
+committer chaos-adept <denis.rykovanov@gmail.com> 1369227173 +0400
+
+    [m] merge feature-airmobile and feature-idea-project
+
+:100644 100644 4447ce2bb4009ab273a4c5d64a41e4a39df77ac9 f2ddeac2c36ffe156a03356c3df3978a0b8a370b M	.gitignore
+:100644 100644 a9c76913369d692fd853218c5bd1a764f27e3245 4865c5293d46240199a4ae0d28b633bd0522b334 M	build.gradle
+:100644 100644 dcd20665d5e13f229b7bf4115239da9b8689f45d ed3226d1ae9ef70d986eccd6025e2c14c7b7867b M	src/main/groovy/org/gradlefx/ide/plugins/IdeaPlugin.groovy
+:000000 100644 0000000000000000000000000000000000000000 1d3becf2295941b90cc0e45669f2f2257b7ad405 A	src/main/groovy/org/gradlefx/ide/tasks/IdeaClean.groovy
+:100644 100755 fc325601a010c0b5e0d56de35da14948dfb86f5d 806e5ff02833a40bbfdf87766daf90514ec99740 M	src/main/groovy/org/gradlefx/ide/tasks/IdeaProject.groovy
+:000000 100644 0000000000000000000000000000000000000000 af84ac823fa278e278abc92a378027839100c4a6 A	src/main/groovy/org/gradlefx/ide/tasks/IdeaUtil.groovy
+:100644 100755 2ae52b9123ada01e97699fb01bdba059e11978bf 4263d51b6a76aa26a419eaec04cfb13044021814 M	src/main/groovy/org/gradlefx/util/TemplateUtil.groovy
+:000000 100755 0000000000000000000000000000000000000000 5aa98e4b7d45d08c500cc6dedf53221ad2dd1a52 A	src/main/resources/templates/idea/template-iml.xml
+:000000 100644 0000000000000000000000000000000000000000 83132a04224987914483cefbcdba0e1e09f4e476 A	src/test/groovy/org/gradlefx/ide/tasks/IdeaProjectModuleTest.groovy
+:000000 100755 0000000000000000000000000000000000000000 fa36c965236ed881f15b0157a86144856692a906 A	src/test/groovy/org/gradlefx/ide/tasks/IdeaProjectTest.groovy
+:000000 100755 0000000000000000000000000000000000000000 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 A	src/test/resources/stub-project-dir/intellij-dummy.xml
+
+commit e4694d6491d880c6cb0e6c8f49893497e7ce0906
+tree 7bb410d79825f724dd350010c6ffc3505ed210d5
+parent a34ff0b361b483766c3f068104e1b3b3ce4ff680
+author Denis Rykovanov <denis.rykovanov@gmail.com> 1366046832 +0300
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1366046832 +0300
+
+    [+] adl configuration, profile, screen size
+
+:100644 100644 1214c24666fa2f33ac08375106790df38f384440 0575bc14cb6d271dba4d121ffd7d2bbf49129fa0 M	src/main/groovy/org/gradlefx/conventions/GradleFxConvention.groovy
+:000000 100644 0000000000000000000000000000000000000000 e762bef1061ba9b645b391848ae0b571dd15b130 A	src/main/groovy/org/gradlefx/conventions/adl/AdlConvention.groovy
+:100644 100644 36c3707b881b613ea060af68858b2599376bcbc3 de05d91af38d5da8e6a0e8a2400ec2c10eff2c18 M	src/main/groovy/org/gradlefx/tasks/adl/AdlTask.groovy
+
+commit a34ff0b361b483766c3f068104e1b3b3ce4ff680
+tree f4ca6e34d1547653e2677d6c3f59dd4d4e63ecb4
+parent 4cd7242673ef9cdb0a43fd5915d200a227f5270d
+author Denis Rykovanov <denis.rykovanov@gmail.com> 1365928331 +0300
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1365928331 +0300
+
+    [+] dirtry adl task
+
+:100644 100644 1367c3480962940d452b61ff8f7dd13a0d249412 e369e4040fb867ce3e92d1a948e9ddbc46dec387 M	src/main/groovy/org/gradlefx/plugins/GradleFxPlugin.groovy
+:100644 100644 ecd5df28bac2e00dde70d7106b4c6b2f96aecfc7 c8ebd7096163f0794cbc6c10ff6bafb8b64bed80 M	src/main/groovy/org/gradlefx/tasks/TaskGroups.groovy
+:100644 100644 9cd013c3abbe632a22b1afa4cbc1ea17c5932c3d 777d59fd72e68c9bd0b1cd59c23febc2352f17dd M	src/main/groovy/org/gradlefx/tasks/Tasks.groovy
+:000000 100644 0000000000000000000000000000000000000000 36c3707b881b613ea060af68858b2599376bcbc3 A	src/main/groovy/org/gradlefx/tasks/adl/AdlTask.groovy
+
+commit 4cd7242673ef9cdb0a43fd5915d200a227f5270d
+tree 68ca89079de826525a823b3fe9a3dc4d9d745dc6
+parent 9f589cf3bd2c0608ca05383e8a018e01dcbebc8d
+author Denis Rykovanov <denis.rykovanov@gmail.com> 1365852052 +0300
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1365852052 +0300
+
+    [+] multiple sources
+
+:100644 100644 bb82b69ddef1a8eeb35d029188e14b1b4555c0c7 824b861f016efaf360c87b78235c6368fdd5f4a5 M	src/main/groovy/org/gradlefx/conventions/embed/EmbedRefClass.groovy
+
+commit 9f589cf3bd2c0608ca05383e8a018e01dcbebc8d
+tree f837c6b83d8de65dfc9d8c41f0553cd2dc735bb8
+parent 8d4c76ae822097310cd5cb541f8bf20271544352
+author Denis Rykovanov <denis.rykovanov@gmail.com> 1365442374 +0300
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1365442374 +0300
+
+    [fix] resource class ref name
+
+:100644 100644 2b9e5c23de82fc0dce2f7b4d89096ffcb46ed90f 166c8920a4b94e9eae4f7ed27061d83ee8612465 M	src/main/groovy/org/gradlefx/cli/CommandLineInstruction.groovy
+:100644 100644 a43c60c0cdfcc78efae8a4bb166534da3e94e4e6 acee4742501fad4d3dc62606d296408764c7cda2 M	src/main/groovy/org/gradlefx/tasks/embed/GenerateResourcesEmbedCode.groovy
+
+commit 8d4c76ae822097310cd5cb541f8bf20271544352
+tree 38d0a2020e0045664f97bb5a98f5df20d718456a
+parent 2c109a9f98e5fe1a6eefe87680030a8c1d8a9a57
+author Denis Rykovanov <denis.rykovanov@gmail.com> 1365329597 +0300
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1365329597 +0300
+
+    [+] embed resource generation plugin, multiple classes with embed
+
+:000000 100644 0000000000000000000000000000000000000000 7af930ff9e27db87dd0520670b8aa7072d832b17 A	src/main/groovy/org/gradlefx/conventions/embed/EmbedConvention.groovy
+:000000 100644 0000000000000000000000000000000000000000 bb82b69ddef1a8eeb35d029188e14b1b4555c0c7 A	src/main/groovy/org/gradlefx/conventions/embed/EmbedRefClass.groovy
+:100644 100644 8d1d28a8b317de6bd8a515cf6678868070e0a21e ce7b1c8849a1ea24b974ab13b30f7d61d2aae6d3 M	src/main/groovy/org/gradlefx/plugins/ResourceEmbedFxPlugin.groovy
+:100644 100644 f69cf625797105242c9b46bb97957ff82a58e01c a43c60c0cdfcc78efae8a4bb166534da3e94e4e6 M	src/main/groovy/org/gradlefx/tasks/embed/GenerateResourcesEmbedCode.groovy
+
+commit 2c109a9f98e5fe1a6eefe87680030a8c1d8a9a57
+tree 818b4cecd5154238d99b3eb3deb21fa75dbe253d
+parent b539e06dc5d5ddb3ed24eda62b8ebd229315bb47
+author Denis Rykovanov <denis.rykovanov@gmail.com> 1365315917 +0300
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1365315917 +0300
+
+    [+] embed resource generation plugin, draft
+
+:100644 100644 23f6f2e44c85f82e9e7836378a31b6651040811a a9c76913369d692fd853218c5bd1a764f27e3245 M	build.gradle
+:000000 100644 0000000000000000000000000000000000000000 8d1d28a8b317de6bd8a515cf6678868070e0a21e A	src/main/groovy/org/gradlefx/plugins/ResourceEmbedFxPlugin.groovy
+:000000 100644 0000000000000000000000000000000000000000 f69cf625797105242c9b46bb97957ff82a58e01c A	src/main/groovy/org/gradlefx/tasks/embed/GenerateResourcesEmbedCode.groovy
+:000000 100644 0000000000000000000000000000000000000000 15f7bd525d84747fa61485baa771630bc2d5f181 A	src/main/resources/META-INF/gradle-plugins/resourceembedfx.properties
+
+commit b539e06dc5d5ddb3ed24eda62b8ebd229315bb47
+tree 92551e3e0d0d50408ec9055cdacf8b7031b8a480
+parent dbb67bb637ebc2760dc960d74efde480398b91fd
+author Denis Rykovanov <denis.rykovanov@gmail.com> 1365186407 +0300
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1365186407 +0300
+
+    [fix] flashbuilder generation, swc project with air support
+
+:100644 100644 b87c334059e196ce31ed9172271ef09e36b01537 e20c0a46c9bfaebcff8871a1ef561bba41ef8303 M	src/main/groovy/org/gradlefx/ide/tasks/FlashBuilderProject.groovy
+:100644 100644 27194a95232f4302923bd6b9a88dcc331f70db1b 2ae52b9123ada01e97699fb01bdba059e11978bf M	src/main/groovy/org/gradlefx/util/TemplateUtil.groovy
+:100644 100644 b7b833e0f83e23cc934d28f7bf4cbeb821b172db b2632a31d068af128fccab62d0dbee4e914666d4 M	src/main/resources/templates/flashbuilder/swc-as.actionScriptProperties
+:100644 100644 0b38208da4a1764723d515a25f80ef2302d1287f d250fb108bf3e5204c8aaf709075d6cfc75d240c M	src/main/resources/templates/flashbuilder/swc-fx.actionScriptProperties
+:100644 100644 64f20634ed85b97d4966a612da8e59c7db6eb680 90eb30933ae78d87c27cb3a6fe6939ad36f9a5d5 M	src/main/resources/templates/flashbuilder/swf-as.actionScriptProperties
+:100644 100644 1f68bba62f36ef880ddedb710d6f0a40284275e6 66459709c807ab799c11ccee04e6ba87292baf9c M	src/main/resources/templates/flashbuilder/swf-fx.actionScriptProperties
+:100644 100644 240d6fd12e9da4fa43ccfc625c2f4bf6ccd8b9d3 08522301faf9f3abcbac361afdf5466b32d2e937 M	src/test/groovy/org/gradlefx/util/StubTemplateUtilBase.groovy
+:100644 100644 28dc9b5e62d7bcc1e087d5d8073b88aa18072318 11743ad3d29e0f892aadb9a296950a2ad84b020d M	src/test/groovy/org/gradlefx/util/TemplateUtilTest.groovy
+
+commit dbb67bb637ebc2760dc960d74efde480398b91fd
+tree 0bb7c1082916ba2c0a482b27188ed1222e45a5d2
+parent d1f4cb40d792b2e887bc8594e23b6a0fcaea34f9
+author Denis Rykovanov <denis.rykovanov@gmail.com> 1365051229 +0300
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1365051229 +0300
+
+    [+] get main class by abs path
+
+:100644 100644 86ebc2c4f662fa207c30cbded4f89727102e92a6 b805cf29b8b8927fb5fc66ef760e3f0d9604dd30 M	src/main/groovy/org/gradlefx/cli/ApplicationCommandLineInstruction.groovy
+
+commit d1f4cb40d792b2e887bc8594e23b6a0fcaea34f9
+tree 99c917fbc9e119762682aba3dd63107d5f0f5712
+parent 2de4ee3a7f08bb686ad10293e809fcbc96838120
+author chaos-adept <denis.rykovanov@gmail.com> 1364179088 +0400
+committer chaos-adept <denis.rykovanov@gmail.com> 1364179088 +0400
+
+    [fix] small fixes in simulatorPackaging
+
+:100644 100644 013aecab6a61dcad9419f7a38ebe44305ec0db95 97a4ab241ea6443564b6dcaffe53a86fe6fb9332 M	src/main/groovy/org/gradlefx/tasks/mobile/BaseAirMobilePackage.groovy
+:100644 100644 1cf76dd8cb917bb632933ebcabdf4e445f6938b2 331fc62207f29e6350f151c2230dafed0ee90270 M	src/main/groovy/org/gradlefx/tasks/mobile/InstallApp.groovy
+:100644 100644 cd6c0c0f614987e627c4df899729791d9236142e 7b176d77154e5c759e18ef0252ebfeaad1e362ee M	src/main/groovy/org/gradlefx/tasks/mobile/InstallSimulatorApp.groovy
+:100644 100644 d0822a7779b6f3499a22832ffd811e284280c44e 548859a5727a991a7d6cb1769e6da9985539845a M	src/main/groovy/org/gradlefx/tasks/mobile/SimulatorAirMobilePackage.groovy
+
+commit 2de4ee3a7f08bb686ad10293e809fcbc96838120
+tree 9b74c1595bac72c7188dde3c42cd13af03b8bc3d
+parent 3309b21c7c4f2f501ee42e57c5a0538a04845e86
+author chaos-adept <denis.rykovanov@gmail.com> 1364098738 +0400
+committer chaos-adept <denis.rykovanov@gmail.com> 1364098738 +0400
+
+    [+] tasks for working with ios simulator, uninstall, install, launch
+
+:100644 100644 e0f969de4226a989e0c90172207d0352c5ac8c5e e3ffe9156feb88a5cf3f81d11e9a082ead607cfb M	src/main/groovy/org/gradlefx/conventions/AIRMobileConvention.groovy
+:100644 100644 80bd821b5b1e1966d88369c8f0d3e0ae53403cf9 1367c3480962940d452b61ff8f7dd13a0d249412 M	src/main/groovy/org/gradlefx/plugins/GradleFxPlugin.groovy
+:100644 100644 dca265716f02f6011a4cef0d9cb4781bc28df4b5 9cd013c3abbe632a22b1afa4cbc1ea17c5932c3d M	src/main/groovy/org/gradlefx/tasks/Tasks.groovy
+:100644 100644 46926885e2fe24831492f727b11c5f69d7401077 013aecab6a61dcad9419f7a38ebe44305ec0db95 M	src/main/groovy/org/gradlefx/tasks/mobile/BaseAirMobilePackage.groovy
+:100644 100644 6d8e54b07d2dc8c03cd9389155bc7cf064abfc05 1cf76dd8cb917bb632933ebcabdf4e445f6938b2 M	src/main/groovy/org/gradlefx/tasks/mobile/InstallApp.groovy
+:100644 100644 6c39833a31e36c3ab34ce6f14bbf503072e293c6 fdbefcc186896f0e766a5c7d0fc4b1ac1b7eed70 M	src/main/groovy/org/gradlefx/tasks/mobile/InstallAppUtils.groovy
+:000000 100644 0000000000000000000000000000000000000000 cd6c0c0f614987e627c4df899729791d9236142e A	src/main/groovy/org/gradlefx/tasks/mobile/InstallSimulatorApp.groovy
+:100644 100644 6a33e4d98a87e9ec1420ebc8de6cd1ba5a35869c 80a97db042c3bca3af9b1920707bdeebd4b6dce3 M	src/main/groovy/org/gradlefx/tasks/mobile/LaunchApp.groovy
+:000000 100644 0000000000000000000000000000000000000000 c56986220a9a4273939c5db7aab430ccd34ca5f0 A	src/main/groovy/org/gradlefx/tasks/mobile/LaunchSimulatorApp.groovy
+:100644 100644 407e29bf23d5004786ec45b41543014726a23802 d0822a7779b6f3499a22832ffd811e284280c44e M	src/main/groovy/org/gradlefx/tasks/mobile/SimulatorAirMobilePackage.groovy
+:100644 100644 69fb92786095161c7941e52938547f767aa5d8b3 e0d01bfef9c1117fe8ba322c0fc6c5d973a202dd M	src/main/groovy/org/gradlefx/tasks/mobile/UninstallApp.groovy
+:000000 100644 0000000000000000000000000000000000000000 a445b767068d2178dac80b380f86618d9a74019f A	src/main/groovy/org/gradlefx/tasks/mobile/UninstallSimulatorApp.groovy
+
+commit 3309b21c7c4f2f501ee42e57c5a0538a04845e86
+tree 166b73d07d1c0226726fa2eebbe1f8cd122bec4e
+parent c530d47e0ec5f4418576d08f801cfc4a4a7e796c
+author chaos-adept <denis.rykovanov@gmail.com> 1364096377 +0400
+committer chaos-adept <denis.rykovanov@gmail.com> 1364096377 +0400
+
+    [ref] extracted Simulator packaging
+
+:100644 100644 48674de752f8828cd6a2da7ac083146a3ba01af2 e0f969de4226a989e0c90172207d0352c5ac8c5e M	src/main/groovy/org/gradlefx/conventions/AIRMobileConvention.groovy
+:100644 100644 4872d81735c1203b152ff75ed3d50c1c3dba35aa 80bd821b5b1e1966d88369c8f0d3e0ae53403cf9 M	src/main/groovy/org/gradlefx/plugins/GradleFxPlugin.groovy
+:100644 100644 c2b049b7212237bd811090f2998ac4602ba048f0 dca265716f02f6011a4cef0d9cb4781bc28df4b5 M	src/main/groovy/org/gradlefx/tasks/Tasks.groovy
+:000000 100644 0000000000000000000000000000000000000000 407e29bf23d5004786ec45b41543014726a23802 A	src/main/groovy/org/gradlefx/tasks/mobile/SimulatorAirMobilePackage.groovy
+
+commit c530d47e0ec5f4418576d08f801cfc4a4a7e796c
+tree 693176e071e1d7e93072bd4ab31a7ac5f539bb75
+parent bc0810ae292b2bdb964ba00db7bf2dcbce02ea68
+author chaos-adept <denis.rykovanov@gmail.com> 1364095686 +0400
+committer chaos-adept <denis.rykovanov@gmail.com> 1364095686 +0400
+
+    [ref] extracted ReleaseAirMobilePackage
+
+:100644 100644 4e7ec9e785ed8d6051b4f49e720b7d41a7593cc1 4872d81735c1203b152ff75ed3d50c1c3dba35aa M	src/main/groovy/org/gradlefx/plugins/GradleFxPlugin.groovy
+:100644 100644 8da9cc4891a66a6995ebd7526f7be1759760714c 46926885e2fe24831492f727b11c5f69d7401077 M	src/main/groovy/org/gradlefx/tasks/mobile/BaseAirMobilePackage.groovy
+:000000 100644 0000000000000000000000000000000000000000 c77bce616184afa764d3282625ed66d80fb82418 A	src/main/groovy/org/gradlefx/tasks/mobile/ReleaseAirMobilePackage.groovy
+
+commit bc0810ae292b2bdb964ba00db7bf2dcbce02ea68
+tree 9efdba00c15d40220fe0777b9fc95c6311828442
+parent a3e9f1db08e9c3773a1adccb8311ca65e7ac8b4d
+author chaos-adept <denis.rykovanov@gmail.com> 1364095076 +0400
+committer chaos-adept <denis.rykovanov@gmail.com> 1364095076 +0400
+
+    [ref] naming
+
+:100644 100644 5a7282aa9559fdd6090a0ae08bc02403256d67df 4e7ec9e785ed8d6051b4f49e720b7d41a7593cc1 M	src/main/groovy/org/gradlefx/plugins/GradleFxPlugin.groovy
+:100644 100644 785b32297f7cdcde862789b9aa1baf4859b572ec 8da9cc4891a66a6995ebd7526f7be1759760714c R096	src/main/groovy/org/gradlefx/tasks/mobile/AirMobilePackage.groovy	src/main/groovy/org/gradlefx/tasks/mobile/BaseAirMobilePackage.groovy
+
+commit a3e9f1db08e9c3773a1adccb8311ca65e7ac8b4d
+tree 97b279e948180334cf834103e7f09e61a8298080
+parent c2d232a66b1cb3b379ebfaeaab33b414537aafde
+author chaos-adept <denis.rykovanov@gmail.com> 1364094981 +0400
+committer chaos-adept <denis.rykovanov@gmail.com> 1364094981 +0400
+
+    [ref] relocate air mobile package
+
+:100644 100644 9062313f6fcf8dae937e55d22060518f91afe772 5a7282aa9559fdd6090a0ae08bc02403256d67df M	src/main/groovy/org/gradlefx/plugins/GradleFxPlugin.groovy
+:100644 100644 d6680ee635bffe214a44088adbd652060688abdf 785b32297f7cdcde862789b9aa1baf4859b572ec R097	src/main/groovy/org/gradlefx/tasks/AirMobilePackage.groovy	src/main/groovy/org/gradlefx/tasks/mobile/AirMobilePackage.groovy
+
+commit c2d232a66b1cb3b379ebfaeaab33b414537aafde
+tree f28ac9aa49df87ccd9b0cf886fd2b68967a934ad
+parent d3ddb21d92a34929dd98893d42f7abd3cd01122a
+author chaos-adept <denis.rykovanov@gmail.com> 1364094926 +0400
+committer chaos-adept <denis.rykovanov@gmail.com> 1364094926 +0400
+
+    [+] air mobile simulator sdk
+
+:100644 100644 5b0fbbd8c9b35d0e6af20c3529691e5c4c62d4e2 48674de752f8828cd6a2da7ac083146a3ba01af2 M	src/main/groovy/org/gradlefx/conventions/AIRMobileConvention.groovy
+:100644 100644 fd04b7647fc72605832be4bfa70b4d2401a3fcb4 d6680ee635bffe214a44088adbd652060688abdf M	src/main/groovy/org/gradlefx/tasks/AirMobilePackage.groovy
+
+commit d3ddb21d92a34929dd98893d42f7abd3cd01122a
+tree ae3383f4e531778ca34a26b339805a9150e06771
+parent 64f1848475c4e4da499769eb1fcda756204a7de4
+author chaos-adept <denis.rykovanov@gmail.com> 1364056805 +0400
+committer chaos-adept <denis.rykovanov@gmail.com> 1364056805 +0400
+
+    [fix] output path
+
+:100644 100644 e4b6e3dda83031224187188603efd8c204ce8772 fd04b7647fc72605832be4bfa70b4d2401a3fcb4 M	src/main/groovy/org/gradlefx/tasks/AirMobilePackage.groovy
+
+commit 694412d40fbde2dc718d4cb86bedcb7df0bea4f0
+tree c68402ce6f95b709d4251e7cf58ee48403ee231b
+parent 91cd8d2eea7d3f5d3e7057058015efedf45cbcd5
+author chaos-adept <denis.rykovanov@gmail.com> 1364035081 +0400
+committer chaos-adept <denis.rykovanov@gmail.com> 1364035081 +0400
+
+    [ref] small fixes, [+] ios support
+
+:100644 100644 90f46f095d279ad8f3c95bc5bc9dfc05a412999a 5b0fbbd8c9b35d0e6af20c3529691e5c4c62d4e2 M	src/main/groovy/org/gradlefx/conventions/AIRMobileConvention.groovy
+:100644 100644 c014ab1d2aa0073d20cd85566b57a26cce91cf43 46a382860893812cc1cee60e3a2532251e4e76c0 M	src/main/groovy/org/gradlefx/tasks/AirMobilePackage.groovy
+:100644 100644 0d289a5a80c9a10493053c5e863c4580b65e72c8 6d8e54b07d2dc8c03cd9389155bc7cf064abfc05 M	src/main/groovy/org/gradlefx/tasks/mobile/InstallApp.groovy
+:000000 100644 0000000000000000000000000000000000000000 6c39833a31e36c3ab34ce6f14bbf503072e293c6 A	src/main/groovy/org/gradlefx/tasks/mobile/InstallAppUtils.groovy
+:100644 100644 ade4422648da53869576cc593e7d4ca64c44f225 6a33e4d98a87e9ec1420ebc8de6cd1ba5a35869c M	src/main/groovy/org/gradlefx/tasks/mobile/LaunchApp.groovy
+:100644 100644 d48f15ae9a394efd321e8d696c95c42d9db08b26 69fb92786095161c7941e52938547f767aa5d8b3 M	src/main/groovy/org/gradlefx/tasks/mobile/UninstallApp.groovy
+
+commit 929d4a1cb3c9d966801d1ada4bbab68cf375367a
+tree 75cfb8037082d1a3c88f199424c593b51fa4fba7
+parent 3ad147df86e25a09a529a9a84d02a32cbafe2044
+author Denis Rykovanov <denis.rykovanov@gmail.com> 1363365616 +0300
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1363365616 +0300
+
+    [fix] remove swf duplicate from apk
+
+:100644 100644 447ade6f099dfcb7d8d6a2e6bc6d64482185936b 44a097dcc3eb715754537d28e995cb1fdaa65330 M	src/main/groovy/org/gradlefx/tasks/AirMobilePackage.groovy
+
+commit 3ad147df86e25a09a529a9a84d02a32cbafe2044
+tree 890f554b34fa18c89d202cb756dcf3ece540f63a
+parent 91cd8d2eea7d3f5d3e7057058015efedf45cbcd5
+author Denis Rykovanov <denis.rykovanov@gmail.com> 1363336021 +0300
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1363336021 +0300
+
+    [fix] generation apk according to output value
+
+:100644 100644 c014ab1d2aa0073d20cd85566b57a26cce91cf43 447ade6f099dfcb7d8d6a2e6bc6d64482185936b M	src/main/groovy/org/gradlefx/tasks/AirMobilePackage.groovy
+
+commit 91cd8d2eea7d3f5d3e7057058015efedf45cbcd5
+tree db9d26712bd40b5d8206932f84c8ab43545db1d2
+parent b3442e5fb48e8867e0efbdaba28c3268733a5eb9
+author Denis Rykovanov <denis.rykovanov@gmail.com> 1363276992 +0300
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1363276992 +0300
+
+    [ref] extract air from airMobile
+
+:100644 100644 9fdc6f51b463a18bed4afe74896b5f88cefb2ee0 90f46f095d279ad8f3c95bc5bc9dfc05a412999a M	src/main/groovy/org/gradlefx/conventions/AIRMobileConvention.groovy
+:100644 100644 fe8e43754e47bd4196f6579cd305845037888c25 1214c24666fa2f33ac08375106790df38f384440 M	src/main/groovy/org/gradlefx/conventions/GradleFxConvention.groovy
+:100644 100644 42fe588dcc937445c9fe43103cefde434b7b6778 c014ab1d2aa0073d20cd85566b57a26cce91cf43 M	src/main/groovy/org/gradlefx/tasks/AirMobilePackage.groovy
+:100644 100644 be7844440c917da35b7405702a2159db827f79af ade4422648da53869576cc593e7d4ca64c44f225 M	src/main/groovy/org/gradlefx/tasks/mobile/LaunchApp.groovy
+:100644 100644 4ba463dad5f0563bbe06debfc71443bf6d72a263 d48f15ae9a394efd321e8d696c95c42d9db08b26 M	src/main/groovy/org/gradlefx/tasks/mobile/UninstallApp.groovy
+:100644 100644 6d085e4f1bc614a9825f1967e49c7332be8d27d3 75559f2d433f7ddc757c2c1026541ca5337153bd M	src/test/groovy/org/gradlefx/conventions/GradleFxConventionTest.groovy
+
+commit b3442e5fb48e8867e0efbdaba28c3268733a5eb9
+tree 1017df3116d66d3f909126d64fe29428f3bd6fe4
+parent 8f2a934416cabaf04735f18ca7a36f44883698c3
+author Denis Rykovanov <denis.rykovanov@gmail.com> 1363272893 +0300
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1363272893 +0300
+
+    [fix] working dir for mobile packaging
+
+:100644 100644 916d228bafb9d478286cf4671d919652c3b16f8d 56e244806dad54c9a1a2aa3dd803eca9919c3fcf M	src/main/groovy/org/gradlefx/tasks/AdtTask.groovy
+:100644 100644 151b527bf3dfdbceb3ce316050e53d91ef927545 42fe588dcc937445c9fe43103cefde434b7b6778 M	src/main/groovy/org/gradlefx/tasks/AirMobilePackage.groovy
+
+commit 8f2a934416cabaf04735f18ca7a36f44883698c3
+tree b2fc9774cc40a5063d7900ca3894f59a422fd7ae
+parent 429fe51e4ea1461aeb22dc2ee4e597d2e80f9246
+author Denis Rykovanov <denis.rykovanov@gmail.com> 1363242935 +0300
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1363242935 +0300
+
+    [+] uninstall app
+
+:100644 100644 e4be7e55c344c9bd046d91e7369ea475cf2b0381 9062313f6fcf8dae937e55d22060518f91afe772 M	src/main/groovy/org/gradlefx/plugins/GradleFxPlugin.groovy
+:100644 100644 3bd45245211e15c089c5d469e7dc809cd3c7610e c2b049b7212237bd811090f2998ac4602ba048f0 M	src/main/groovy/org/gradlefx/tasks/Tasks.groovy
+:100644 100644 15ed9fbb919d4d578316724c8912d0f6a2326b99 0d289a5a80c9a10493053c5e863c4580b65e72c8 M	src/main/groovy/org/gradlefx/tasks/mobile/InstallApp.groovy
+:100644 100644 637ee28cb5703410dd538cda5a56f32d58d73843 be7844440c917da35b7405702a2159db827f79af M	src/main/groovy/org/gradlefx/tasks/mobile/LaunchApp.groovy
+:000000 100644 0000000000000000000000000000000000000000 4ba463dad5f0563bbe06debfc71443bf6d72a263 A	src/main/groovy/org/gradlefx/tasks/mobile/UninstallApp.groovy
+
+commit 429fe51e4ea1461aeb22dc2ee4e597d2e80f9246
+tree 9a31f7ce62d84107af7d81bcec5763e6fcbbddba
+parent f59ea8f954f7b27c18ce1f6e551564c3e4997efd
+author Denis Rykovanov <denis.rykovanov@gmail.com> 1363172680 +0300
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1363172680 +0300
+
+    [ref] small correction of adt cmd line
+
+:100644 100644 985ee350d7f0c83d7790c1423d3ed2ecb8442f2e 253feeb33c1a90d9494dbc941172768fbd2dc456 M	src/main/groovy/org/gradlefx/tasks/ane/PackageAne.groovy
+
+commit f59ea8f954f7b27c18ce1f6e551564c3e4997efd
+tree d5ef046963c7e9f94aed7b5faa9087e0c1eb3266
+parent c15f707463ce4b3a0c51fd1fb2043437aa8abb0e
+author Denis Rykovanov <denis.rykovanov@gmail.com> 1363172654 +0300
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1363172654 +0300
+
+    [+] launch app
+
+:100644 100644 d27ce91a625650190c91cd6119e97679e0974a87 e4be7e55c344c9bd046d91e7369ea475cf2b0381 M	src/main/groovy/org/gradlefx/plugins/GradleFxPlugin.groovy
+:100644 100644 8537db3eda709423044a483792f00cad50fa7bc3 3bd45245211e15c089c5d469e7dc809cd3c7610e M	src/main/groovy/org/gradlefx/tasks/Tasks.groovy
+:000000 100644 0000000000000000000000000000000000000000 637ee28cb5703410dd538cda5a56f32d58d73843 A	src/main/groovy/org/gradlefx/tasks/mobile/LaunchApp.groovy
+
+commit c15f707463ce4b3a0c51fd1fb2043437aa8abb0e
+tree 92a7f3ac805fc101c9d2fdd6b3a34afa2752d90a
+parent e166382df431cef1aa9cabafee243aab24885bb2
+author Denis Rykovanov <denis.rykovanov@gmail.com> 1363110773 +0300
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1363110773 +0300
+
+    [+] quick fix for recompiling
+
+:100644 100644 e8e305e7f50def70b091aafb41e9d9f9c012deef 985ee350d7f0c83d7790c1423d3ed2ecb8442f2e M	src/main/groovy/org/gradlefx/tasks/ane/PackageAne.groovy
+
+commit e166382df431cef1aa9cabafee243aab24885bb2
+tree a5809237f5e063e7d0231200bcf875fe53b02ade
+parent 2325ec9d3cef38e73e4f9de66e6e285f17457363
+author Denis Rykovanov <denis.rykovanov@gmail.com> 1363088872 +0300
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1363088872 +0300
+
+    [+] package ane plugin (not completed)
+
+:000000 100644 0000000000000000000000000000000000000000 c989c07f517482c20a8371e55379fe15f2327544 A	src/main/groovy/org/gradlefx/plugins/PackageAneFxPlugin.groovy
+:000000 100644 0000000000000000000000000000000000000000 e8e305e7f50def70b091aafb41e9d9f9c012deef A	src/main/groovy/org/gradlefx/tasks/ane/PackageAne.groovy
+:000000 100644 0000000000000000000000000000000000000000 9c248ac018e98f3e17a570ef061bb47211f99a3f A	src/main/resources/META-INF/gradle-plugins/packageanefx.properties
+
+commit 2325ec9d3cef38e73e4f9de66e6e285f17457363
+tree 3b8c9c7c34bc80bee16b346039514c168cb75b55
+parent 4a915d85aa7898e413e3e27bf0383275e0ebf9df
+author Denis Rykovanov <denis.rykovanov@gmail.com> 1363059179 +0300
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1363059179 +0300
+
+    [+] install apk to target device
+
+:100644 100644 dab5b921b1fa3962552549341759cd2b3a7348fa 9fdc6f51b463a18bed4afe74896b5f88cefb2ee0 M	src/main/groovy/org/gradlefx/conventions/AIRMobileConvention.groovy
+:100644 100644 c6759ae05b3b4d90c75be6ee065e3f4909ba4f89 d27ce91a625650190c91cd6119e97679e0974a87 M	src/main/groovy/org/gradlefx/plugins/GradleFxPlugin.groovy
+:100644 100644 d585c7513f5cefe88856d93d81e6aa381f06cf23 8537db3eda709423044a483792f00cad50fa7bc3 M	src/main/groovy/org/gradlefx/tasks/Tasks.groovy
+:000000 100644 0000000000000000000000000000000000000000 15ed9fbb919d4d578316724c8912d0f6a2326b99 A	src/main/groovy/org/gradlefx/tasks/mobile/InstallApp.groovy
+:100644 100644 451f1bce9df83b69857750884ec136382aaab433 6d085e4f1bc614a9825f1967e49c7332be8d27d3 M	src/test/groovy/org/gradlefx/conventions/GradleFxConventionTest.groovy
+
+commit 4a915d85aa7898e413e3e27bf0383275e0ebf9df
+tree a946a9b160d537e7ece3a794a65962495af724f2
+parent b344d3dd223599cf0a0efe59b76066a9334af0dc
+author Denis Rykovanov <denis.rykovanov@gmail.com> 1363024505 +0300
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1363024505 +0300
+
+    [+] extensionDir property
+
+:100644 100644 c476594071a7750554fcecc18afe7a7fe1a9bea1 dab5b921b1fa3962552549341759cd2b3a7348fa M	src/main/groovy/org/gradlefx/conventions/AIRMobileConvention.groovy
+:100644 100644 16521c45247458a509de7541cefc8a967d7f4f1a 151b527bf3dfdbceb3ce316050e53d91ef927545 M	src/main/groovy/org/gradlefx/tasks/AirMobilePackage.groovy
+:100644 100644 66352be7b663bee5080d384abb18224d4a7047eb 451f1bce9df83b69857750884ec136382aaab433 M	src/test/groovy/org/gradlefx/conventions/GradleFxConventionTest.groovy
+
+commit b344d3dd223599cf0a0efe59b76066a9334af0dc
+tree e4c6baf701c635b16c71f8d5b38225c63dd4338a
+parent 276f81ad74211465299089e7fa5b89d3d9857b5e
+author Denis Rykovanov <denis.rykovanov@gmail.com> 1363023067 +0300
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1363023067 +0300
+
+    [fix] air mobile package task
+
+:100644 100644 19f227ccc591ac170eb2cb1476177371d99e289f c476594071a7750554fcecc18afe7a7fe1a9bea1 M	src/main/groovy/org/gradlefx/conventions/AIRMobileConvention.groovy
+:100644 100644 bdc5c17caea31e0b281b6050684fa5ef8a694370 c6759ae05b3b4d90c75be6ee065e3f4909ba4f89 M	src/main/groovy/org/gradlefx/plugins/GradleFxPlugin.groovy
+:000000 100644 0000000000000000000000000000000000000000 16521c45247458a509de7541cefc8a967d7f4f1a A	src/main/groovy/org/gradlefx/tasks/AirMobilePackage.groovy
+:100644 100644 1aaefa945e336884e1f6ced840b534af722252ab 66352be7b663bee5080d384abb18224d4a7047eb M	src/test/groovy/org/gradlefx/conventions/GradleFxConventionTest.groovy
+:100644 100644 246abad4d8e6e5c10038636c0308c4d31b81a609 0cca195f2eee0b22beee97ba5a81dfa3155e20ce M	src/test/groovy/org/gradlefx/conventions/GradleFxDerivedPropertiesTest.groovy
+
+commit 276f81ad74211465299089e7fa5b89d3d9857b5e
+tree 8dc8e7e2f34e0df1e223b7efcf892728e058e9ac
+parent 4b77b0c2fa28a4546aeb5c04e7d9b40d6e0646b1
+author Denis Rykovanov <denis.rykovanov@gmail.com> 1363019363 +0300
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1363019363 +0300
+
+    [fix] junit run
+
+:100644 100644 e8d9f916c9ed965ba1c0f023b5f34f6c4d6a55c0 23f6f2e44c85f82e9e7836378a31b6651040811a M	build.gradle
+
+commit 9aef8eaac27ef12702aa06e2ff95ed2b856487d7
+tree 31a8b3eb57f9c1090c7895980d8ac9ed90da0226
+parent fbab8f66ff4e8b3cb730a9dccb83d33eae8dd15a
+author chaos-adept <denis.rykovanov@gmail.com> 1363014894 +0400
+committer chaos-adept <denis.rykovanov@gmail.com> 1363014894 +0400
+
+    [-] ignore out folder
+
+:100644 100644 8beb201edf19bee70e38dc812286451485c48aba 4447ce2bb4009ab273a4c5d64a41e4a39df77ac9 M	.gitignore
+:100644 000000 eeca581b5d307ffe9d2bad778b00176b91d2670b 0000000000000000000000000000000000000000 D	out/production/gradlefx/META-INF/gradle-plugins/creator.properties
+:100644 000000 ce935d68af033c36f683ae295d36a3dc2f1594ec 0000000000000000000000000000000000000000 D	out/production/gradlefx/META-INF/gradle-plugins/fdt.properties
+:100644 000000 72b49f3ac6b80ba188b6945851b49bac2739153c 0000000000000000000000000000000000000000 D	out/production/gradlefx/META-INF/gradle-plugins/flashbuilder.properties
+:100644 000000 4671a5249ecf5a03fd2d97a910e442c04c305221 0000000000000000000000000000000000000000 D	out/production/gradlefx/META-INF/gradle-plugins/flashdevelop.properties
+:100644 000000 733558432e62e5aae5ccaab9e65a0d31e2717428 0000000000000000000000000000000000000000 D	out/production/gradlefx/META-INF/gradle-plugins/flexbuilder.properties
+:100644 000000 0a4f3bf05db06ed6af3c77c9c50d4410c450a2dd 0000000000000000000000000000000000000000 D	out/production/gradlefx/META-INF/gradle-plugins/gradlefx.properties
+:100644 000000 1e0df0d2be5ff37fbdbc6980639f60adadfe5ccc 0000000000000000000000000000000000000000 D	out/production/gradlefx/META-INF/gradle-plugins/ide.properties
+:100644 000000 70db9f8282534a85b4b9af46165b1117835803b6 0000000000000000000000000000000000000000 D	out/production/gradlefx/META-INF/gradle-plugins/ideafx.properties
+:100644 000000 b4c7aefb49b6df16d5407d1dc83ab580c13464c1 0000000000000000000000000000000000000000 D	out/production/gradlefx/META-INF/gradle-plugins/scaffold.properties
+:100644 000000 7f542a5f57d5cda57e535db09be24deabe0a054a 0000000000000000000000000000000000000000 D	out/production/gradlefx/META-INF/gradle-plugins/templates.properties
+:100644 000000 ffc36e4786cd37db43e0e2af5053e93eb0e2757f 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/cli/AIRCommandLineInstruction.class
+:100644 000000 d03ccf43f54bd226ac319a6dc6eccd3095279a2c 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/cli/ASDocCommandLineInstruction$_addDocSources_closure1.class
+:100644 000000 5c460bc35d4a16cee4a3194c50c19bf5ca0924b6 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/cli/ASDocCommandLineInstruction.class
+:100644 000000 7334ee4bd202683f2a3c09b9336eae00437bd786 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/cli/ApplicationCommandLineInstruction.class
+:100644 000000 b71ad24bc74d11e8a696b461edd85f2a991a98d7 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/cli/CommandLineInstruction$_addAll_closure14.class
+:100644 000000 4c6e0b6e3df1f9ba3d10be030dc1d69d671049ed 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/cli/CommandLineInstruction$_addFrameworkRsls_closure8.class
+:100644 000000 f9633c7317a2ccf8ceed5fb33d933ac26bc7d20b 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/cli/CommandLineInstruction$_addFramework_closure1.class
+:100644 000000 9d6bfc9a6bb5f4ab98830290a55c410517c898bc 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/cli/CommandLineInstruction$_addFramework_closure2.class
+:100644 000000 66688460a5219eff7a720ea7e7e295e916ad9a73 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/cli/CommandLineInstruction$_addLibraries_closure5.class
+:100644 000000 506ace23da064a20183948ee8417bb6f25e5294f 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/cli/CommandLineInstruction$_addLibraries_closure6.class
+:100644 000000 ee9743dbabdfba73d627f7b4d3fbbecf34aea8ca 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/cli/CommandLineInstruction$_addRSLs_closure7.class
+:100644 000000 1d6b2cabe408f98d6cbc5ee6b9f9326115fbba70 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/cli/CommandLineInstruction$_execute_closure11.class
+:100644 000000 4632feac340ccfd9165d08acdcb2c771e5e81d4c 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/cli/CommandLineInstruction$_execute_closure12.class
+:100644 000000 da2f6f1a6633791747a7ee6e307fb10aecee08a2 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/cli/CommandLineInstruction$_execute_closure12_closure15.class
+:100644 000000 20778edb8576552cc8f759214d26ae52ebab3a6e 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/cli/CommandLineInstruction$_execute_closure12_closure16.class
+:100644 000000 b7dbf7a71642dc30b696beabdbb029583ab78246 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/cli/CommandLineInstruction$_getValidSourcePaths_closure3.class
+:100644 000000 f03eaa3afe08706de2ca5ac5a2362d0e146e2d2d 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/cli/CommandLineInstruction$_getValidSourcePaths_closure4.class
+:100644 000000 517930ee26943956f72d686c152a0353f441a2df 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/cli/CommandLineInstruction$_setAll_closure13.class
+:100644 000000 f6772f02505ba2c7b681d0a7dfdb854d56019e7b 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/cli/CommandLineInstruction$_validateFilesExist_closure10.class
+:100644 000000 17b6348cc0587c5648bf333590d751d64efaac0e 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/cli/CommandLineInstruction$_validateFilesExist_closure9.class
+:100644 000000 ba29d10521992b0a3fca475fc8a0b18a89b1294e 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/cli/CommandLineInstruction.class
+:100644 000000 ec0b4b8868556043f72e96a09b397446d0ecffa2 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/cli/CompilerOption.class
+:100644 000000 28b7ec7cf6dc54d35ea24238a0985948b52d21ad 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/cli/LibraryCommandLineInstruction$_addResources_closure1.class
+:100644 000000 e79f556d712fb4435afbb82bbf2aeedf1c7abb4d 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/cli/LibraryCommandLineInstruction$_addResources_closure1_closure3.class
+:100644 000000 e2afa03b884b3bf0f6f16616392bedb19689c41a 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/cli/LibraryCommandLineInstruction$_addSourceFilesAndDirectories_closure2.class
+:100644 000000 08bdd0d09816861710f88ec052dc3ec7d6208390 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/cli/LibraryCommandLineInstruction.class
+:100644 000000 b65e86b583ba847cb5cde8143bf42c41d7ca314d 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/configuration/Configurations.class
+:100644 000000 eef0fbd3a9515bf27dc24da8bad49ea2d0dab9c9 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/configuration/FlexAntTasksConfigurator$_configure_closure1.class
+:100644 000000 d263f28e4404aefec22e2ffc1a542d367dd9f7f2 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/configuration/FlexAntTasksConfigurator$_configure_closure1_closure2.class
+:100644 000000 83ac2f634102f1d91af251bdf92a28e9fb3d725a 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/configuration/FlexAntTasksConfigurator$_configure_closure1_closure2_closure3.class
+:100644 000000 c022fc0b0d57c54162b023dd512429b65ef8b68e 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/configuration/FlexAntTasksConfigurator.class
+:100644 000000 8fb2f2c365a412e1c4c8a4884d2a9aced7b05c9d 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/configuration/FlexUnitAntTasksConfigurator.class
+:100644 000000 1a00fe73998193ce6c31c755bfe57d48b03c9c5a 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/configuration/sdk/DefaultSdkInitialisationContext.class
+:100644 000000 ed9d4e73e90e1f31fb0f8a43cf1eb46d0f52a694 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/configuration/sdk/SdkInitState.class
+:100644 000000 cacef356eec77106056085967e63a1c717bdf285 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/configuration/sdk/SdkInitialisationContext.class
+:100644 000000 8ce90fa18126bcf25ba69ba2f87ffb9a1d2ac411 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/configuration/sdk/SdkInstallLocation.class
+:100644 000000 51ce136c9fd8c87fff6792d1b5b56701df0b0551 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/configuration/sdk/SdkInstallLocationFactory$_filesToHash_closure1.class
+:100644 000000 2beb3aac614637e825f2129ffc3b3751c5a72817 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/configuration/sdk/SdkInstallLocationFactory.class
+:100644 000000 091df1f99007cc4892b9e56ed0db5419abe7a027 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/configuration/sdk/SdkType.class
+:100644 000000 af343626af092dd3f2d3b9b3e4aa5e3fd588193a 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/configuration/sdk/states/AbstractCreateSdkInstallLocationState.class
+:100644 000000 14c9d21a22d4beb129f0b6c6d0393d92b46688a7 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/configuration/sdk/states/AbstractDetermineSdkDeclarationTypeState.class
+:100644 000000 8f1436725e971210f4343386ac9af41e4cf983e5 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/configuration/sdk/states/AbstractInstallSdkState.class
+:100644 000000 e980068f442af4cc6732439dab6dc22734a21e6b 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/configuration/sdk/states/air/CreateAirSdkInstallLocationState.class
+:100644 000000 75ecc42010f2c1c54d7a00162dadb8da396b1fe3 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/configuration/sdk/states/air/DetermineAirSdkDeclarationTypeState.class
+:100644 000000 6ae3882aa635330f69a7ce368662546bbee75bf3 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/configuration/sdk/states/air/InstallAirSdkState.class
+:100644 000000 da8ac8bcccbcddd636c3e75ebb71472bf6ab7c8f 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/configuration/sdk/states/flex/CreateFlexSdkInstallLocationState.class
+:100644 000000 292ee99a6eee6686b80c0610c00acf803fa5af6e 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/configuration/sdk/states/flex/DetermineFlexSdkDeclarationTypeState.class
+:100644 000000 0eebf0554ca64cd0311337453f997740ecde113b 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/configuration/sdk/states/flex/InstallFlexSdkState$_downloadPlayerGlobalSwc_closure3.class
+:100644 000000 6629e958d2ef65bab2da611faadf5964a51f77b6 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/configuration/sdk/states/flex/InstallFlexSdkState$_executeSdkDownloadsScript_closure2.class
+:100644 000000 75f932f9be8b76a6fdbe32dbb103b509ce118c7b 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/configuration/sdk/states/flex/InstallFlexSdkState$_getPlayerGlobalSwcDownloadUrl_closure4.class
+:100644 000000 a611c8858c0884742669d3eb737dcee2fed77028 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/configuration/sdk/states/flex/InstallFlexSdkState$_getPlayerGlobalSwcDownloadUrl_closure5.class
+:100644 000000 6117a2ec65c009041021292a229087146902ba39 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/configuration/sdk/states/flex/InstallFlexSdkState$_updateFrameworkConfigFiles_closure1.class
+:100644 000000 1aa817ee654f11b48048f3d1cf3c3dbbcf1fc7f3 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/configuration/sdk/states/flex/InstallFlexSdkState.class
+:100644 000000 a19f901d64891eff1b1f63244cfee4a63eb06cb7 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/configuration/sdk/states/flex/SetFlexHomeBasedOnSdkInstallLocationState.class
+:100644 000000 7dabc27240e235101b9c47b57dd0fb2338a56117 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/configuration/sdk/states/unpacking/AbstractSdkUnpacker$_findSdkLocation_closure2.class
+:100644 000000 6a48e151658d2ed3dcd612e7795cd88e9350bf0c 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/configuration/sdk/states/unpacking/AbstractSdkUnpacker$_moveSdkFilesToRootDirectoryWhenNeeded_closure1.class
+:100644 000000 6418fe63d2e125940a7e929657caa3012547d638 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/configuration/sdk/states/unpacking/AbstractSdkUnpacker.class
+:100644 000000 6859bcd38458588e447b4583c81e4a9e68163f60 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/configuration/sdk/states/unpacking/SdkTarGzUnpacker.class
+:100644 000000 0539ad7fb92bc93ef7f521865fea4b338daa5dab 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/configuration/sdk/states/unpacking/SdkTbz2Unpacker.class
+:100644 000000 2930da77902c701ca7cef619b47bfafd261e0db2 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/configuration/sdk/states/unpacking/SdkZipUnpacker.class
+:100644 000000 3eb1da8f9285073341fa04fa02255737c9dbfce5 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/configuration/sdk/states/unpacking/Unpacker.class
+:100644 000000 63caa2ce4f9368f067d44ed0c4cab29a276b79b6 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/conventions/AIRConvention.class
+:100644 000000 db4d3eb82f56b4ebb199b423a7cfd00a420ad250 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/conventions/AIRMobileConvention.class
+:100644 000000 7625d3ed4f7c6dc2e7326295aa9e3a11c6679c11 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/conventions/ASDocConvention.class
+:100644 000000 528e2fc5d326f21b10777403b2e1dbbf59199fa2 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/conventions/FlexType.class
+:100644 000000 6d561dec339d949d53965d01e5e77eb34e89dad3 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/conventions/FlexUnitConvention.class
+:100644 000000 b131c1230073b5fe5cddcb5ed544b8791c7cd69e 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/conventions/FrameworkLinkage.class
+:100644 000000 dbb4b784298d79815b4846a5c5f457eb09c92082 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/conventions/GradleFxConvention.class
+:100644 000000 0a5fbddcfabb7f0493eee355cdf001809b5be1dc 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/conventions/GradleFxDerivedProperties$_createDependencyProjects_closure1.class
+:100644 000000 31d117b76c908354da413009ba6d57a1299f1213 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/conventions/GradleFxDerivedProperties$_createDependencyProjects_closure2.class
+:100644 000000 54102ecd22a6d20b7276175740b7996e18bb1c51 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/conventions/GradleFxDerivedProperties.class
+:100644 000000 a24ebde1b4f43bb4ed34387473cc2f9c71ec7f7e 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/conventions/HtmlWrapperConvention.class
+:100644 000000 5ad728c08f69df7a1f35e3ddf696df14f975f172 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/conventions/SdkAutoInstallConvention.class
+:100644 000000 6ac109eabb724d89e446ce78fbfa561e232bbe86 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/ide/plugins/FDTPlugin.class
+:100644 000000 7d7bbd91dd48518297c26fa97b08b60fd415a04e 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/ide/plugins/FlashBuilderPlugin.class
+:100644 000000 fdaeceaf9bfc86fc140b7d203d5f14fcedcbb7fe 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/ide/plugins/FlashDevelopPlugin.class
+:100644 000000 60996bc63da834964f5711f8a9dd89f9fb9986f7 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/ide/plugins/FlexBuilderPlugin.class
+:100644 000000 3c2c8085b687d0d5e631c2516dcc71bf2714ed61 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/ide/plugins/IDEPlugin.class
+:100644 000000 78b1bf8e0a7687b5f2fc7b68818b8e9dd5668204 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/ide/plugins/IdeaPlugin.class
+:100644 000000 bcbc1c6cd1a9b4197d2b112fea0ec313fa6a10c7 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/ide/tasks/AbstractIDEProject$_eachDependencyFile_closure2.class
+:100644 000000 e67bfe432d15943ddc3a98504c128cc2fad56dec 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/ide/tasks/AbstractIDEProject$_eachDependencyFile_closure2_closure3.class
+:100644 000000 1b30e5537a955264c3b8b3aeb23335ed50e1ce1c 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/ide/tasks/AbstractIDEProject$_editXmlFile_closure1.class
+:100644 000000 6a5bfedf01914f89c88c766345b55ff37a19ccde 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/ide/tasks/AbstractIDEProject.class
+:100644 000000 9540150f9dcdcad289ada13b7c0f612cad487419 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/ide/tasks/CleanTask.class
+:100644 000000 13e54b2570c96131045ee1c8ccdf46c039dc831b 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/ide/tasks/FDTProject.class
+:100644 000000 cf054ead3f0888917a92f9f6a57b9ea78d79c907 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/ide/tasks/FlashBuilderClean$_cleanProject_closure1.class
+:100644 000000 fdad0a119a1fd1ba901bf9fd26cc782980a5af4f 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/ide/tasks/FlashBuilderClean.class
+:100644 000000 903d2c47c29b8e66c581d228b8a4a8be441ad1d2 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/ide/tasks/FlashBuilderProject$_addDependencies_closure5.class
+:100644 000000 ea30bdf73b4fe7cb6da31df3409ecfa1f4de3410 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/ide/tasks/FlashBuilderProject$_addDependencies_closure5_closure11.class
+:100644 000000 235053db52aea44c92adc8df2c6f2917bb0032ed 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/ide/tasks/FlashBuilderProject$_addIncludedClasses_closure4.class
+:100644 000000 b27cc218e4e01aabea14516ed6bd4d5b373aeaa6 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/ide/tasks/FlashBuilderProject$_addIncludedClasses_closure4_closure10.class
+:100644 000000 85c6ef5e67b58fb553125dd8609811dc51de3964 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/ide/tasks/FlashBuilderProject$_addSourceDirs_closure3.class
+:100644 000000 90d65d60dbbb149e9f8653a4783c4c3bef6f83c9 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/ide/tasks/FlashBuilderProject$_addSourceDirs_closure3_closure9.class
+:100644 000000 5d2fad5347b11a27f279909ae1579f0cca87a699 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/ide/tasks/FlashBuilderProject$_createConfigFiles_closure2.class
+:100644 000000 8d0fd5f1859d80e3c3589ddf6ea8ae970c0cfb4a 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/ide/tasks/FlashBuilderProject$_toDependencyPath_closure6.class
+:100644 000000 dcf9db984c5c327e3fff5a504913fb26b5730c22 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/ide/tasks/FlashBuilderProject$_toDependencyPath_closure7.class
+:100644 000000 18c0948d039bec3f23c9edcd740dc7a290dab9a8 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/ide/tasks/FlashBuilderProject$_toDependencyPath_closure7_closure12.class
+:100644 000000 422da12506840d620bc20fbbf4d635632731f363 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/ide/tasks/FlashBuilderProject$_validateProjectDependencies_closure1.class
+:100644 000000 0c8ec5c41aa9a33b3a4201aa95d5c7d25cc2f5d7 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/ide/tasks/FlashBuilderProject$_validateProjectDependencies_closure1_closure8.class
+:100644 000000 57d6bf3e150fffb2b76db1666f8b2c7be8518c55 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/ide/tasks/FlashBuilderProject.class
+:100644 000000 31c3c974a3b0fbd0d5f15ae40679addee36c7881 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/ide/tasks/FlashBuilderUtil.class
+:100644 000000 1fb953c40154066c85b29e60a9ad4fc3b8b721bd 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/ide/tasks/FlashDevelopProject.class
+:100644 000000 6afd0cd9e5527d4b92095b5cdad9b16755c4efda 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/ide/tasks/FlexBuilderProject.class
+:100644 000000 fe157cb57db487fe5bbd94c850994e07c031fc60 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/ide/tasks/IdeaProject.class
+:100644 000000 62acbc876c883eb0600d130aff2bc2cfd9f4a6f8 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/ide/tasks/ProjectTask.class
+:100644 000000 0dff4e41886106f2382b1b0a372faf79bcece2ac 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/ide/validators/actions/ValidateIDEProjectTaskAction.class
+:100644 000000 31ac934ca3a94cfb40411410cf5a0c1d0b3dffce 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/plugins/AbstractGradleFxPlugin$_addDefaultConfigurations_closure2.class
+:100644 000000 ebce90a8657bca23b306360259058167358a6631 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/plugins/AbstractGradleFxPlugin$_addDefaultConfigurations_closure3.class
+:100644 000000 13e74cd0638e398168949f94d9744cd7d2ef6211 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/plugins/AbstractGradleFxPlugin$_addTask_closure4.class
+:100644 000000 cc47abd8401093b7e842455841da37459a78cf8b 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/plugins/AbstractGradleFxPlugin$_apply_closure1.class
+:100644 000000 d87a2e377f0b73cccda74240a3766957cd989a11 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/plugins/AbstractGradleFxPlugin.class
+:100644 000000 b2cc77301be3ae8238abf36810b72492a909ba70 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/plugins/GradleFxPlugin$_addArtifactsToDefaultConfiguration_closure6.class
+:100644 000000 bbfa5da5e0da3742e232b1a1b310ab9e108f94f1 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/plugins/GradleFxPlugin$_addArtifactsToDefaultConfiguration_closure6_closure7.class
+:100644 000000 b1a29437705530e632a86b16243ec4902234bf43 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/plugins/GradleFxPlugin$_addTasks_closure1.class
+:100644 000000 958c43036730e69d6e7c8d2de23f32b6ce2b39fb 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/plugins/GradleFxPlugin$_addTasks_closure2.class
+:100644 000000 ba7439f03f4421dc0e2758182417a78590368ad5 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/plugins/GradleFxPlugin$_addTasks_closure3.class
+:100644 000000 df65c76baaf7179ce477ac8449eee9baa67fd303 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/plugins/GradleFxPlugin$_addTasks_closure4.class
+:100644 000000 a7b6ec10a4331dcd4f54e72ad3eeda431ca67be8 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/plugins/GradleFxPlugin$_configure_closure5.class
+:100644 000000 c4a2f60d5641ce5fdf478d658b10c24af6b9a8e7 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/plugins/GradleFxPlugin.class
+:100644 000000 1aa42329de9654a84aea936cec39a7120ff0aa42 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/ASDoc$_closure1.class
+:100644 000000 e9e1e3d635053518274b4d9bf35878618e5dca20 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/ASDoc$_hasDocSources_closure3.class
+:100644 000000 0c2a508a0315a5303b9ec2490f46e211ae84db58 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/ASDoc$_initInputDirectory_closure2.class
+:100644 000000 f29c4d0ea6aa71393443853492c8138a6fc52a9a 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/ASDoc.class
+:100644 000000 792f9e916af0d3b332a063406885ae2cb730e430 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/AirPackage$_addFiles_closure2.class
+:100644 000000 7f9e8972efc9c382448e4295e523e2ba5a68d842 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/AirPackage$_addFiles_closure2_closure4.class
+:100644 000000 d8ac75dffd7453c7308b0b2ac243afab8c6e5131 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/AirPackage$_packageAir_closure1.class
+:100644 000000 46b25199f197dcc5eb01820e4f8313cd9bb783f8 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/AirPackage$_packageAir_closure1_closure3.class
+:100644 000000 733522fbdbd5427c2087e7931c3b94b5eac49e1d 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/AirPackage.class
+:100644 000000 59f948833861878fc4a4c6af82f38557c668e985 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/Build.class
+:100644 000000 9101b348a488abbd45d7b7f2ba1095da8124fb2e 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/CleanSdks.class
+:100644 000000 14642908cf11eb79d5cb9a477110e10ef03ecaf8 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/CopyResources$_copyResources_closure1.class
+:100644 000000 b6e30518de7547042941c6d20343e48fba7f2d78 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/CopyResources$_copyResources_closure1_closure2.class
+:100644 000000 773d3b2e106d26a64b9c5a4ecc61345a760e725a 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/CopyResources.class
+:100644 000000 73f71411e648370bd605761a616837d48b19e015 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/CopyTestResources$_copyResources_closure1.class
+:100644 000000 4e119079f32d09980901d7f913d785e2f511978e 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/CopyTestResources$_copyResources_closure1_closure2.class
+:100644 000000 64f74f7ee9c81a49bb6941f584d79cb1a37a50db 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/CopyTestResources.class
+:100644 000000 8406ff2b6bb05e31982dc4917b55edcf65847b4b 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/HtmlWrapper$_generateCustomWrapper_closure1.class
+:100644 000000 7fab2c962e71b7d147e15f98b6f29937cf12213e 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/HtmlWrapper$_generateCustomWrapper_closure1_closure2.class
+:100644 000000 8e31a19c912fd4e96e8846beae555b1ac922b645 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/HtmlWrapper$_generateCustomWrapper_closure1_closure2_closure3.class
+:100644 000000 eacecf5599a51611e1e49e751a699879ab8bdc9f 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/HtmlWrapper$_generateCustomWrapper_closure1_closure2_closure4.class
+:100644 000000 31777e3d186dbdec12aefeabb0acf0b35a6999b5 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/HtmlWrapper$_generateCustomWrapper_closure1_closure2_closure4_closure5.class
+:100644 000000 b16e15ce13c0b993e3ccff2461e2a0575ef2e2ea 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/HtmlWrapper.class
+:100644 000000 6de7fc1730b0df94026717341d3aa980c7db102a 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/Publish$_publishFlex_closure1.class
+:100644 000000 76e8807a4d3a98f7e69a064d29a08304855cf157 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/Publish$_publishFlex_closure2.class
+:100644 000000 6e1eb86df1e1860f927f3b5a2960f051dceffce3 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/Publish$_publishFlex_closure2_closure3.class
+:100644 000000 497c94875dd13aefa2259e4c8b65faf7aaa30d37 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/Publish$_publishFlex_closure2_closure3_closure4.class
+:100644 000000 2e19ff5c49d0924dd6af5763344ee9a478705a7e 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/Publish.class
+:100644 000000 2bfaa64fc46174ca076c2663daf5b73145b3f066 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/TaskGroups.class
+:100644 000000 33f32da24dfe92c6f121b82677cfeb37c9edaa4c 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/Tasks.class
+:100644 000000 c0a7524ea7ad00dd0df1a91698e02cf8cd966673 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/Test$_hasTests_closure1.class
+:100644 000000 d47e1fc8219754f5f1736f4f66833ef1712432cd 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/Test$_runTests_closure2.class
+:100644 000000 5f480ebf48b60647ca5411f3c776e5dcc2010aa7 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/Test$_runTests_closure2_closure3.class
+:100644 000000 731ba7c26cea25fe77fb20582c201ff4a5cfdd34 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/Test$_runTests_closure2_closure4.class
+:100644 000000 daa83ee8adcb7119fe8cf9f400fa5008f4529dee 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/Test$_runTests_closure2_closure5.class
+:100644 000000 af5367462f987e812cc19e7b8b272e9b5e40562d 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/Test$_runTests_closure2_closure5_closure7.class
+:100644 000000 93a88f12c5be05a8053431ad4b70b31942319ed0 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/Test$_runTests_closure2_closure5_closure7_closure8.class
+:100644 000000 59b57a7ce08fb02eecb7997191ccddede7e84522 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/Test$_runTests_closure2_closure6.class
+:100644 000000 e5ca4c208d604208a44e2ef3b4f7c270929b7cb3 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/Test$_runTests_closure2_closure6_closure9.class
+:100644 000000 48022b5982b06798fe9e78edcc89a0ca7c7d5599 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/Test.class
+:100644 000000 e92a7f52d0d5cac807ecb8b1cd660ee15b10d882 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/compile/Compc$_addAsdocToSwc_closure1.class
+:100644 000000 dd75181887ecf72f142e0579a657e012713f3635 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/compile/Compc$_addAsdocToSwc_closure1_closure2.class
+:100644 000000 428446db29e6711dcfd974c33ed153bb37b71f80 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/compile/Compc.class
+:100644 000000 478927bc20b2288a63c635d4c4a9f5072b0ea83b 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/compile/Compile$_addCompilationDependencies_closure3.class
+:100644 000000 74cea7867ef2bb394b493ad45e68bec0be0aec8a 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/compile/Compile$_addCompilationDependencies_closure3_closure4.class
+:100644 000000 f9a91a4b83c79c6337a395b6a9d33e587899d828 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/compile/Compile$_addCompilationDependencies_closure3_closure4_closure5.class
+:100644 000000 996d9dd00d3c701159d1598b6b00db938b78392e 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/compile/Compile$_closure1.class
+:100644 000000 c1567d3df0c43479dadfa9ad5f3b292cf8c2ab0f 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/compile/Compile$_initInputDirectory_closure2.class
+:100644 000000 2c89c727e15e72e3050332392ca806a9bb24a693 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/compile/Compile.class
+:100644 000000 0a74e82d2bcedb7880b0dce58266e7066b655a30 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/compile/CompileTask.class
+:100644 000000 cba9df399bf532b44377893066e09218741ea259 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/compile/CompileTaskDelegate.class
+:100644 000000 eaf0f670c884a87b4dd645b0b3f0c27e1035369d 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/compile/Mxmlc$_copyFrameworkRSLs_closure1.class
+:100644 000000 927bd232b57aba0ecca9a791f6f5d098bca283d0 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/tasks/compile/Mxmlc.class
+:100644 000000 4d5f2bfd895e8b866ee1958e6942f1e142ea1243 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/templates/plugins/CreatorPlugin.class
+:100644 000000 83a8892a031cad8af2b97a3409522193fbfc3c89 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/templates/plugins/ScaffoldPlugin.class
+:100644 000000 cb142f962b175e81f2095ee612cc5a0f3b7ce9d6 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/templates/plugins/TemplatesPlugin.class
+:100644 000000 f4f08c40259f152ce41c666195cd703392f4b401 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/templates/tasks/Scaffold$_createDirectories_closure1.class
+:100644 000000 5491e5de24e05f809afad10d0f7769e08c1aa217 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/templates/tasks/Scaffold$_createDirectories_closure2.class
+:100644 000000 1b84d1bbb2dfadb58c58fd898f3a2d56def54f5c 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/templates/tasks/Scaffold.class
+:100644 000000 189d50d0819441d8dc5803db2233a6964a7599a2 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/templates/validators/actions/ValidateScaffoldTaskPropertiesAction.class
+:100644 000000 6c60cbcc8616653202339210d0e8960c2c166281 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/util/TemplateUtil$_writeContent_closure1.class
+:100644 000000 13703b114f08915bb493358e24cf9c6c7ca70c84 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/util/TemplateUtil$_writeContent_closure1_closure2.class
+:100644 000000 55cb42775f84048258b22e6542ae59c8c598ba4c 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/util/TemplateUtil$_writeContent_closure1_closure2_closure10.class
+:100644 000000 3ee7099bb087c3bb7f2e54cd404a109e093d85f2 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/util/TemplateUtil$_writeContent_closure1_closure2_closure11.class
+:100644 000000 d90e28f7a536ac261a8cce6e53650359d51f8cd9 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/util/TemplateUtil$_writeContent_closure1_closure2_closure12.class
+:100644 000000 66e3297e42d3c7b1784329de257bf8fe463775fd 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/util/TemplateUtil$_writeContent_closure1_closure2_closure13.class
+:100644 000000 caa739781e6d4fe4293ea63ce34216bbc6829f82 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/util/TemplateUtil$_writeContent_closure1_closure2_closure3.class
+:100644 000000 8ac7f4c7a8079782e0788572b0d2d4e5fc5896f0 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/util/TemplateUtil$_writeContent_closure1_closure2_closure4.class
+:100644 000000 c14579357c9032f06fbecf556da4874f0b111a73 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/util/TemplateUtil$_writeContent_closure1_closure2_closure5.class
+:100644 000000 1a929c809e0a125c806605da38a35c09e4ffe95d 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/util/TemplateUtil$_writeContent_closure1_closure2_closure6.class
+:100644 000000 3987414ac36f0d269f0a4f2234e716238f459261 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/util/TemplateUtil$_writeContent_closure1_closure2_closure7.class
+:100644 000000 3190e84cddddee3785ee0fcc863c0ba0208555a8 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/util/TemplateUtil$_writeContent_closure1_closure2_closure8.class
+:100644 000000 1486f8b0a2a1599cdadb41ea54d2ea221d81f784 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/util/TemplateUtil$_writeContent_closure1_closure2_closure9.class
+:100644 000000 7b329c4fe9d2038d7d553a506b024b745b4ef3a7 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/util/TemplateUtil.class
+:100644 000000 4c080bbbf8b5b9d4ec162c8cd05389a84aaaadbc 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/validators/AbstractCompilerPropertiesValidator$_usesCompilerOptionInAdditionalProperties_closure1.class
+:100644 000000 98b4f73b30bb478c3edc6b4c8e04d576f8b09907 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/validators/AbstractCompilerPropertiesValidator.class
+:100644 000000 0d91b9c9321a126f2430a14d05c632e301523478 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/validators/AbstractProjectPropertyValidator.class
+:100644 000000 0cfc7609ba2cf8abba6bf7041369e4f345506073 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/validators/AirPackagePropertiesValidator.class
+:100644 000000 cdeec49c799f8503918717879dbfafb846f882b2 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/validators/CompcAdditionalPropertiesValidator.class
+:100644 000000 9e6500de510c3f1f57f8bcf2101f53e4ed3ae9a5 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/validators/FlexSDKSpecifiedValidator$_hasNoFlexSDKlibs_closure1.class
+:100644 000000 08783890bc6be35f573edd581d2cdfdf13e60b83 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/validators/FlexSDKSpecifiedValidator.class
+:100644 000000 01bd6719bd5c32fd498825fad5cc379a4387bc0d 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/validators/FrameworkLinkageValidator.class
+:100644 000000 607cfeaf8b7d366f52e2c78c6629dcfcdb00a563 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/validators/MxmlcAdditionalPropertiesValidator.class
+:100644 000000 212241daca183e4d768f0f90faf242443065e8d7 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/validators/ProjectPropertyValidator.class
+:100644 000000 84df197c849e48732149be8b90a0cb4d04027480 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/validators/RequiredProjectPropertiesValidator.class
+:100644 000000 90e5c38cdde5705bfbc20884374e97716cbda2fd 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/validators/actions/ValidateAirPackageTaskPropertiesAction.class
+:100644 000000 56616c3a84c6d6821a5338a76223a35b46122112 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/validators/actions/ValidateCompcTaskPropertiesAction.class
+:100644 000000 74ba03f5dad52250e95831b529327668191ceac1 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/validators/actions/ValidateMxmlcTaskPropertiesAction.class
+:100644 000000 291bd849a6adf37194ae37c864e5b13c8028f707 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/validators/runner/FailOnErrorValidatorRunner$_run_closure1.class
+:100644 000000 67354623a4c56a95f078d39241d41790c23b1ae2 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/validators/runner/FailOnErrorValidatorRunner.class
+:100644 000000 993c40adb976a425342ca29fd01e909e9e5b451b 0000000000000000000000000000000000000000 D	out/production/gradlefx/org/gradlefx/validators/runner/ValidatorRunner.class
+:100644 000000 f51531dde27d3fc62f3455750eb31fb32eaa9a60 0000000000000000000000000000000000000000 D	out/production/gradlefx/templates/air-app.xml
+:100644 000000 d7026027f58c9ce76650471f88a4de79d2a44030 0000000000000000000000000000000000000000 D	out/production/gradlefx/templates/air.as
+:100644 000000 62d68f25efdab7fc93cbe7418a7b8b086d24a422 0000000000000000000000000000000000000000 D	out/production/gradlefx/templates/air.mxml
+:100644 000000 14ab3044de70d6b040525083cc5e3b3a335cd5e6 0000000000000000000000000000000000000000 D	out/production/gradlefx/templates/flashbuilder/air-as.actionScriptProperties
+:100644 000000 8e9197fe4d58ac49dda9a7f296a2b0e59479ff1a 0000000000000000000000000000000000000000 D	out/production/gradlefx/templates/flashbuilder/air-as.project
+:100644 000000 519eab1aaa05847fa8c734ca700659028d0d4325 0000000000000000000000000000000000000000 D	out/production/gradlefx/templates/flashbuilder/air-fx.actionScriptProperties
+:100644 000000 37f300288277daef26d0eb9d6a142953d7cf391e 0000000000000000000000000000000000000000 D	out/production/gradlefx/templates/flashbuilder/air-fx.project
+:100644 000000 a9bce5c607ca9fe95e772b13a8880a4a1ea933b7 0000000000000000000000000000000000000000 D	out/production/gradlefx/templates/flashbuilder/mobile-as.actionScriptProperties
+:100644 000000 989ec06df680e7e9e2042b7e72b43e273b9a6ce1 0000000000000000000000000000000000000000 D	out/production/gradlefx/templates/flashbuilder/mobile-as.project
+:100644 000000 f3271a8bf2ce7b9fe954925e5dc78b8f71858b5e 0000000000000000000000000000000000000000 D	out/production/gradlefx/templates/flashbuilder/mobile-fx.actionScriptProperties
+:100644 000000 cdd2db293d89cc7fd7bcdf5df5311bf15e628771 0000000000000000000000000000000000000000 D	out/production/gradlefx/templates/flashbuilder/mobile-fx.project
+:100644 000000 b7b833e0f83e23cc934d28f7bf4cbeb821b172db 0000000000000000000000000000000000000000 D	out/production/gradlefx/templates/flashbuilder/swc-as.actionScriptProperties
+:100644 000000 b5f1c2bae7c832584426d1f0b89f73b0df431a2e 0000000000000000000000000000000000000000 D	out/production/gradlefx/templates/flashbuilder/swc-as.project
+:100644 000000 0b38208da4a1764723d515a25f80ef2302d1287f 0000000000000000000000000000000000000000 D	out/production/gradlefx/templates/flashbuilder/swc-fx.actionScriptProperties
+:100644 000000 b5f1c2bae7c832584426d1f0b89f73b0df431a2e 0000000000000000000000000000000000000000 D	out/production/gradlefx/templates/flashbuilder/swc-fx.project
+:100644 000000 64f20634ed85b97d4966a612da8e59c7db6eb680 0000000000000000000000000000000000000000 D	out/production/gradlefx/templates/flashbuilder/swf-as.actionScriptProperties
+:100644 000000 dc96d006afe5defd07bb9210006309ab260c2b66 0000000000000000000000000000000000000000 D	out/production/gradlefx/templates/flashbuilder/swf-as.project
+:100644 000000 1f68bba62f36ef880ddedb710d6f0a40284275e6 0000000000000000000000000000000000000000 D	out/production/gradlefx/templates/flashbuilder/swf-fx.actionScriptProperties
+:100644 000000 a229331b82a57d4ff74e0cb5b3e036d8e5f13f5a 0000000000000000000000000000000000000000 D	out/production/gradlefx/templates/flashbuilder/swf-fx.project
+:100644 000000 5183fd37da03993089720f4f833857d1838615b7 0000000000000000000000000000000000000000 D	out/production/gradlefx/templates/flashbuilder/template.flexLibProperties
+:100644 000000 1aae212b6c1377fd18498dca4481426b7b43b085 0000000000000000000000000000000000000000 D	out/production/gradlefx/templates/flashbuilder/template.flexProperties
+:100644 000000 eb7e05706d9166dc8d272470f60d4f674e643db2 0000000000000000000000000000000000000000 D	out/production/gradlefx/templates/mobile-app.xml
+:100644 000000 607b608f6147bf3ad4b2b1371cd60d936daaf1d7 0000000000000000000000000000000000000000 D	out/production/gradlefx/templates/mobile.as
+:100644 000000 9b5be35cbcaaba105ee4331200416a8b7f8ec4d2 0000000000000000000000000000000000000000 D	out/production/gradlefx/templates/mobile.mxml
+:100644 000000 d7026027f58c9ce76650471f88a4de79d2a44030 0000000000000000000000000000000000000000 D	out/production/gradlefx/templates/swf.as
+:100644 000000 2cadd72a11f79994d61a3117694f94b41d39f580 0000000000000000000000000000000000000000 D	out/production/gradlefx/templates/swf.mxml
+:100644 000000 cf85d48d72316db62431e54af5480387aec9d09d 0000000000000000000000000000000000000000 D	out/test/gradlefx/dummy-swcs/domain.swc
+:100644 000000 8f6f21a3a94ccc355a4001609a58d90d0b8e778a 0000000000000000000000000000000000000000 D	out/test/gradlefx/dummy-swcs/util.swc
+:100644 000000 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 0000000000000000000000000000000000000000 D	out/test/gradlefx/flex-sdk-no-config/frameworks/libs/some.swc
+:100644 000000 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 0000000000000000000000000000000000000000 D	out/test/gradlefx/flex-sdk-no-libs/frameworks/flex-config.xml
+:100644 000000 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 0000000000000000000000000000000000000000 D	out/test/gradlefx/invalid-flex-sdk/frameworks/libs/dummy.txt
+:100644 000000 137864c95c06f9fa0eed75559742f04bef5c7829 0000000000000000000000000000000000000000 D	out/test/gradlefx/org/gradlefx/cli/ASDocCommandLineInstructionTest.class
+:100644 000000 c3ed35ba5bd9a68bcef7f37fb121d3fdace7cc4f 0000000000000000000000000000000000000000 D	out/test/gradlefx/org/gradlefx/cli/CommandLineInstructionTest.class
+:100644 000000 c57f12d33f7d9683bfd367f6ee7a31f85175eb8f 0000000000000000000000000000000000000000 D	out/test/gradlefx/org/gradlefx/cli/LibraryCommandLineInstructionTest.class
+:100644 000000 e7e6efa1ecc94b3cf9637429b9fbfa8e0903ef0b 0000000000000000000000000000000000000000 D	out/test/gradlefx/org/gradlefx/cli/StubCommandLineInstruction.class
+:100644 000000 33e195f52e4d5f4d823c94c8a200f8710b1df1af 0000000000000000000000000000000000000000 D	out/test/gradlefx/org/gradlefx/conventions/FlexTypeTest.class
+:100644 000000 26c55159d06a7c3a85b22a370d3ea603d397451f 0000000000000000000000000000000000000000 D	out/test/gradlefx/org/gradlefx/conventions/FrameworkLinkageTest.class
+:100644 000000 4fbc679dadbd63f16296dc460e829c4813f91fc6 0000000000000000000000000000000000000000 D	out/test/gradlefx/org/gradlefx/conventions/GradleFxConventionTest$_$spock_feature_0_10_closure6.class
+:100644 000000 c15b82edde3d23762b52c6f83f113224ee9d0f21 0000000000000000000000000000000000000000 D	out/test/gradlefx/org/gradlefx/conventions/GradleFxConventionTest$_$spock_feature_0_11_closure7.class
+:100644 000000 2c3022bd9ce874a6dcb5665dbd383f6fb2874a01 0000000000000000000000000000000000000000 D	out/test/gradlefx/org/gradlefx/conventions/GradleFxConventionTest$_$spock_feature_0_12_closure8.class
+:100644 000000 5f966310fac554e3c690a316afd74c66893761b4 0000000000000000000000000000000000000000 D	out/test/gradlefx/org/gradlefx/conventions/GradleFxConventionTest$_$spock_feature_0_5_closure1.class
+:100644 000000 275e3f9c1d4e6c09479b4894b0c9afc679ce4d31 0000000000000000000000000000000000000000 D	out/test/gradlefx/org/gradlefx/conventions/GradleFxConventionTest$_$spock_feature_0_6_closure2.class
+:100644 000000 484b49a8cf728781bcd6020c53d5d477dc325337 0000000000000000000000000000000000000000 D	out/test/gradlefx/org/gradlefx/conventions/GradleFxConventionTest$_$spock_feature_0_7_closure3.class
+:100644 000000 34b3df431aaa0586841b164f4030c4f5a92e4f8a 0000000000000000000000000000000000000000 D	out/test/gradlefx/org/gradlefx/conventions/GradleFxConventionTest$_$spock_feature_0_8_closure4.class
+:100644 000000 2419bb3e6908b090c7ef7722787dadbb1ac4dd89 0000000000000000000000000000000000000000 D	out/test/gradlefx/org/gradlefx/conventions/GradleFxConventionTest$_$spock_feature_0_9_closure5.class
+:100644 000000 a19caa5e8dec245139fdcc24628d57744f1c996e 0000000000000000000000000000000000000000 D	out/test/gradlefx/org/gradlefx/conventions/GradleFxConventionTest.class
+:100644 000000 ab208bed6597aecbe094682c293a2e8b3587a21f 0000000000000000000000000000000000000000 D	out/test/gradlefx/org/gradlefx/conventions/GradleFxDerivedPropertiesTest.class
+:100644 000000 31e7980e3e7f1f326798559957f2ce0a00248ef9 0000000000000000000000000000000000000000 D	out/test/gradlefx/org/gradlefx/ide/tasks/AbstractIDEProjectTest$_$spock_feature_0_0_closure1.class
+:100644 000000 6a4eab41e4787d446bb68d734435cfa97f9daf98 0000000000000000000000000000000000000000 D	out/test/gradlefx/org/gradlefx/ide/tasks/AbstractIDEProjectTest.class
+:100644 000000 5aec9bac6158437b67cb479dfb94789d5d87bc6c 0000000000000000000000000000000000000000 D	out/test/gradlefx/org/gradlefx/ide/tasks/StubAbstractIDEProject.class
+:100644 000000 ab7f46d58bddc40d11a358fa661b98a79b3ac220 0000000000000000000000000000000000000000 D	out/test/gradlefx/org/gradlefx/util/StubTemplateUtilBase.class
+:100644 000000 7d4c8e8e74a5cf019afd55ed7d5426ea86b216de 0000000000000000000000000000000000000000 D	out/test/gradlefx/org/gradlefx/util/TemplateUtilTest.class
+:100644 000000 e9b79e2509cb1f052492293cf1b1291943ea708c 0000000000000000000000000000000000000000 D	out/test/gradlefx/org/gradlefx/validators/CompcAdditionalPropertiesValidatorTest.class
+:100644 000000 0922d79ad2628b0677e9455a0dc64302164f161e 0000000000000000000000000000000000000000 D	out/test/gradlefx/org/gradlefx/validators/FlexSDKSpecifiedValidatorTest.class
+:100644 000000 ebd2f2509f896dae7c4e3e2d3789d64376c256ae 0000000000000000000000000000000000000000 D	out/test/gradlefx/org/gradlefx/validators/FrameworkLinkageValidatorTest.class
+:100644 000000 a6ec99257c66a8eaadca2e9d03a30443e5b09a71 0000000000000000000000000000000000000000 D	out/test/gradlefx/org/gradlefx/validators/RequiredProjectPropertiesValidatorTest.class
+:100644 000000 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 0000000000000000000000000000000000000000 D	out/test/gradlefx/stub-project-dir/stub-resource-dir/level1file.txt
+:100644 000000 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 0000000000000000000000000000000000000000 D	out/test/gradlefx/stub-project-dir/stub-resource-dir/level2/level2file.txt
+:100644 000000 cca61d19e347026ac21664724245ca06a27521d1 0000000000000000000000000000000000000000 D	out/test/gradlefx/stub-project-dir/swf-fx.actionScriptProperties
+:100644 000000 449391bcec45af92334939736d820ed8181988f8 0000000000000000000000000000000000000000 D	out/test/gradlefx/valid-flex-sdk/ant/flexTasks.tasks
+:100644 000000 f782b3ffbf636f6cfd1b79b8873587008bbd40d0 0000000000000000000000000000000000000000 D	out/test/gradlefx/valid-flex-sdk/ant/lib/flexTasks.jar
+:100644 000000 4b78484d8fbee1cda3585ae4ae01941129241056 0000000000000000000000000000000000000000 D	out/test/gradlefx/valid-flex-sdk/frameworks/flex-config.xml
+:100644 000000 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 0000000000000000000000000000000000000000 D	out/test/gradlefx/valid-flex-sdk/frameworks/libs/some.swc
+
+commit fbab8f66ff4e8b3cb730a9dccb83d33eae8dd15a
+tree b6c69f0cef27a89a959ce6b3d6ad8fbacc0984a1
+parent 4350dcaddfa6c53979fb63fc1acd8c6bb6376acb
+author chaos-adept <denis.rykovanov@gmail.com> 1363014806 +0400
+committer chaos-adept <denis.rykovanov@gmail.com> 1363014806 +0400
+
+    [+] empty airmobile conv
+
+:000000 100644 0000000000000000000000000000000000000000 eeca581b5d307ffe9d2bad778b00176b91d2670b A	out/production/gradlefx/META-INF/gradle-plugins/creator.properties
+:000000 100644 0000000000000000000000000000000000000000 ce935d68af033c36f683ae295d36a3dc2f1594ec A	out/production/gradlefx/META-INF/gradle-plugins/fdt.properties
+:000000 100644 0000000000000000000000000000000000000000 72b49f3ac6b80ba188b6945851b49bac2739153c A	out/production/gradlefx/META-INF/gradle-plugins/flashbuilder.properties
+:000000 100644 0000000000000000000000000000000000000000 4671a5249ecf5a03fd2d97a910e442c04c305221 A	out/production/gradlefx/META-INF/gradle-plugins/flashdevelop.properties
+:000000 100644 0000000000000000000000000000000000000000 733558432e62e5aae5ccaab9e65a0d31e2717428 A	out/production/gradlefx/META-INF/gradle-plugins/flexbuilder.properties
+:000000 100644 0000000000000000000000000000000000000000 0a4f3bf05db06ed6af3c77c9c50d4410c450a2dd A	out/production/gradlefx/META-INF/gradle-plugins/gradlefx.properties
+:000000 100644 0000000000000000000000000000000000000000 1e0df0d2be5ff37fbdbc6980639f60adadfe5ccc A	out/production/gradlefx/META-INF/gradle-plugins/ide.properties
+:000000 100644 0000000000000000000000000000000000000000 70db9f8282534a85b4b9af46165b1117835803b6 A	out/production/gradlefx/META-INF/gradle-plugins/ideafx.properties
+:000000 100644 0000000000000000000000000000000000000000 b4c7aefb49b6df16d5407d1dc83ab580c13464c1 A	out/production/gradlefx/META-INF/gradle-plugins/scaffold.properties
+:000000 100644 0000000000000000000000000000000000000000 7f542a5f57d5cda57e535db09be24deabe0a054a A	out/production/gradlefx/META-INF/gradle-plugins/templates.properties
+:000000 100644 0000000000000000000000000000000000000000 ffc36e4786cd37db43e0e2af5053e93eb0e2757f A	out/production/gradlefx/org/gradlefx/cli/AIRCommandLineInstruction.class
+:000000 100644 0000000000000000000000000000000000000000 d03ccf43f54bd226ac319a6dc6eccd3095279a2c A	out/production/gradlefx/org/gradlefx/cli/ASDocCommandLineInstruction$_addDocSources_closure1.class
+:000000 100644 0000000000000000000000000000000000000000 5c460bc35d4a16cee4a3194c50c19bf5ca0924b6 A	out/production/gradlefx/org/gradlefx/cli/ASDocCommandLineInstruction.class
+:000000 100644 0000000000000000000000000000000000000000 7334ee4bd202683f2a3c09b9336eae00437bd786 A	out/production/gradlefx/org/gradlefx/cli/ApplicationCommandLineInstruction.class
+:000000 100644 0000000000000000000000000000000000000000 b71ad24bc74d11e8a696b461edd85f2a991a98d7 A	out/production/gradlefx/org/gradlefx/cli/CommandLineInstruction$_addAll_closure14.class
+:000000 100644 0000000000000000000000000000000000000000 4c6e0b6e3df1f9ba3d10be030dc1d69d671049ed A	out/production/gradlefx/org/gradlefx/cli/CommandLineInstruction$_addFrameworkRsls_closure8.class
+:000000 100644 0000000000000000000000000000000000000000 f9633c7317a2ccf8ceed5fb33d933ac26bc7d20b A	out/production/gradlefx/org/gradlefx/cli/CommandLineInstruction$_addFramework_closure1.class
+:000000 100644 0000000000000000000000000000000000000000 9d6bfc9a6bb5f4ab98830290a55c410517c898bc A	out/production/gradlefx/org/gradlefx/cli/CommandLineInstruction$_addFramework_closure2.class
+:000000 100644 0000000000000000000000000000000000000000 66688460a5219eff7a720ea7e7e295e916ad9a73 A	out/production/gradlefx/org/gradlefx/cli/CommandLineInstruction$_addLibraries_closure5.class
+:000000 100644 0000000000000000000000000000000000000000 506ace23da064a20183948ee8417bb6f25e5294f A	out/production/gradlefx/org/gradlefx/cli/CommandLineInstruction$_addLibraries_closure6.class
+:000000 100644 0000000000000000000000000000000000000000 ee9743dbabdfba73d627f7b4d3fbbecf34aea8ca A	out/production/gradlefx/org/gradlefx/cli/CommandLineInstruction$_addRSLs_closure7.class
+:000000 100644 0000000000000000000000000000000000000000 1d6b2cabe408f98d6cbc5ee6b9f9326115fbba70 A	out/production/gradlefx/org/gradlefx/cli/CommandLineInstruction$_execute_closure11.class
+:000000 100644 0000000000000000000000000000000000000000 4632feac340ccfd9165d08acdcb2c771e5e81d4c A	out/production/gradlefx/org/gradlefx/cli/CommandLineInstruction$_execute_closure12.class
+:000000 100644 0000000000000000000000000000000000000000 da2f6f1a6633791747a7ee6e307fb10aecee08a2 A	out/production/gradlefx/org/gradlefx/cli/CommandLineInstruction$_execute_closure12_closure15.class
+:000000 100644 0000000000000000000000000000000000000000 20778edb8576552cc8f759214d26ae52ebab3a6e A	out/production/gradlefx/org/gradlefx/cli/CommandLineInstruction$_execute_closure12_closure16.class
+:000000 100644 0000000000000000000000000000000000000000 b7dbf7a71642dc30b696beabdbb029583ab78246 A	out/production/gradlefx/org/gradlefx/cli/CommandLineInstruction$_getValidSourcePaths_closure3.class
+:000000 100644 0000000000000000000000000000000000000000 f03eaa3afe08706de2ca5ac5a2362d0e146e2d2d A	out/production/gradlefx/org/gradlefx/cli/CommandLineInstruction$_getValidSourcePaths_closure4.class
+:000000 100644 0000000000000000000000000000000000000000 517930ee26943956f72d686c152a0353f441a2df A	out/production/gradlefx/org/gradlefx/cli/CommandLineInstruction$_setAll_closure13.class
+:000000 100644 0000000000000000000000000000000000000000 f6772f02505ba2c7b681d0a7dfdb854d56019e7b A	out/production/gradlefx/org/gradlefx/cli/CommandLineInstruction$_validateFilesExist_closure10.class
+:000000 100644 0000000000000000000000000000000000000000 17b6348cc0587c5648bf333590d751d64efaac0e A	out/production/gradlefx/org/gradlefx/cli/CommandLineInstruction$_validateFilesExist_closure9.class
+:000000 100644 0000000000000000000000000000000000000000 ba29d10521992b0a3fca475fc8a0b18a89b1294e A	out/production/gradlefx/org/gradlefx/cli/CommandLineInstruction.class
+:000000 100644 0000000000000000000000000000000000000000 ec0b4b8868556043f72e96a09b397446d0ecffa2 A	out/production/gradlefx/org/gradlefx/cli/CompilerOption.class
+:000000 100644 0000000000000000000000000000000000000000 28b7ec7cf6dc54d35ea24238a0985948b52d21ad A	out/production/gradlefx/org/gradlefx/cli/LibraryCommandLineInstruction$_addResources_closure1.class
+:000000 100644 0000000000000000000000000000000000000000 e79f556d712fb4435afbb82bbf2aeedf1c7abb4d A	out/production/gradlefx/org/gradlefx/cli/LibraryCommandLineInstruction$_addResources_closure1_closure3.class
+:000000 100644 0000000000000000000000000000000000000000 e2afa03b884b3bf0f6f16616392bedb19689c41a A	out/production/gradlefx/org/gradlefx/cli/LibraryCommandLineInstruction$_addSourceFilesAndDirectories_closure2.class
+:000000 100644 0000000000000000000000000000000000000000 08bdd0d09816861710f88ec052dc3ec7d6208390 A	out/production/gradlefx/org/gradlefx/cli/LibraryCommandLineInstruction.class
+:000000 100644 0000000000000000000000000000000000000000 b65e86b583ba847cb5cde8143bf42c41d7ca314d A	out/production/gradlefx/org/gradlefx/configuration/Configurations.class
+:000000 100644 0000000000000000000000000000000000000000 eef0fbd3a9515bf27dc24da8bad49ea2d0dab9c9 A	out/production/gradlefx/org/gradlefx/configuration/FlexAntTasksConfigurator$_configure_closure1.class
+:000000 100644 0000000000000000000000000000000000000000 d263f28e4404aefec22e2ffc1a542d367dd9f7f2 A	out/production/gradlefx/org/gradlefx/configuration/FlexAntTasksConfigurator$_configure_closure1_closure2.class
+:000000 100644 0000000000000000000000000000000000000000 83ac2f634102f1d91af251bdf92a28e9fb3d725a A	out/production/gradlefx/org/gradlefx/configuration/FlexAntTasksConfigurator$_configure_closure1_closure2_closure3.class
+:000000 100644 0000000000000000000000000000000000000000 c022fc0b0d57c54162b023dd512429b65ef8b68e A	out/production/gradlefx/org/gradlefx/configuration/FlexAntTasksConfigurator.class
+:000000 100644 0000000000000000000000000000000000000000 8fb2f2c365a412e1c4c8a4884d2a9aced7b05c9d A	out/production/gradlefx/org/gradlefx/configuration/FlexUnitAntTasksConfigurator.class
+:000000 100644 0000000000000000000000000000000000000000 1a00fe73998193ce6c31c755bfe57d48b03c9c5a A	out/production/gradlefx/org/gradlefx/configuration/sdk/DefaultSdkInitialisationContext.class
+:000000 100644 0000000000000000000000000000000000000000 ed9d4e73e90e1f31fb0f8a43cf1eb46d0f52a694 A	out/production/gradlefx/org/gradlefx/configuration/sdk/SdkInitState.class
+:000000 100644 0000000000000000000000000000000000000000 cacef356eec77106056085967e63a1c717bdf285 A	out/production/gradlefx/org/gradlefx/configuration/sdk/SdkInitialisationContext.class
+:000000 100644 0000000000000000000000000000000000000000 8ce90fa18126bcf25ba69ba2f87ffb9a1d2ac411 A	out/production/gradlefx/org/gradlefx/configuration/sdk/SdkInstallLocation.class
+:000000 100644 0000000000000000000000000000000000000000 51ce136c9fd8c87fff6792d1b5b56701df0b0551 A	out/production/gradlefx/org/gradlefx/configuration/sdk/SdkInstallLocationFactory$_filesToHash_closure1.class
+:000000 100644 0000000000000000000000000000000000000000 2beb3aac614637e825f2129ffc3b3751c5a72817 A	out/production/gradlefx/org/gradlefx/configuration/sdk/SdkInstallLocationFactory.class
+:000000 100644 0000000000000000000000000000000000000000 091df1f99007cc4892b9e56ed0db5419abe7a027 A	out/production/gradlefx/org/gradlefx/configuration/sdk/SdkType.class
+:000000 100644 0000000000000000000000000000000000000000 af343626af092dd3f2d3b9b3e4aa5e3fd588193a A	out/production/gradlefx/org/gradlefx/configuration/sdk/states/AbstractCreateSdkInstallLocationState.class
+:000000 100644 0000000000000000000000000000000000000000 14c9d21a22d4beb129f0b6c6d0393d92b46688a7 A	out/production/gradlefx/org/gradlefx/configuration/sdk/states/AbstractDetermineSdkDeclarationTypeState.class
+:000000 100644 0000000000000000000000000000000000000000 8f1436725e971210f4343386ac9af41e4cf983e5 A	out/production/gradlefx/org/gradlefx/configuration/sdk/states/AbstractInstallSdkState.class
+:000000 100644 0000000000000000000000000000000000000000 e980068f442af4cc6732439dab6dc22734a21e6b A	out/production/gradlefx/org/gradlefx/configuration/sdk/states/air/CreateAirSdkInstallLocationState.class
+:000000 100644 0000000000000000000000000000000000000000 75ecc42010f2c1c54d7a00162dadb8da396b1fe3 A	out/production/gradlefx/org/gradlefx/configuration/sdk/states/air/DetermineAirSdkDeclarationTypeState.class
+:000000 100644 0000000000000000000000000000000000000000 6ae3882aa635330f69a7ce368662546bbee75bf3 A	out/production/gradlefx/org/gradlefx/configuration/sdk/states/air/InstallAirSdkState.class
+:000000 100644 0000000000000000000000000000000000000000 da8ac8bcccbcddd636c3e75ebb71472bf6ab7c8f A	out/production/gradlefx/org/gradlefx/configuration/sdk/states/flex/CreateFlexSdkInstallLocationState.class
+:000000 100644 0000000000000000000000000000000000000000 292ee99a6eee6686b80c0610c00acf803fa5af6e A	out/production/gradlefx/org/gradlefx/configuration/sdk/states/flex/DetermineFlexSdkDeclarationTypeState.class
+:000000 100644 0000000000000000000000000000000000000000 0eebf0554ca64cd0311337453f997740ecde113b A	out/production/gradlefx/org/gradlefx/configuration/sdk/states/flex/InstallFlexSdkState$_downloadPlayerGlobalSwc_closure3.class
+:000000 100644 0000000000000000000000000000000000000000 6629e958d2ef65bab2da611faadf5964a51f77b6 A	out/production/gradlefx/org/gradlefx/configuration/sdk/states/flex/InstallFlexSdkState$_executeSdkDownloadsScript_closure2.class
+:000000 100644 0000000000000000000000000000000000000000 75f932f9be8b76a6fdbe32dbb103b509ce118c7b A	out/production/gradlefx/org/gradlefx/configuration/sdk/states/flex/InstallFlexSdkState$_getPlayerGlobalSwcDownloadUrl_closure4.class
+:000000 100644 0000000000000000000000000000000000000000 a611c8858c0884742669d3eb737dcee2fed77028 A	out/production/gradlefx/org/gradlefx/configuration/sdk/states/flex/InstallFlexSdkState$_getPlayerGlobalSwcDownloadUrl_closure5.class
+:000000 100644 0000000000000000000000000000000000000000 6117a2ec65c009041021292a229087146902ba39 A	out/production/gradlefx/org/gradlefx/configuration/sdk/states/flex/InstallFlexSdkState$_updateFrameworkConfigFiles_closure1.class
+:000000 100644 0000000000000000000000000000000000000000 1aa817ee654f11b48048f3d1cf3c3dbbcf1fc7f3 A	out/production/gradlefx/org/gradlefx/configuration/sdk/states/flex/InstallFlexSdkState.class
+:000000 100644 0000000000000000000000000000000000000000 a19f901d64891eff1b1f63244cfee4a63eb06cb7 A	out/production/gradlefx/org/gradlefx/configuration/sdk/states/flex/SetFlexHomeBasedOnSdkInstallLocationState.class
+:000000 100644 0000000000000000000000000000000000000000 7dabc27240e235101b9c47b57dd0fb2338a56117 A	out/production/gradlefx/org/gradlefx/configuration/sdk/states/unpacking/AbstractSdkUnpacker$_findSdkLocation_closure2.class
+:000000 100644 0000000000000000000000000000000000000000 6a48e151658d2ed3dcd612e7795cd88e9350bf0c A	out/production/gradlefx/org/gradlefx/configuration/sdk/states/unpacking/AbstractSdkUnpacker$_moveSdkFilesToRootDirectoryWhenNeeded_closure1.class
+:000000 100644 0000000000000000000000000000000000000000 6418fe63d2e125940a7e929657caa3012547d638 A	out/production/gradlefx/org/gradlefx/configuration/sdk/states/unpacking/AbstractSdkUnpacker.class
+:000000 100644 0000000000000000000000000000000000000000 6859bcd38458588e447b4583c81e4a9e68163f60 A	out/production/gradlefx/org/gradlefx/configuration/sdk/states/unpacking/SdkTarGzUnpacker.class
+:000000 100644 0000000000000000000000000000000000000000 0539ad7fb92bc93ef7f521865fea4b338daa5dab A	out/production/gradlefx/org/gradlefx/configuration/sdk/states/unpacking/SdkTbz2Unpacker.class
+:000000 100644 0000000000000000000000000000000000000000 2930da77902c701ca7cef619b47bfafd261e0db2 A	out/production/gradlefx/org/gradlefx/configuration/sdk/states/unpacking/SdkZipUnpacker.class
+:000000 100644 0000000000000000000000000000000000000000 3eb1da8f9285073341fa04fa02255737c9dbfce5 A	out/production/gradlefx/org/gradlefx/configuration/sdk/states/unpacking/Unpacker.class
+:000000 100644 0000000000000000000000000000000000000000 63caa2ce4f9368f067d44ed0c4cab29a276b79b6 A	out/production/gradlefx/org/gradlefx/conventions/AIRConvention.class
+:000000 100644 0000000000000000000000000000000000000000 db4d3eb82f56b4ebb199b423a7cfd00a420ad250 A	out/production/gradlefx/org/gradlefx/conventions/AIRMobileConvention.class
+:000000 100644 0000000000000000000000000000000000000000 7625d3ed4f7c6dc2e7326295aa9e3a11c6679c11 A	out/production/gradlefx/org/gradlefx/conventions/ASDocConvention.class
+:000000 100644 0000000000000000000000000000000000000000 528e2fc5d326f21b10777403b2e1dbbf59199fa2 A	out/production/gradlefx/org/gradlefx/conventions/FlexType.class
+:000000 100644 0000000000000000000000000000000000000000 6d561dec339d949d53965d01e5e77eb34e89dad3 A	out/production/gradlefx/org/gradlefx/conventions/FlexUnitConvention.class
+:000000 100644 0000000000000000000000000000000000000000 b131c1230073b5fe5cddcb5ed544b8791c7cd69e A	out/production/gradlefx/org/gradlefx/conventions/FrameworkLinkage.class
+:000000 100644 0000000000000000000000000000000000000000 dbb4b784298d79815b4846a5c5f457eb09c92082 A	out/production/gradlefx/org/gradlefx/conventions/GradleFxConvention.class
+:000000 100644 0000000000000000000000000000000000000000 0a5fbddcfabb7f0493eee355cdf001809b5be1dc A	out/production/gradlefx/org/gradlefx/conventions/GradleFxDerivedProperties$_createDependencyProjects_closure1.class
+:000000 100644 0000000000000000000000000000000000000000 31d117b76c908354da413009ba6d57a1299f1213 A	out/production/gradlefx/org/gradlefx/conventions/GradleFxDerivedProperties$_createDependencyProjects_closure2.class
+:000000 100644 0000000000000000000000000000000000000000 54102ecd22a6d20b7276175740b7996e18bb1c51 A	out/production/gradlefx/org/gradlefx/conventions/GradleFxDerivedProperties.class
+:000000 100644 0000000000000000000000000000000000000000 a24ebde1b4f43bb4ed34387473cc2f9c71ec7f7e A	out/production/gradlefx/org/gradlefx/conventions/HtmlWrapperConvention.class
+:000000 100644 0000000000000000000000000000000000000000 5ad728c08f69df7a1f35e3ddf696df14f975f172 A	out/production/gradlefx/org/gradlefx/conventions/SdkAutoInstallConvention.class
+:000000 100644 0000000000000000000000000000000000000000 6ac109eabb724d89e446ce78fbfa561e232bbe86 A	out/production/gradlefx/org/gradlefx/ide/plugins/FDTPlugin.class
+:000000 100644 0000000000000000000000000000000000000000 7d7bbd91dd48518297c26fa97b08b60fd415a04e A	out/production/gradlefx/org/gradlefx/ide/plugins/FlashBuilderPlugin.class
+:000000 100644 0000000000000000000000000000000000000000 fdaeceaf9bfc86fc140b7d203d5f14fcedcbb7fe A	out/production/gradlefx/org/gradlefx/ide/plugins/FlashDevelopPlugin.class
+:000000 100644 0000000000000000000000000000000000000000 60996bc63da834964f5711f8a9dd89f9fb9986f7 A	out/production/gradlefx/org/gradlefx/ide/plugins/FlexBuilderPlugin.class
+:000000 100644 0000000000000000000000000000000000000000 3c2c8085b687d0d5e631c2516dcc71bf2714ed61 A	out/production/gradlefx/org/gradlefx/ide/plugins/IDEPlugin.class
+:000000 100644 0000000000000000000000000000000000000000 78b1bf8e0a7687b5f2fc7b68818b8e9dd5668204 A	out/production/gradlefx/org/gradlefx/ide/plugins/IdeaPlugin.class
+:000000 100644 0000000000000000000000000000000000000000 bcbc1c6cd1a9b4197d2b112fea0ec313fa6a10c7 A	out/production/gradlefx/org/gradlefx/ide/tasks/AbstractIDEProject$_eachDependencyFile_closure2.class
+:000000 100644 0000000000000000000000000000000000000000 e67bfe432d15943ddc3a98504c128cc2fad56dec A	out/production/gradlefx/org/gradlefx/ide/tasks/AbstractIDEProject$_eachDependencyFile_closure2_closure3.class
+:000000 100644 0000000000000000000000000000000000000000 1b30e5537a955264c3b8b3aeb23335ed50e1ce1c A	out/production/gradlefx/org/gradlefx/ide/tasks/AbstractIDEProject$_editXmlFile_closure1.class
+:000000 100644 0000000000000000000000000000000000000000 6a5bfedf01914f89c88c766345b55ff37a19ccde A	out/production/gradlefx/org/gradlefx/ide/tasks/AbstractIDEProject.class
+:000000 100644 0000000000000000000000000000000000000000 9540150f9dcdcad289ada13b7c0f612cad487419 A	out/production/gradlefx/org/gradlefx/ide/tasks/CleanTask.class
+:000000 100644 0000000000000000000000000000000000000000 13e54b2570c96131045ee1c8ccdf46c039dc831b A	out/production/gradlefx/org/gradlefx/ide/tasks/FDTProject.class
+:000000 100644 0000000000000000000000000000000000000000 cf054ead3f0888917a92f9f6a57b9ea78d79c907 A	out/production/gradlefx/org/gradlefx/ide/tasks/FlashBuilderClean$_cleanProject_closure1.class
+:000000 100644 0000000000000000000000000000000000000000 fdad0a119a1fd1ba901bf9fd26cc782980a5af4f A	out/production/gradlefx/org/gradlefx/ide/tasks/FlashBuilderClean.class
+:000000 100644 0000000000000000000000000000000000000000 903d2c47c29b8e66c581d228b8a4a8be441ad1d2 A	out/production/gradlefx/org/gradlefx/ide/tasks/FlashBuilderProject$_addDependencies_closure5.class
+:000000 100644 0000000000000000000000000000000000000000 ea30bdf73b4fe7cb6da31df3409ecfa1f4de3410 A	out/production/gradlefx/org/gradlefx/ide/tasks/FlashBuilderProject$_addDependencies_closure5_closure11.class
+:000000 100644 0000000000000000000000000000000000000000 235053db52aea44c92adc8df2c6f2917bb0032ed A	out/production/gradlefx/org/gradlefx/ide/tasks/FlashBuilderProject$_addIncludedClasses_closure4.class
+:000000 100644 0000000000000000000000000000000000000000 b27cc218e4e01aabea14516ed6bd4d5b373aeaa6 A	out/production/gradlefx/org/gradlefx/ide/tasks/FlashBuilderProject$_addIncludedClasses_closure4_closure10.class
+:000000 100644 0000000000000000000000000000000000000000 85c6ef5e67b58fb553125dd8609811dc51de3964 A	out/production/gradlefx/org/gradlefx/ide/tasks/FlashBuilderProject$_addSourceDirs_closure3.class
+:000000 100644 0000000000000000000000000000000000000000 90d65d60dbbb149e9f8653a4783c4c3bef6f83c9 A	out/production/gradlefx/org/gradlefx/ide/tasks/FlashBuilderProject$_addSourceDirs_closure3_closure9.class
+:000000 100644 0000000000000000000000000000000000000000 5d2fad5347b11a27f279909ae1579f0cca87a699 A	out/production/gradlefx/org/gradlefx/ide/tasks/FlashBuilderProject$_createConfigFiles_closure2.class
+:000000 100644 0000000000000000000000000000000000000000 8d0fd5f1859d80e3c3589ddf6ea8ae970c0cfb4a A	out/production/gradlefx/org/gradlefx/ide/tasks/FlashBuilderProject$_toDependencyPath_closure6.class
+:000000 100644 0000000000000000000000000000000000000000 dcf9db984c5c327e3fff5a504913fb26b5730c22 A	out/production/gradlefx/org/gradlefx/ide/tasks/FlashBuilderProject$_toDependencyPath_closure7.class
+:000000 100644 0000000000000000000000000000000000000000 18c0948d039bec3f23c9edcd740dc7a290dab9a8 A	out/production/gradlefx/org/gradlefx/ide/tasks/FlashBuilderProject$_toDependencyPath_closure7_closure12.class
+:000000 100644 0000000000000000000000000000000000000000 422da12506840d620bc20fbbf4d635632731f363 A	out/production/gradlefx/org/gradlefx/ide/tasks/FlashBuilderProject$_validateProjectDependencies_closure1.class
+:000000 100644 0000000000000000000000000000000000000000 0c8ec5c41aa9a33b3a4201aa95d5c7d25cc2f5d7 A	out/production/gradlefx/org/gradlefx/ide/tasks/FlashBuilderProject$_validateProjectDependencies_closure1_closure8.class
+:000000 100644 0000000000000000000000000000000000000000 57d6bf3e150fffb2b76db1666f8b2c7be8518c55 A	out/production/gradlefx/org/gradlefx/ide/tasks/FlashBuilderProject.class
+:000000 100644 0000000000000000000000000000000000000000 31c3c974a3b0fbd0d5f15ae40679addee36c7881 A	out/production/gradlefx/org/gradlefx/ide/tasks/FlashBuilderUtil.class
+:000000 100644 0000000000000000000000000000000000000000 1fb953c40154066c85b29e60a9ad4fc3b8b721bd A	out/production/gradlefx/org/gradlefx/ide/tasks/FlashDevelopProject.class
+:000000 100644 0000000000000000000000000000000000000000 6afd0cd9e5527d4b92095b5cdad9b16755c4efda A	out/production/gradlefx/org/gradlefx/ide/tasks/FlexBuilderProject.class
+:000000 100644 0000000000000000000000000000000000000000 fe157cb57db487fe5bbd94c850994e07c031fc60 A	out/production/gradlefx/org/gradlefx/ide/tasks/IdeaProject.class
+:000000 100644 0000000000000000000000000000000000000000 62acbc876c883eb0600d130aff2bc2cfd9f4a6f8 A	out/production/gradlefx/org/gradlefx/ide/tasks/ProjectTask.class
+:000000 100644 0000000000000000000000000000000000000000 0dff4e41886106f2382b1b0a372faf79bcece2ac A	out/production/gradlefx/org/gradlefx/ide/validators/actions/ValidateIDEProjectTaskAction.class
+:000000 100644 0000000000000000000000000000000000000000 31ac934ca3a94cfb40411410cf5a0c1d0b3dffce A	out/production/gradlefx/org/gradlefx/plugins/AbstractGradleFxPlugin$_addDefaultConfigurations_closure2.class
+:000000 100644 0000000000000000000000000000000000000000 ebce90a8657bca23b306360259058167358a6631 A	out/production/gradlefx/org/gradlefx/plugins/AbstractGradleFxPlugin$_addDefaultConfigurations_closure3.class
+:000000 100644 0000000000000000000000000000000000000000 13e74cd0638e398168949f94d9744cd7d2ef6211 A	out/production/gradlefx/org/gradlefx/plugins/AbstractGradleFxPlugin$_addTask_closure4.class
+:000000 100644 0000000000000000000000000000000000000000 cc47abd8401093b7e842455841da37459a78cf8b A	out/production/gradlefx/org/gradlefx/plugins/AbstractGradleFxPlugin$_apply_closure1.class
+:000000 100644 0000000000000000000000000000000000000000 d87a2e377f0b73cccda74240a3766957cd989a11 A	out/production/gradlefx/org/gradlefx/plugins/AbstractGradleFxPlugin.class
+:000000 100644 0000000000000000000000000000000000000000 b2cc77301be3ae8238abf36810b72492a909ba70 A	out/production/gradlefx/org/gradlefx/plugins/GradleFxPlugin$_addArtifactsToDefaultConfiguration_closure6.class
+:000000 100644 0000000000000000000000000000000000000000 bbfa5da5e0da3742e232b1a1b310ab9e108f94f1 A	out/production/gradlefx/org/gradlefx/plugins/GradleFxPlugin$_addArtifactsToDefaultConfiguration_closure6_closure7.class
+:000000 100644 0000000000000000000000000000000000000000 b1a29437705530e632a86b16243ec4902234bf43 A	out/production/gradlefx/org/gradlefx/plugins/GradleFxPlugin$_addTasks_closure1.class
+:000000 100644 0000000000000000000000000000000000000000 958c43036730e69d6e7c8d2de23f32b6ce2b39fb A	out/production/gradlefx/org/gradlefx/plugins/GradleFxPlugin$_addTasks_closure2.class
+:000000 100644 0000000000000000000000000000000000000000 ba7439f03f4421dc0e2758182417a78590368ad5 A	out/production/gradlefx/org/gradlefx/plugins/GradleFxPlugin$_addTasks_closure3.class
+:000000 100644 0000000000000000000000000000000000000000 df65c76baaf7179ce477ac8449eee9baa67fd303 A	out/production/gradlefx/org/gradlefx/plugins/GradleFxPlugin$_addTasks_closure4.class
+:000000 100644 0000000000000000000000000000000000000000 a7b6ec10a4331dcd4f54e72ad3eeda431ca67be8 A	out/production/gradlefx/org/gradlefx/plugins/GradleFxPlugin$_configure_closure5.class
+:000000 100644 0000000000000000000000000000000000000000 c4a2f60d5641ce5fdf478d658b10c24af6b9a8e7 A	out/production/gradlefx/org/gradlefx/plugins/GradleFxPlugin.class
+:000000 100644 0000000000000000000000000000000000000000 1aa42329de9654a84aea936cec39a7120ff0aa42 A	out/production/gradlefx/org/gradlefx/tasks/ASDoc$_closure1.class
+:000000 100644 0000000000000000000000000000000000000000 e9e1e3d635053518274b4d9bf35878618e5dca20 A	out/production/gradlefx/org/gradlefx/tasks/ASDoc$_hasDocSources_closure3.class
+:000000 100644 0000000000000000000000000000000000000000 0c2a508a0315a5303b9ec2490f46e211ae84db58 A	out/production/gradlefx/org/gradlefx/tasks/ASDoc$_initInputDirectory_closure2.class
+:000000 100644 0000000000000000000000000000000000000000 f29c4d0ea6aa71393443853492c8138a6fc52a9a A	out/production/gradlefx/org/gradlefx/tasks/ASDoc.class
+:000000 100644 0000000000000000000000000000000000000000 792f9e916af0d3b332a063406885ae2cb730e430 A	out/production/gradlefx/org/gradlefx/tasks/AirPackage$_addFiles_closure2.class
+:000000 100644 0000000000000000000000000000000000000000 7f9e8972efc9c382448e4295e523e2ba5a68d842 A	out/production/gradlefx/org/gradlefx/tasks/AirPackage$_addFiles_closure2_closure4.class
+:000000 100644 0000000000000000000000000000000000000000 d8ac75dffd7453c7308b0b2ac243afab8c6e5131 A	out/production/gradlefx/org/gradlefx/tasks/AirPackage$_packageAir_closure1.class
+:000000 100644 0000000000000000000000000000000000000000 46b25199f197dcc5eb01820e4f8313cd9bb783f8 A	out/production/gradlefx/org/gradlefx/tasks/AirPackage$_packageAir_closure1_closure3.class
+:000000 100644 0000000000000000000000000000000000000000 733522fbdbd5427c2087e7931c3b94b5eac49e1d A	out/production/gradlefx/org/gradlefx/tasks/AirPackage.class
+:000000 100644 0000000000000000000000000000000000000000 59f948833861878fc4a4c6af82f38557c668e985 A	out/production/gradlefx/org/gradlefx/tasks/Build.class
+:000000 100644 0000000000000000000000000000000000000000 9101b348a488abbd45d7b7f2ba1095da8124fb2e A	out/production/gradlefx/org/gradlefx/tasks/CleanSdks.class
+:000000 100644 0000000000000000000000000000000000000000 14642908cf11eb79d5cb9a477110e10ef03ecaf8 A	out/production/gradlefx/org/gradlefx/tasks/CopyResources$_copyResources_closure1.class
+:000000 100644 0000000000000000000000000000000000000000 b6e30518de7547042941c6d20343e48fba7f2d78 A	out/production/gradlefx/org/gradlefx/tasks/CopyResources$_copyResources_closure1_closure2.class
+:000000 100644 0000000000000000000000000000000000000000 773d3b2e106d26a64b9c5a4ecc61345a760e725a A	out/production/gradlefx/org/gradlefx/tasks/CopyResources.class
+:000000 100644 0000000000000000000000000000000000000000 73f71411e648370bd605761a616837d48b19e015 A	out/production/gradlefx/org/gradlefx/tasks/CopyTestResources$_copyResources_closure1.class
+:000000 100644 0000000000000000000000000000000000000000 4e119079f32d09980901d7f913d785e2f511978e A	out/production/gradlefx/org/gradlefx/tasks/CopyTestResources$_copyResources_closure1_closure2.class
+:000000 100644 0000000000000000000000000000000000000000 64f74f7ee9c81a49bb6941f584d79cb1a37a50db A	out/production/gradlefx/org/gradlefx/tasks/CopyTestResources.class
+:000000 100644 0000000000000000000000000000000000000000 8406ff2b6bb05e31982dc4917b55edcf65847b4b A	out/production/gradlefx/org/gradlefx/tasks/HtmlWrapper$_generateCustomWrapper_closure1.class
+:000000 100644 0000000000000000000000000000000000000000 7fab2c962e71b7d147e15f98b6f29937cf12213e A	out/production/gradlefx/org/gradlefx/tasks/HtmlWrapper$_generateCustomWrapper_closure1_closure2.class
+:000000 100644 0000000000000000000000000000000000000000 8e31a19c912fd4e96e8846beae555b1ac922b645 A	out/production/gradlefx/org/gradlefx/tasks/HtmlWrapper$_generateCustomWrapper_closure1_closure2_closure3.class
+:000000 100644 0000000000000000000000000000000000000000 eacecf5599a51611e1e49e751a699879ab8bdc9f A	out/production/gradlefx/org/gradlefx/tasks/HtmlWrapper$_generateCustomWrapper_closure1_closure2_closure4.class
+:000000 100644 0000000000000000000000000000000000000000 31777e3d186dbdec12aefeabb0acf0b35a6999b5 A	out/production/gradlefx/org/gradlefx/tasks/HtmlWrapper$_generateCustomWrapper_closure1_closure2_closure4_closure5.class
+:000000 100644 0000000000000000000000000000000000000000 b16e15ce13c0b993e3ccff2461e2a0575ef2e2ea A	out/production/gradlefx/org/gradlefx/tasks/HtmlWrapper.class
+:000000 100644 0000000000000000000000000000000000000000 6de7fc1730b0df94026717341d3aa980c7db102a A	out/production/gradlefx/org/gradlefx/tasks/Publish$_publishFlex_closure1.class
+:000000 100644 0000000000000000000000000000000000000000 76e8807a4d3a98f7e69a064d29a08304855cf157 A	out/production/gradlefx/org/gradlefx/tasks/Publish$_publishFlex_closure2.class
+:000000 100644 0000000000000000000000000000000000000000 6e1eb86df1e1860f927f3b5a2960f051dceffce3 A	out/production/gradlefx/org/gradlefx/tasks/Publish$_publishFlex_closure2_closure3.class
+:000000 100644 0000000000000000000000000000000000000000 497c94875dd13aefa2259e4c8b65faf7aaa30d37 A	out/production/gradlefx/org/gradlefx/tasks/Publish$_publishFlex_closure2_closure3_closure4.class
+:000000 100644 0000000000000000000000000000000000000000 2e19ff5c49d0924dd6af5763344ee9a478705a7e A	out/production/gradlefx/org/gradlefx/tasks/Publish.class
+:000000 100644 0000000000000000000000000000000000000000 2bfaa64fc46174ca076c2663daf5b73145b3f066 A	out/production/gradlefx/org/gradlefx/tasks/TaskGroups.class
+:000000 100644 0000000000000000000000000000000000000000 33f32da24dfe92c6f121b82677cfeb37c9edaa4c A	out/production/gradlefx/org/gradlefx/tasks/Tasks.class
+:000000 100644 0000000000000000000000000000000000000000 c0a7524ea7ad00dd0df1a91698e02cf8cd966673 A	out/production/gradlefx/org/gradlefx/tasks/Test$_hasTests_closure1.class
+:000000 100644 0000000000000000000000000000000000000000 d47e1fc8219754f5f1736f4f66833ef1712432cd A	out/production/gradlefx/org/gradlefx/tasks/Test$_runTests_closure2.class
+:000000 100644 0000000000000000000000000000000000000000 5f480ebf48b60647ca5411f3c776e5dcc2010aa7 A	out/production/gradlefx/org/gradlefx/tasks/Test$_runTests_closure2_closure3.class
+:000000 100644 0000000000000000000000000000000000000000 731ba7c26cea25fe77fb20582c201ff4a5cfdd34 A	out/production/gradlefx/org/gradlefx/tasks/Test$_runTests_closure2_closure4.class
+:000000 100644 0000000000000000000000000000000000000000 daa83ee8adcb7119fe8cf9f400fa5008f4529dee A	out/production/gradlefx/org/gradlefx/tasks/Test$_runTests_closure2_closure5.class
+:000000 100644 0000000000000000000000000000000000000000 af5367462f987e812cc19e7b8b272e9b5e40562d A	out/production/gradlefx/org/gradlefx/tasks/Test$_runTests_closure2_closure5_closure7.class
+:000000 100644 0000000000000000000000000000000000000000 93a88f12c5be05a8053431ad4b70b31942319ed0 A	out/production/gradlefx/org/gradlefx/tasks/Test$_runTests_closure2_closure5_closure7_closure8.class
+:000000 100644 0000000000000000000000000000000000000000 59b57a7ce08fb02eecb7997191ccddede7e84522 A	out/production/gradlefx/org/gradlefx/tasks/Test$_runTests_closure2_closure6.class
+:000000 100644 0000000000000000000000000000000000000000 e5ca4c208d604208a44e2ef3b4f7c270929b7cb3 A	out/production/gradlefx/org/gradlefx/tasks/Test$_runTests_closure2_closure6_closure9.class
+:000000 100644 0000000000000000000000000000000000000000 48022b5982b06798fe9e78edcc89a0ca7c7d5599 A	out/production/gradlefx/org/gradlefx/tasks/Test.class
+:000000 100644 0000000000000000000000000000000000000000 e92a7f52d0d5cac807ecb8b1cd660ee15b10d882 A	out/production/gradlefx/org/gradlefx/tasks/compile/Compc$_addAsdocToSwc_closure1.class
+:000000 100644 0000000000000000000000000000000000000000 dd75181887ecf72f142e0579a657e012713f3635 A	out/production/gradlefx/org/gradlefx/tasks/compile/Compc$_addAsdocToSwc_closure1_closure2.class
+:000000 100644 0000000000000000000000000000000000000000 428446db29e6711dcfd974c33ed153bb37b71f80 A	out/production/gradlefx/org/gradlefx/tasks/compile/Compc.class
+:000000 100644 0000000000000000000000000000000000000000 478927bc20b2288a63c635d4c4a9f5072b0ea83b A	out/production/gradlefx/org/gradlefx/tasks/compile/Compile$_addCompilationDependencies_closure3.class
+:000000 100644 0000000000000000000000000000000000000000 74cea7867ef2bb394b493ad45e68bec0be0aec8a A	out/production/gradlefx/org/gradlefx/tasks/compile/Compile$_addCompilationDependencies_closure3_closure4.class
+:000000 100644 0000000000000000000000000000000000000000 f9a91a4b83c79c6337a395b6a9d33e587899d828 A	out/production/gradlefx/org/gradlefx/tasks/compile/Compile$_addCompilationDependencies_closure3_closure4_closure5.class
+:000000 100644 0000000000000000000000000000000000000000 996d9dd00d3c701159d1598b6b00db938b78392e A	out/production/gradlefx/org/gradlefx/tasks/compile/Compile$_closure1.class
+:000000 100644 0000000000000000000000000000000000000000 c1567d3df0c43479dadfa9ad5f3b292cf8c2ab0f A	out/production/gradlefx/org/gradlefx/tasks/compile/Compile$_initInputDirectory_closure2.class
+:000000 100644 0000000000000000000000000000000000000000 2c89c727e15e72e3050332392ca806a9bb24a693 A	out/production/gradlefx/org/gradlefx/tasks/compile/Compile.class
+:000000 100644 0000000000000000000000000000000000000000 0a74e82d2bcedb7880b0dce58266e7066b655a30 A	out/production/gradlefx/org/gradlefx/tasks/compile/CompileTask.class
+:000000 100644 0000000000000000000000000000000000000000 cba9df399bf532b44377893066e09218741ea259 A	out/production/gradlefx/org/gradlefx/tasks/compile/CompileTaskDelegate.class
+:000000 100644 0000000000000000000000000000000000000000 eaf0f670c884a87b4dd645b0b3f0c27e1035369d A	out/production/gradlefx/org/gradlefx/tasks/compile/Mxmlc$_copyFrameworkRSLs_closure1.class
+:000000 100644 0000000000000000000000000000000000000000 927bd232b57aba0ecca9a791f6f5d098bca283d0 A	out/production/gradlefx/org/gradlefx/tasks/compile/Mxmlc.class
+:000000 100644 0000000000000000000000000000000000000000 4d5f2bfd895e8b866ee1958e6942f1e142ea1243 A	out/production/gradlefx/org/gradlefx/templates/plugins/CreatorPlugin.class
+:000000 100644 0000000000000000000000000000000000000000 83a8892a031cad8af2b97a3409522193fbfc3c89 A	out/production/gradlefx/org/gradlefx/templates/plugins/ScaffoldPlugin.class
+:000000 100644 0000000000000000000000000000000000000000 cb142f962b175e81f2095ee612cc5a0f3b7ce9d6 A	out/production/gradlefx/org/gradlefx/templates/plugins/TemplatesPlugin.class
+:000000 100644 0000000000000000000000000000000000000000 f4f08c40259f152ce41c666195cd703392f4b401 A	out/production/gradlefx/org/gradlefx/templates/tasks/Scaffold$_createDirectories_closure1.class
+:000000 100644 0000000000000000000000000000000000000000 5491e5de24e05f809afad10d0f7769e08c1aa217 A	out/production/gradlefx/org/gradlefx/templates/tasks/Scaffold$_createDirectories_closure2.class
+:000000 100644 0000000000000000000000000000000000000000 1b84d1bbb2dfadb58c58fd898f3a2d56def54f5c A	out/production/gradlefx/org/gradlefx/templates/tasks/Scaffold.class
+:000000 100644 0000000000000000000000000000000000000000 189d50d0819441d8dc5803db2233a6964a7599a2 A	out/production/gradlefx/org/gradlefx/templates/validators/actions/ValidateScaffoldTaskPropertiesAction.class
+:000000 100644 0000000000000000000000000000000000000000 6c60cbcc8616653202339210d0e8960c2c166281 A	out/production/gradlefx/org/gradlefx/util/TemplateUtil$_writeContent_closure1.class
+:000000 100644 0000000000000000000000000000000000000000 13703b114f08915bb493358e24cf9c6c7ca70c84 A	out/production/gradlefx/org/gradlefx/util/TemplateUtil$_writeContent_closure1_closure2.class
+:000000 100644 0000000000000000000000000000000000000000 55cb42775f84048258b22e6542ae59c8c598ba4c A	out/production/gradlefx/org/gradlefx/util/TemplateUtil$_writeContent_closure1_closure2_closure10.class
+:000000 100644 0000000000000000000000000000000000000000 3ee7099bb087c3bb7f2e54cd404a109e093d85f2 A	out/production/gradlefx/org/gradlefx/util/TemplateUtil$_writeContent_closure1_closure2_closure11.class
+:000000 100644 0000000000000000000000000000000000000000 d90e28f7a536ac261a8cce6e53650359d51f8cd9 A	out/production/gradlefx/org/gradlefx/util/TemplateUtil$_writeContent_closure1_closure2_closure12.class
+:000000 100644 0000000000000000000000000000000000000000 66e3297e42d3c7b1784329de257bf8fe463775fd A	out/production/gradlefx/org/gradlefx/util/TemplateUtil$_writeContent_closure1_closure2_closure13.class
+:000000 100644 0000000000000000000000000000000000000000 caa739781e6d4fe4293ea63ce34216bbc6829f82 A	out/production/gradlefx/org/gradlefx/util/TemplateUtil$_writeContent_closure1_closure2_closure3.class
+:000000 100644 0000000000000000000000000000000000000000 8ac7f4c7a8079782e0788572b0d2d4e5fc5896f0 A	out/production/gradlefx/org/gradlefx/util/TemplateUtil$_writeContent_closure1_closure2_closure4.class
+:000000 100644 0000000000000000000000000000000000000000 c14579357c9032f06fbecf556da4874f0b111a73 A	out/production/gradlefx/org/gradlefx/util/TemplateUtil$_writeContent_closure1_closure2_closure5.class
+:000000 100644 0000000000000000000000000000000000000000 1a929c809e0a125c806605da38a35c09e4ffe95d A	out/production/gradlefx/org/gradlefx/util/TemplateUtil$_writeContent_closure1_closure2_closure6.class
+:000000 100644 0000000000000000000000000000000000000000 3987414ac36f0d269f0a4f2234e716238f459261 A	out/production/gradlefx/org/gradlefx/util/TemplateUtil$_writeContent_closure1_closure2_closure7.class
+:000000 100644 0000000000000000000000000000000000000000 3190e84cddddee3785ee0fcc863c0ba0208555a8 A	out/production/gradlefx/org/gradlefx/util/TemplateUtil$_writeContent_closure1_closure2_closure8.class
+:000000 100644 0000000000000000000000000000000000000000 1486f8b0a2a1599cdadb41ea54d2ea221d81f784 A	out/production/gradlefx/org/gradlefx/util/TemplateUtil$_writeContent_closure1_closure2_closure9.class
+:000000 100644 0000000000000000000000000000000000000000 7b329c4fe9d2038d7d553a506b024b745b4ef3a7 A	out/production/gradlefx/org/gradlefx/util/TemplateUtil.class
+:000000 100644 0000000000000000000000000000000000000000 4c080bbbf8b5b9d4ec162c8cd05389a84aaaadbc A	out/production/gradlefx/org/gradlefx/validators/AbstractCompilerPropertiesValidator$_usesCompilerOptionInAdditionalProperties_closure1.class
+:000000 100644 0000000000000000000000000000000000000000 98b4f73b30bb478c3edc6b4c8e04d576f8b09907 A	out/production/gradlefx/org/gradlefx/validators/AbstractCompilerPropertiesValidator.class
+:000000 100644 0000000000000000000000000000000000000000 0d91b9c9321a126f2430a14d05c632e301523478 A	out/production/gradlefx/org/gradlefx/validators/AbstractProjectPropertyValidator.class
+:000000 100644 0000000000000000000000000000000000000000 0cfc7609ba2cf8abba6bf7041369e4f345506073 A	out/production/gradlefx/org/gradlefx/validators/AirPackagePropertiesValidator.class
+:000000 100644 0000000000000000000000000000000000000000 cdeec49c799f8503918717879dbfafb846f882b2 A	out/production/gradlefx/org/gradlefx/validators/CompcAdditionalPropertiesValidator.class
+:000000 100644 0000000000000000000000000000000000000000 9e6500de510c3f1f57f8bcf2101f53e4ed3ae9a5 A	out/production/gradlefx/org/gradlefx/validators/FlexSDKSpecifiedValidator$_hasNoFlexSDKlibs_closure1.class
+:000000 100644 0000000000000000000000000000000000000000 08783890bc6be35f573edd581d2cdfdf13e60b83 A	out/production/gradlefx/org/gradlefx/validators/FlexSDKSpecifiedValidator.class
+:000000 100644 0000000000000000000000000000000000000000 01bd6719bd5c32fd498825fad5cc379a4387bc0d A	out/production/gradlefx/org/gradlefx/validators/FrameworkLinkageValidator.class
+:000000 100644 0000000000000000000000000000000000000000 607cfeaf8b7d366f52e2c78c6629dcfcdb00a563 A	out/production/gradlefx/org/gradlefx/validators/MxmlcAdditionalPropertiesValidator.class
+:000000 100644 0000000000000000000000000000000000000000 212241daca183e4d768f0f90faf242443065e8d7 A	out/production/gradlefx/org/gradlefx/validators/ProjectPropertyValidator.class
+:000000 100644 0000000000000000000000000000000000000000 84df197c849e48732149be8b90a0cb4d04027480 A	out/production/gradlefx/org/gradlefx/validators/RequiredProjectPropertiesValidator.class
+:000000 100644 0000000000000000000000000000000000000000 90e5c38cdde5705bfbc20884374e97716cbda2fd A	out/production/gradlefx/org/gradlefx/validators/actions/ValidateAirPackageTaskPropertiesAction.class
+:000000 100644 0000000000000000000000000000000000000000 56616c3a84c6d6821a5338a76223a35b46122112 A	out/production/gradlefx/org/gradlefx/validators/actions/ValidateCompcTaskPropertiesAction.class
+:000000 100644 0000000000000000000000000000000000000000 74ba03f5dad52250e95831b529327668191ceac1 A	out/production/gradlefx/org/gradlefx/validators/actions/ValidateMxmlcTaskPropertiesAction.class
+:000000 100644 0000000000000000000000000000000000000000 291bd849a6adf37194ae37c864e5b13c8028f707 A	out/production/gradlefx/org/gradlefx/validators/runner/FailOnErrorValidatorRunner$_run_closure1.class
+:000000 100644 0000000000000000000000000000000000000000 67354623a4c56a95f078d39241d41790c23b1ae2 A	out/production/gradlefx/org/gradlefx/validators/runner/FailOnErrorValidatorRunner.class
+:000000 100644 0000000000000000000000000000000000000000 993c40adb976a425342ca29fd01e909e9e5b451b A	out/production/gradlefx/org/gradlefx/validators/runner/ValidatorRunner.class
+:000000 100644 0000000000000000000000000000000000000000 f51531dde27d3fc62f3455750eb31fb32eaa9a60 A	out/production/gradlefx/templates/air-app.xml
+:000000 100644 0000000000000000000000000000000000000000 d7026027f58c9ce76650471f88a4de79d2a44030 A	out/production/gradlefx/templates/air.as
+:000000 100644 0000000000000000000000000000000000000000 62d68f25efdab7fc93cbe7418a7b8b086d24a422 A	out/production/gradlefx/templates/air.mxml
+:000000 100644 0000000000000000000000000000000000000000 14ab3044de70d6b040525083cc5e3b3a335cd5e6 A	out/production/gradlefx/templates/flashbuilder/air-as.actionScriptProperties
+:000000 100644 0000000000000000000000000000000000000000 8e9197fe4d58ac49dda9a7f296a2b0e59479ff1a A	out/production/gradlefx/templates/flashbuilder/air-as.project
+:000000 100644 0000000000000000000000000000000000000000 519eab1aaa05847fa8c734ca700659028d0d4325 A	out/production/gradlefx/templates/flashbuilder/air-fx.actionScriptProperties
+:000000 100644 0000000000000000000000000000000000000000 37f300288277daef26d0eb9d6a142953d7cf391e A	out/production/gradlefx/templates/flashbuilder/air-fx.project
+:000000 100644 0000000000000000000000000000000000000000 a9bce5c607ca9fe95e772b13a8880a4a1ea933b7 A	out/production/gradlefx/templates/flashbuilder/mobile-as.actionScriptProperties
+:000000 100644 0000000000000000000000000000000000000000 989ec06df680e7e9e2042b7e72b43e273b9a6ce1 A	out/production/gradlefx/templates/flashbuilder/mobile-as.project
+:000000 100644 0000000000000000000000000000000000000000 f3271a8bf2ce7b9fe954925e5dc78b8f71858b5e A	out/production/gradlefx/templates/flashbuilder/mobile-fx.actionScriptProperties
+:000000 100644 0000000000000000000000000000000000000000 cdd2db293d89cc7fd7bcdf5df5311bf15e628771 A	out/production/gradlefx/templates/flashbuilder/mobile-fx.project
+:000000 100644 0000000000000000000000000000000000000000 b7b833e0f83e23cc934d28f7bf4cbeb821b172db A	out/production/gradlefx/templates/flashbuilder/swc-as.actionScriptProperties
+:000000 100644 0000000000000000000000000000000000000000 b5f1c2bae7c832584426d1f0b89f73b0df431a2e A	out/production/gradlefx/templates/flashbuilder/swc-as.project
+:000000 100644 0000000000000000000000000000000000000000 0b38208da4a1764723d515a25f80ef2302d1287f A	out/production/gradlefx/templates/flashbuilder/swc-fx.actionScriptProperties
+:000000 100644 0000000000000000000000000000000000000000 b5f1c2bae7c832584426d1f0b89f73b0df431a2e A	out/production/gradlefx/templates/flashbuilder/swc-fx.project
+:000000 100644 0000000000000000000000000000000000000000 64f20634ed85b97d4966a612da8e59c7db6eb680 A	out/production/gradlefx/templates/flashbuilder/swf-as.actionScriptProperties
+:000000 100644 0000000000000000000000000000000000000000 dc96d006afe5defd07bb9210006309ab260c2b66 A	out/production/gradlefx/templates/flashbuilder/swf-as.project
+:000000 100644 0000000000000000000000000000000000000000 1f68bba62f36ef880ddedb710d6f0a40284275e6 A	out/production/gradlefx/templates/flashbuilder/swf-fx.actionScriptProperties
+:000000 100644 0000000000000000000000000000000000000000 a229331b82a57d4ff74e0cb5b3e036d8e5f13f5a A	out/production/gradlefx/templates/flashbuilder/swf-fx.project
+:000000 100644 0000000000000000000000000000000000000000 5183fd37da03993089720f4f833857d1838615b7 A	out/production/gradlefx/templates/flashbuilder/template.flexLibProperties
+:000000 100644 0000000000000000000000000000000000000000 1aae212b6c1377fd18498dca4481426b7b43b085 A	out/production/gradlefx/templates/flashbuilder/template.flexProperties
+:000000 100644 0000000000000000000000000000000000000000 eb7e05706d9166dc8d272470f60d4f674e643db2 A	out/production/gradlefx/templates/mobile-app.xml
+:000000 100644 0000000000000000000000000000000000000000 607b608f6147bf3ad4b2b1371cd60d936daaf1d7 A	out/production/gradlefx/templates/mobile.as
+:000000 100644 0000000000000000000000000000000000000000 9b5be35cbcaaba105ee4331200416a8b7f8ec4d2 A	out/production/gradlefx/templates/mobile.mxml
+:000000 100644 0000000000000000000000000000000000000000 d7026027f58c9ce76650471f88a4de79d2a44030 A	out/production/gradlefx/templates/swf.as
+:000000 100644 0000000000000000000000000000000000000000 2cadd72a11f79994d61a3117694f94b41d39f580 A	out/production/gradlefx/templates/swf.mxml
+:000000 100644 0000000000000000000000000000000000000000 cf85d48d72316db62431e54af5480387aec9d09d A	out/test/gradlefx/dummy-swcs/domain.swc
+:000000 100644 0000000000000000000000000000000000000000 8f6f21a3a94ccc355a4001609a58d90d0b8e778a A	out/test/gradlefx/dummy-swcs/util.swc
+:000000 100644 0000000000000000000000000000000000000000 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 A	out/test/gradlefx/flex-sdk-no-config/frameworks/libs/some.swc
+:000000 100644 0000000000000000000000000000000000000000 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 A	out/test/gradlefx/flex-sdk-no-libs/frameworks/flex-config.xml
+:000000 100644 0000000000000000000000000000000000000000 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 A	out/test/gradlefx/invalid-flex-sdk/frameworks/libs/dummy.txt
+:000000 100644 0000000000000000000000000000000000000000 137864c95c06f9fa0eed75559742f04bef5c7829 A	out/test/gradlefx/org/gradlefx/cli/ASDocCommandLineInstructionTest.class
+:000000 100644 0000000000000000000000000000000000000000 c3ed35ba5bd9a68bcef7f37fb121d3fdace7cc4f A	out/test/gradlefx/org/gradlefx/cli/CommandLineInstructionTest.class
+:000000 100644 0000000000000000000000000000000000000000 c57f12d33f7d9683bfd367f6ee7a31f85175eb8f A	out/test/gradlefx/org/gradlefx/cli/LibraryCommandLineInstructionTest.class
+:000000 100644 0000000000000000000000000000000000000000 e7e6efa1ecc94b3cf9637429b9fbfa8e0903ef0b A	out/test/gradlefx/org/gradlefx/cli/StubCommandLineInstruction.class
+:000000 100644 0000000000000000000000000000000000000000 33e195f52e4d5f4d823c94c8a200f8710b1df1af A	out/test/gradlefx/org/gradlefx/conventions/FlexTypeTest.class
+:000000 100644 0000000000000000000000000000000000000000 26c55159d06a7c3a85b22a370d3ea603d397451f A	out/test/gradlefx/org/gradlefx/conventions/FrameworkLinkageTest.class
+:000000 100644 0000000000000000000000000000000000000000 4fbc679dadbd63f16296dc460e829c4813f91fc6 A	out/test/gradlefx/org/gradlefx/conventions/GradleFxConventionTest$_$spock_feature_0_10_closure6.class
+:000000 100644 0000000000000000000000000000000000000000 c15b82edde3d23762b52c6f83f113224ee9d0f21 A	out/test/gradlefx/org/gradlefx/conventions/GradleFxConventionTest$_$spock_feature_0_11_closure7.class
+:000000 100644 0000000000000000000000000000000000000000 2c3022bd9ce874a6dcb5665dbd383f6fb2874a01 A	out/test/gradlefx/org/gradlefx/conventions/GradleFxConventionTest$_$spock_feature_0_12_closure8.class
+:000000 100644 0000000000000000000000000000000000000000 5f966310fac554e3c690a316afd74c66893761b4 A	out/test/gradlefx/org/gradlefx/conventions/GradleFxConventionTest$_$spock_feature_0_5_closure1.class
+:000000 100644 0000000000000000000000000000000000000000 275e3f9c1d4e6c09479b4894b0c9afc679ce4d31 A	out/test/gradlefx/org/gradlefx/conventions/GradleFxConventionTest$_$spock_feature_0_6_closure2.class
+:000000 100644 0000000000000000000000000000000000000000 484b49a8cf728781bcd6020c53d5d477dc325337 A	out/test/gradlefx/org/gradlefx/conventions/GradleFxConventionTest$_$spock_feature_0_7_closure3.class
+:000000 100644 0000000000000000000000000000000000000000 34b3df431aaa0586841b164f4030c4f5a92e4f8a A	out/test/gradlefx/org/gradlefx/conventions/GradleFxConventionTest$_$spock_feature_0_8_closure4.class
+:000000 100644 0000000000000000000000000000000000000000 2419bb3e6908b090c7ef7722787dadbb1ac4dd89 A	out/test/gradlefx/org/gradlefx/conventions/GradleFxConventionTest$_$spock_feature_0_9_closure5.class
+:000000 100644 0000000000000000000000000000000000000000 a19caa5e8dec245139fdcc24628d57744f1c996e A	out/test/gradlefx/org/gradlefx/conventions/GradleFxConventionTest.class
+:000000 100644 0000000000000000000000000000000000000000 ab208bed6597aecbe094682c293a2e8b3587a21f A	out/test/gradlefx/org/gradlefx/conventions/GradleFxDerivedPropertiesTest.class
+:000000 100644 0000000000000000000000000000000000000000 31e7980e3e7f1f326798559957f2ce0a00248ef9 A	out/test/gradlefx/org/gradlefx/ide/tasks/AbstractIDEProjectTest$_$spock_feature_0_0_closure1.class
+:000000 100644 0000000000000000000000000000000000000000 6a4eab41e4787d446bb68d734435cfa97f9daf98 A	out/test/gradlefx/org/gradlefx/ide/tasks/AbstractIDEProjectTest.class
+:000000 100644 0000000000000000000000000000000000000000 5aec9bac6158437b67cb479dfb94789d5d87bc6c A	out/test/gradlefx/org/gradlefx/ide/tasks/StubAbstractIDEProject.class
+:000000 100644 0000000000000000000000000000000000000000 ab7f46d58bddc40d11a358fa661b98a79b3ac220 A	out/test/gradlefx/org/gradlefx/util/StubTemplateUtilBase.class
+:000000 100644 0000000000000000000000000000000000000000 7d4c8e8e74a5cf019afd55ed7d5426ea86b216de A	out/test/gradlefx/org/gradlefx/util/TemplateUtilTest.class
+:000000 100644 0000000000000000000000000000000000000000 e9b79e2509cb1f052492293cf1b1291943ea708c A	out/test/gradlefx/org/gradlefx/validators/CompcAdditionalPropertiesValidatorTest.class
+:000000 100644 0000000000000000000000000000000000000000 0922d79ad2628b0677e9455a0dc64302164f161e A	out/test/gradlefx/org/gradlefx/validators/FlexSDKSpecifiedValidatorTest.class
+:000000 100644 0000000000000000000000000000000000000000 ebd2f2509f896dae7c4e3e2d3789d64376c256ae A	out/test/gradlefx/org/gradlefx/validators/FrameworkLinkageValidatorTest.class
+:000000 100644 0000000000000000000000000000000000000000 a6ec99257c66a8eaadca2e9d03a30443e5b09a71 A	out/test/gradlefx/org/gradlefx/validators/RequiredProjectPropertiesValidatorTest.class
+:000000 100644 0000000000000000000000000000000000000000 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 A	out/test/gradlefx/stub-project-dir/stub-resource-dir/level1file.txt
+:000000 100644 0000000000000000000000000000000000000000 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 A	out/test/gradlefx/stub-project-dir/stub-resource-dir/level2/level2file.txt
+:000000 100644 0000000000000000000000000000000000000000 cca61d19e347026ac21664724245ca06a27521d1 A	out/test/gradlefx/stub-project-dir/swf-fx.actionScriptProperties
+:000000 100644 0000000000000000000000000000000000000000 449391bcec45af92334939736d820ed8181988f8 A	out/test/gradlefx/valid-flex-sdk/ant/flexTasks.tasks
+:000000 100644 0000000000000000000000000000000000000000 f782b3ffbf636f6cfd1b79b8873587008bbd40d0 A	out/test/gradlefx/valid-flex-sdk/ant/lib/flexTasks.jar
+:000000 100644 0000000000000000000000000000000000000000 4b78484d8fbee1cda3585ae4ae01941129241056 A	out/test/gradlefx/valid-flex-sdk/frameworks/flex-config.xml
+:000000 100644 0000000000000000000000000000000000000000 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 A	out/test/gradlefx/valid-flex-sdk/frameworks/libs/some.swc
+:000000 100644 0000000000000000000000000000000000000000 19f227ccc591ac170eb2cb1476177371d99e289f A	src/main/groovy/org/gradlefx/conventions/AIRMobileConvention.groovy
+:100644 100644 c258861e048e7bdd3fefe495a3ac2d3c2feb382d db6db706da595799b95b9fe2789745135bf944a6 M	src/main/groovy/org/gradlefx/conventions/FlexType.groovy
+:100644 100644 61eb4ec80217f767f25af2814cb47faf7ace9f66 fe8e43754e47bd4196f6579cd305845037888c25 M	src/main/groovy/org/gradlefx/conventions/GradleFxConvention.groovy
+:100644 100644 4522c2f90d50c785c6973db31dea79cacc7ae724 07f23cab3eacb37af1f02b17d5100403e065f4c3 M	src/main/groovy/org/gradlefx/plugins/GradleFxPlugin.groovy
+:100644 100644 bc928882ef7c216fe25c255f5ebe4b55ec512500 d585c7513f5cefe88856d93d81e6aa381f06cf23 M	src/main/groovy/org/gradlefx/tasks/Tasks.groovy
+:100644 100644 932a7d477d5bc6b4e528e73590a54928957a2265 1aaefa945e336884e1f6ced840b534af722252ab M	src/test/groovy/org/gradlefx/conventions/GradleFxConventionTest.groovy
+:100644 100644 2a6b9d15d340feee1fa3cb12866d433546175fb2 246abad4d8e6e5c10038636c0308c4d31b81a609 M	src/test/groovy/org/gradlefx/conventions/GradleFxDerivedPropertiesTest.groovy
+
+commit 4350dcaddfa6c53979fb63fc1acd8c6bb6376acb
+tree 42476327ed876ee0fb67db781d6a0f58a823a933
+parent 0acd7928afdb473dd842ecb4acdffb4d725803d7
+author chaos-adept <denis.rykovanov@gmail.com> 1363012025 +0400
+committer chaos-adept <denis.rykovanov@gmail.com> 1363012025 +0400
+
+    [fix] junit run
+
+:100644 100644 3cbbefc3fbfb0062c8d474af2bae30b1f6df2471 e8d9f916c9ed965ba1c0f023b5f34f6c4d6a55c0 M	build.gradle
+
+commit dbd5c31413ccf2b2df778f2113e8f2cace50d03d
+tree 4dc53535079fedb39c3f064f75fd7df90675d22f
+parent 0acd7928afdb473dd842ecb4acdffb4d725803d7
+author Denis Rykovanov <denis.rykovanov@gmail.com> 1362846866 +0300
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1362846866 +0300
+
+    [+] adt task
+
+:100644 100644 4522c2f90d50c785c6973db31dea79cacc7ae724 c24845dd9e79c56a29f0e22b694dcb310ee3581f M	src/main/groovy/org/gradlefx/plugins/GradleFxPlugin.groovy
+:000000 100644 0000000000000000000000000000000000000000 916d228bafb9d478286cf4671d919652c3b16f8d A	src/main/groovy/org/gradlefx/tasks/AdtTask.groovy
+
+commit 0acd7928afdb473dd842ecb4acdffb4d725803d7
+tree af769d9a53e8cc9cbae84f20a3f1b1af02781154
+parent 57c4aa11796d22c5f53d126134c2e6187b13167b
+author Denis Rykovanov <denis.rykovanov@gmail.com> 1361855816 +0300
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1361855816 +0300
+
+    [+] adt packages air with custom working dir by default dir is project dir
+
+:100644 100644 80db694667485578bdadbef843fbe6a53203e318 54642b684db64dd84e9f896f22c62d1ce6fc851f M	src/main/groovy/org/gradlefx/conventions/AIRConvention.groovy
+:100644 100644 c27d9c2b21319ecb15715c718ce5a3bcf3ab9f4b d7cfafb424baa1ac14352ad94bcd39d565b298b6 M	src/main/groovy/org/gradlefx/tasks/AirPackage.groovy
+
+commit 4e11938715c68f5ed2cfee6c54f28d31c7809916
+tree dafcc71ef51629b45593e888870e6cfae4cc0cc0
+parent 8c44efd596b64f13ccd4b183842c6cc39bcf7c06
+author Yennick Trevels <yennick.trevels@gmail.com> 1361011941 +0100
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1361361196 +0300
+
+    updating changelog for 0.6.4 release
+
+:100644 100644 ef17a5dfe939acec1d97f7bcb941e9a656280e94 ec1217cd070967ff1348bc9bbdd2bbd9e4a9caef M	CHANGELOG.textile
+
+commit 8c44efd596b64f13ccd4b183842c6cc39bcf7c06
+tree 67a2c86cd895ef8b4b100aead2868e772047c5eb
+parent 60b6825289dfc04b8b974f0f679254afa744026d
+author RIAstar <maxime@riastar.net> 1360785198 +0000
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1361361196 +0300
+
+    fixed #76 > proper error message when 'type' is undefined
+
+:100644 100644 b65dbb65855e602b41fbc9ed70c64f9ac06295b3 372b4b94bf7d0394aa03ababf85bc3e6ba302529 M	src/main/groovy/org/gradlefx/ide/tasks/AbstractIDEProject.groovy
+:000000 100644 0000000000000000000000000000000000000000 87f1cc47f064d2618da3e7af2bfbe9d47b98c741 A	src/main/groovy/org/gradlefx/ide/validators/actions/ValidateIDEProjectTaskAction.groovy
+:100644 100644 48881eabf1db4490590ea1b2c74abe3d3f56f589 4522c2f90d50c785c6973db31dea79cacc7ae724 M	src/main/groovy/org/gradlefx/plugins/GradleFxPlugin.groovy
+:100644 100644 c9a5edf71fa14073b5277cda01ba5e5f370b4bb3 c5812c378569e04d2e23f8164fec6a86831ba4e3 M	src/main/groovy/org/gradlefx/tasks/compile/Compile.groovy
+:100644 100644 01d4717c644184592085334529280a2d19074d46 3705d59e0997969bf21984f8813b6af1c76dcc26 M	src/main/groovy/org/gradlefx/templates/tasks/Scaffold.groovy
+:000000 100644 0000000000000000000000000000000000000000 41a1999943e6005edcb956adf740a66f9b37a2c9 A	src/main/groovy/org/gradlefx/templates/validators/actions/ValidateScaffoldTaskPropertiesAction.groovy
+:000000 100644 0000000000000000000000000000000000000000 f4744234cba05168da1ae139948dfb4cf415f2fc A	src/main/groovy/org/gradlefx/validators/RequiredProjectPropertiesValidator.groovy
+:100644 100644 e7bcce9843ef533073a964ac58a565df981ee6be 972bedec2a780706c9dce44779637b32ccc2ef5e M	src/main/groovy/org/gradlefx/validators/actions/ValidateAirPackageTaskPropertiesAction.groovy
+:100644 100644 00b14b2d769f91517afae53370472b901976b186 3da508997fbadf69c1f61a3602423bcff0fc2d1d M	src/main/groovy/org/gradlefx/validators/actions/ValidateCompcTaskPropertiesAction.groovy
+:100644 100644 71aacd2d0bfe70c9112b8d7cc20c56cc12aac837 2c4a47fda376f4787a51a87b7a43917fe25b16f5 M	src/main/groovy/org/gradlefx/validators/actions/ValidateMxmlcTaskPropertiesAction.groovy
+:000000 100644 0000000000000000000000000000000000000000 521c68082fdab3bf9cb5b41ccf38e5fde10e8d95 A	src/test/groovy/org/gradlefx/validators/RequiredProjectPropertiesValidatorTest.groovy
+
+commit 60b6825289dfc04b8b974f0f679254afa744026d
+tree f7f3e0a0866160522f2fca62f123d29081f80289
+parent 301dc088f3f39e1644047d3f98f50c637e4fbc19
+author RIAstar <maxime@riastar.net> 1358728158 +0000
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1361361195 +0300
+
+    fixed #75 > FrameworkLinkage: clean up playerglobal.swc linking
+
+:100644 100644 fb9b491ece21bca387fe12f2ce02818c17198307 2b9e5c23de82fc0dce2f7b4d89096ffcb46ed90f M	src/main/groovy/org/gradlefx/cli/CommandLineInstruction.groovy
+:100644 100644 fa855200e0a3125d8d0a9d4a18c739a481e7b7d6 4ed96c91d4d026cc3e93b38fb2f232c521bb0685 M	src/test/groovy/org/gradlefx/cli/CommandLineInstructionTest.groovy
+:100644 100644 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 4b78484d8fbee1cda3585ae4ae01941129241056 M	src/test/resources/valid-flex-sdk/frameworks/flex-config.xml
+
+commit 301dc088f3f39e1644047d3f98f50c637e4fbc19
+tree 02766f2ab16e97633e05ced0262d89cc051b6d64
+parent 6594270f2c69ee0003a381de9403258d8eb830d5
+author Yennick Trevels <yennick.trevels@gmail.com> 1358613987 +0100
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1361361195 +0300
+
+    changing the copyTestResources task name to lowercase
+
+:100644 100644 d413fc4813d00140b0ab223fcbb300133656738e bc928882ef7c216fe25c255f5ebe4b55ec512500 M	src/main/groovy/org/gradlefx/tasks/Tasks.groovy
+
+commit 6594270f2c69ee0003a381de9403258d8eb830d5
+tree f001f449cb03a388dba28dcfc514b03d945b7afa
+parent 0c7575d3b888a1c9faafd406974db1c3b406e72a
+author Yennick Trevels <yennick.trevels@gmail.com> 1358613686 +0100
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1361361195 +0300
+
+    fixed issue72: FlexUnit - test task doesn't copy test-resources. Resolution: Added a copyTestResources task on which the test task depends
+
+:100644 100644 119210b560521d7b122b6aa2401330aa2e0207e7 48881eabf1db4490590ea1b2c74abe3d3f56f589 M	src/main/groovy/org/gradlefx/plugins/GradleFxPlugin.groovy
+:000000 100644 0000000000000000000000000000000000000000 c2d77865bc37f2998f5ae1265374ec62939610ef A	src/main/groovy/org/gradlefx/tasks/CopyTestResources.groovy
+:100644 100644 9d919fb35ed5a19f9697eebe3c6db317b433d165 d413fc4813d00140b0ab223fcbb300133656738e M	src/main/groovy/org/gradlefx/tasks/Tasks.groovy
+:100644 100644 200ac239c9a57af6d4088716110cb922472337c6 3b387059d20b18aeb8f2c73da91cefc2823a1d21 M	src/main/groovy/org/gradlefx/tasks/Test.groovy
+
+commit 0c7575d3b888a1c9faafd406974db1c3b406e72a
+tree c930ee271b235bd509acdc1932b8197fcb589577
+parent c20092b6ddbd6f45be8cc314cc189e8959e2727e
+author Yennick Trevels <yennick.trevels@gmail.com> 1358458485 +0100
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1361361195 +0300
+
+    removing the manual addition of the flash player library since it's already added in the flex-config.xml file
+
+:100644 100644 ddfcc0b4b68762c159050c40291817689b63e31d 86ebc2c4f662fa207c30cbded4f89727102e92a6 M	src/main/groovy/org/gradlefx/cli/ApplicationCommandLineInstruction.groovy
+:100644 100644 984603e8242381fc86723542fb51eb2c3b18d4d5 fb9b491ece21bca387fe12f2ce02818c17198307 M	src/main/groovy/org/gradlefx/cli/CommandLineInstruction.groovy
+:100644 100644 12d354b2eef3fec11a59a9af5f8ded86284e0572 7a98a69b337e9c75a3398d4c28f48b348d69ef7b M	src/main/groovy/org/gradlefx/cli/LibraryCommandLineInstruction.groovy
+
+commit c20092b6ddbd6f45be8cc314cc189e8959e2727e
+tree 71f05e33a1610c159cccf5e3795ab5db099f0eb4
+parent 220c50a2cef2cc52d7be082dd27cc5cb27fd051d
+author Yennick Trevels <yennick.trevels@gmail.com> 1358458234 +0100
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1361361194 +0300
+
+    increasing GradleFx version
+
+:100644 100644 0bfe870056e9496216be6126dc7456bbde1ebedc 83a031c59e29e0d177858ef3aa64a4d9d85c3065 M	build.gradle
+
+commit 220c50a2cef2cc52d7be082dd27cc5cb27fd051d
+tree 89ab53174bb28df0f5d7db534bb921aa4d56a116
+parent e91f141fb8d1c2406431f826cd441abde270b995
+author Yennick Trevels <yennick.trevels@gmail.com> 1357930453 +0100
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1361361194 +0300
+
+    updated the changelog for release 0.6.3
+
+:100644 100644 5590c27b3b3a8a04d86bdb867e89c45bfa6d25c7 ef17a5dfe939acec1d97f7bcb941e9a656280e94 M	CHANGELOG.textile
+
+commit e91f141fb8d1c2406431f826cd441abde270b995
+tree fec024cccb6ff2866473adce76e1611135534d16
+parent 5b3765c27938205ea20d74971ceddd281c44c2f6
+author Yennick Trevels <yennick.trevels@gmail.com> 1357844744 +0100
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1361361194 +0300
+
+    added twitter link to the readme
+
+:100644 100644 7403d924c0673cebd439f97422fa505bf5b52938 33005510020039812f5f8a2accd1991df224f6da M	README.textile
+
+commit 5b3765c27938205ea20d74971ceddd281c44c2f6
+tree 11226fde1300cb75a25889bab66021bb311b16aa
+parent 50bb94dbc68921700d85e787c323281383dd147a
+author Patrick Mowrer <pmowrer@gmail.com> 1357784380 -0500
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1361361193 +0300
+
+    Add tokenReplacements  property for template token replacement. #67
+
+:100644 100644 8e83a3e4ab97a6ba9ce7efefa8abfd1d3a796da0 cc98b32f1ad9441a8fe9c4f6208718741ace74e5 M	src/main/groovy/org/gradlefx/conventions/HtmlWrapperConvention.groovy
+:100644 100644 f60d2aeafaf7513f05288b16186502cca327a445 e6e843868c73a8b55c1b788b7451a6018f1dae17 M	src/main/groovy/org/gradlefx/tasks/HtmlWrapper.groovy
+
+commit 50bb94dbc68921700d85e787c323281383dd147a
+tree f18a9ca027bf69ff2c3a67986d0a9e3899a09d3f
+parent 79ded7a4ed6b0ebaf4ac1964854f40456cc91594
+author Patrick Mowrer <pmowrer@gmail.com> 1357747180 -0500
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1361361193 +0300
+
+    Add 'source' file property for HtmlWrapper task. #67
+
+:100644 100644 2682957668df216114b7f6aca3c97cb237ac422f 8e83a3e4ab97a6ba9ce7efefa8abfd1d3a796da0 M	src/main/groovy/org/gradlefx/conventions/HtmlWrapperConvention.groovy
+:100644 100644 1357a64812d67415e8d5715c2a734b1e47fdf1da f60d2aeafaf7513f05288b16186502cca327a445 M	src/main/groovy/org/gradlefx/tasks/HtmlWrapper.groovy
+
+commit 79ded7a4ed6b0ebaf4ac1964854f40456cc91594
+tree 7877e26bcd34db8a99570e8609afdbc324cf3abd
+parent bfeefbc8519cf220df85626b34a6711ce47f4dbd
+author Yennick Trevels <yennick.trevels@gmail.com> 1357297273 +0100
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1361361193 +0300
+
+    adding the test sources only once to the flexunit task
+
+:100644 100644 0f24c3bc499a1338db5fafc2caa21e6d36cc1ba0 200ac239c9a57af6d4088716110cb922472337c6 M	src/main/groovy/org/gradlefx/tasks/Test.groovy
+
+commit bfeefbc8519cf220df85626b34a6711ce47f4dbd
+tree 0632aedf9c49679396405ed7e62f01a705b7ed50
+parent e05ec012aa835a81f2f814e3802ba84f8f74eb81
+author Yennick Trevels <yennick.trevels@gmail.com> 1357151488 +0100
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1361361193 +0300
+
+    increasing the GradleFx version number to 0.6.3
+
+:100644 100644 b6befcb7f5fc2e543a529dc92ce827450b0ace38 0bfe870056e9496216be6126dc7456bbde1ebedc M	build.gradle
+
+commit e05ec012aa835a81f2f814e3802ba84f8f74eb81
+tree fd608ef83ef3a9aff4f29a5239e2c3da19af0a0c
+parent 827f19671f3a7d4dc83cd25763e110b35703bd5e
+author Yennick Trevels <yennick.trevels@gmail.com> 1357151433 +0100
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1361361192 +0300
+
+    fixed issue 70: supporting locales in FlexUnit tests
+
+:100644 100644 7341f65d6b0680702b4fbe4791f640667dd9f604 0f24c3bc499a1338db5fafc2caa21e6d36cc1ba0 M	src/main/groovy/org/gradlefx/tasks/Test.groovy
+
+commit 827f19671f3a7d4dc83cd25763e110b35703bd5e
+tree 41a49c77c6195f0206c761f26bafb6212a397bb2
+parent 03f999d945daa4e6b87f38950f16a83c4b01fdec
+author Yennick Trevels <yennick.trevels@gmail.com> 1356707152 +0100
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1361361192 +0300
+
+    updated the changelog for release 0.6.2
+
+:100644 100644 d2a8947b26e05c03a23ae3ee929b4823c87bfaa5 5590c27b3b3a8a04d86bdb867e89c45bfa6d25c7 M	CHANGELOG.textile
+
+commit 03f999d945daa4e6b87f38950f16a83c4b01fdec
+tree 073024de6629a79fe77526f0e8aeeee3f5a43e5a
+parent 2879fe2a56ff60689ae500d9063db2cc37ac3e40
+author RIAstar <maxime@riastar.net> 1355690458 +0100
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1361361192 +0300
+
+    added .externalToolBuilders to the flashbuilderClean task
+
+:100644 100644 464848af232ac3f61f5ac1e1bc0b5ae763cae2f5 0b8492a27064b6d973d2e669f2b8bf820167175f M	src/main/groovy/org/gradlefx/ide/tasks/FlashBuilderClean.groovy
+:100644 100644 a5075c891441022a92f64cc09f051f6e1bbe986f 98132eb793aeb661053464502c89270cfdd28019 M	src/main/groovy/org/gradlefx/ide/tasks/FlashBuilderUtil.groovy
+
+commit 2879fe2a56ff60689ae500d9063db2cc37ac3e40
+tree e0b6f7fe2028dd8e285d4b56269f9d878aa8045b
+parent 0609aa2a9072ff579f98c5f6c247875c058ec0d4
+author Yennick Trevels <yennick.trevels@gmail.com> 1354739973 +0100
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1361361191 +0300
+
+    fixed issue 68: only show compiler options with logging level info
+
+:100644 100644 276fd05e34ccb4d152b6e62320c88e23601c42c9 c9a5edf71fa14073b5277cda01ba5e5f370b4bb3 M	src/main/groovy/org/gradlefx/tasks/compile/Compile.groovy
+
+commit 0609aa2a9072ff579f98c5f6c247875c058ec0d4
+tree 3696435029c255a680d9c8bd076f6d6ff0072164
+parent 827e8c2268a1b355619095b2dd35a9be707fd692
+author Yennick Trevels <yennick.trevels@gmail.com> 1354738852 +0100
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1361361191 +0300
+
+    upped the GradleFx version number
+
+:100644 100644 747dfaf139fe30a6f064230bc5a6a06ee6d79ed6 b6befcb7f5fc2e543a529dc92ce827450b0ace38 M	build.gradle
+
+commit 827e8c2268a1b355619095b2dd35a9be707fd692
+tree d9e44f391ca8993c7d18c42ad8aab7bf263a9ba6
+parent b6e2c0397a2ed462d0ed4087deeb134dbb1bdb36
+author Yennick Trevels <yennick.trevels@gmail.com> 1354738758 +0100
+committer Denis Rykovanov <denis.rykovanov@gmail.com> 1361361191 +0300
+
+    fixed issue 69: The compile task now only executes when source files have been changed
+
+:100644 100644 36db4227308eb7d140cf5c34cfb64d9dc147cd5e 276fd05e34ccb4d152b6e62320c88e23601c42c9 M	src/main/groovy/org/gradlefx/tasks/compile/Compile.groovy

@@ -1,0 +1,37 @@
+Started by GitHub push by 
+Building in workspace /var/lib/jenkins/workspace/GradleFx Develop Build
+Checkout:GradleFx Develop Build / /var/lib/jenkins/workspace/GradleFx Develop Build - hudson.remoting.LocalChannel@1a5814df
+Using strategy: Default
+Last Built Revision: Revision f4e2ee7683218add893d2c93ac2ff553b2a6959c (origin/develop)
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from git@github.com:GradleFx/GradleFx.git
+Commencing build of Revision 5d7e409d1e5ffba0eaa4844b881058d45e6025b1 (origin/develop)
+Checking out Revision 5d7e409d1e5ffba0eaa4844b881058d45e6025b1 (origin/develop)
+[GradleFx Develop Build] $ "/var/lib/jenkins/workspace/GradleFx Develop Build/gradlew" --stacktrace clean build uploadArchives -Pci
+Downloading http://services.gradle.org/distributions/gradle-1.6-bin.zip
+...................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Unzipping /var/lib/jenkins/.gradle/wrapper/dists/gradle-1.6-bin/72srdo3a5eb3bic159kar72vok/gradle-1.6-bin.zip to /var/lib/jenkins/.gradle/wrapper/dists/gradle-1.6-bin/72srdo3a5eb3bic159kar72vok
+Set executable permissions for: /var/lib/jenkins/.gradle/wrapper/dists/gradle-1.6-bin/72srdo3a5eb3bic159kar72vok/gradle-1.6/bin/gradle
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:clean
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:compileJava UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:compileGroovy UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:processResources UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:classes UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:jar
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:assemble
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:compileTestJava UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:compileTestGroovy UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:processTestResources UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:testClasses UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:test
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:check
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:build
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:clean
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:compileJava UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:compileGroovy
+Download http://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.pom
+Download http://repo1.maven.org/maven2/org/apache/commons/commons-parent/25/commons-parent-25.pom
+Download http://repo1.maven.org/maven2/org/apache/apache/9/apache-9.pom
+Download http://repo1.maven.org/maven2/org/codehaus/groovy/groovy-all/1.8.6/groovy-all-1.8.6.pom
+Download http://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.jar
+Download http://repo1.maven.org/maven2/org/codehaus/groovy/groovy-all/1.8.6/groovy-all-1.8.6.jar

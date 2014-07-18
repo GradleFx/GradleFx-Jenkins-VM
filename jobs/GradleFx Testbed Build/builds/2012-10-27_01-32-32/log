@@ -1,0 +1,764 @@
+Started by upstream project "[8mha:AAAAnx+LCAAAAAAAAABb85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyT1dMUiOWdZ/mImBiZPBrac1Lz0kgwfBubSopwSBiGfrMSyRP2cxLx0/eCSosy8dOuKIgYpNOOcITTIMAYIYGRiYKgoADLEShgU9LPyk/TdixJTclLdKlSNDFxSy1Jz8guALKfSzJwUfQDojmfypQAAAA==[0mGradleFx Develop Build" build number [8mha:AAAAoR+LCAAAAAAAAABb85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyT1dMUiOWdZ/mImBiZPBrac1Lz0kgwfBubSopwSBiGfrMSyRP2cxLx0/eCSosy8dOuKIgYpNOOcITTIMAYIYGRiYKgoADKYShiU9LPyk/TdixJTclLdKlSNDFxSy1Jz8guALKfSzJwUfTMzAEAUlzGnAAAA[0m66
+Building in workspace /var/lib/jenkins/workspace/GradleFx Testbed Build
+Checkout:GradleFx Testbed Build / /var/lib/jenkins/workspace/GradleFx Testbed Build - hudson.remoting.LocalChannel@4e2ab877
+Using strategy: Default
+Last Built Revision: Revision 8a4f8bb225fd90d93170f74a6d4d0562f33290f1 (origin/master)
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from git@github.com:GradleFx/GradleFx-testbed.git
+Commencing build of Revision 8a4f8bb225fd90d93170f74a6d4d0562f33290f1 (origin/master)
+Checking out Revision 8a4f8bb225fd90d93170f74a6d4d0562f33290f1 (origin/master)
+Starting xvnc
+[GradleFx Testbed Build] $ vncserver :19
+
+New 'server.augnite.com:19 (jenkins)' desktop is server.augnite.com:19
+
+Starting applications specified in /var/lib/jenkins/.vnc/xstartup
+Log file is /var/lib/jenkins/.vnc/server.augnite.com:19.log
+
+[GradleFx Testbed Build] $ "/var/lib/jenkins/workspace/GradleFx Testbed Build/gradlew" -info --stacktrace
+Starting Build
+================================================ Start building buildSrc
+Evaluating root project 'buildSrc' using empty build file.
+Selected primary task 'build'
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:compileJava
+Skipping task ':compileJava' as it has no source files.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:compileJava UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:compileGroovy
+Skipping task ':compileGroovy' as it has no source files.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:compileGroovy UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:processResources
+Skipping task ':processResources' as it has no source files.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:processResources UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:classes
+Skipping task ':classes' as it has no actions.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:classes UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:jar
+Skipping task ':jar' as it is up-to-date.
+Skipping task ':jar' as it is up-to-date
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:jar UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:assemble
+Skipping task ':assemble' as it has no actions.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:assemble UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:compileTestJava
+Skipping task ':compileTestJava' as it has no source files.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:compileTestJava UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:compileTestGroovy
+Skipping task ':compileTestGroovy' as it has no source files.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:compileTestGroovy UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:processTestResources
+Skipping task ':processTestResources' as it has no source files.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:processTestResources UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:testClasses
+Skipping task ':testClasses' as it has no actions.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:testClasses UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:test
+file or directory '/var/lib/jenkins/workspace/GradleFx Testbed Build/buildSrc/build/classes/test', not found
+Skipping task ':test' as it is up-to-date.
+Skipping task ':test' as it is up-to-date
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:test UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:check
+Skipping task ':check' as it has no actions.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:check UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:build
+Skipping task ':build' as it has no actions.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:buildSrc:build UP-TO-DATE
+================================================ Finished building buildSrc
+Settings evaluated using settings file '/var/lib/jenkins/workspace/GradleFx Testbed Build/settings.gradle'.
+Projects loaded. Root project using build file '/var/lib/jenkins/workspace/GradleFx Testbed Build/build.gradle'.
+Included projects: [root project 'GradleFx Testbed Build', project ':air-single-project', project ':flex-java-war', project ':flexunit-single-project', project ':merge-swc-packages', project ':multiproject-all-conventions', project ':multiproject-no-conventions', project ':flex-java-war:flex', project ':flex-java-war:java', project ':merge-swc-packages:domain', project ':merge-swc-packages:util', project ':multiproject-all-conventions:assets', project ':multiproject-all-conventions:client', project ':multiproject-all-conventions:domain', project ':multiproject-all-conventions:util', project ':multiproject-no-conventions:client', project ':multiproject-no-conventions:domain', project ':multiproject-no-conventions:util', project ':flex-java-war:flex:swc', project ':flex-java-war:flex:swf', project ':flex-java-war:java:dto', project ':flex-java-war:java:war']
+Evaluating root project 'GradleFx Testbed Build' using build file '/var/lib/jenkins/workspace/GradleFx Testbed Build/build.gradle'.
+Found locally available resource with matching checksum: [https://oss.sonatype.org/content/repositories/snapshots/org/gradlefx/gradlefx/0.6-SNAPSHOT/gradlefx-0.6-20121026.233204-6.pom, /var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.gradlefx/gradlefx/0.6-SNAPSHOT/pom/e388efb9c83dc93860398ce2577695e586f73622/gradlefx-0.6-SNAPSHOT.pom]
+downloading Http GET Resource: https://oss.sonatype.org/content/repositories/snapshots/org/gradlefx/gradlefx/0.6-SNAPSHOT/gradlefx-0.6-20121026.233204-6.jar ...
+Download https://oss.sonatype.org/content/repositories/snapshots/org/gradlefx/gradlefx/0.6-SNAPSHOT/gradlefx-0.6-20121026.233204-6.jar
+	[SUCCESSFUL ] org.gradlefx#gradlefx;0.6-SNAPSHOT!gradlefx.jar (1732ms)
+Evaluating project ':air-single-project' using build file '/var/lib/jenkins/workspace/GradleFx Testbed Build/air-single-project/build.gradle'.
+Dynamic properties are deprecated: http://gradle.org/docs/current/dsl/org.gradle.api.plugins.ExtraPropertiesExtension.html
+Deprecated dynamic property: "as3commons_lang_version" on "project ':air-single-project'", value: "0.3.2".
+Using the Flex SDK dependency
+Determining SDK install location
+Setting flexHome to /var/lib/jenkins/.gradle/gradleFx/sdks/9eba2c745792f4dfc86449f822ab73146ee2e16f
+Using the Air SDK dependency
+Determining SDK install location
+Evaluating project ':flex-java-war' using build file '/var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/build.gradle'.
+Evaluating project ':flexunit-single-project' using build file '/var/lib/jenkins/workspace/GradleFx Testbed Build/flexunit-single-project/build.gradle'.
+Deprecated dynamic property: "hamcrest_as3_version" on "project ':flexunit-single-project'", value: "1.1".
+Deprecated dynamic property: "flexUnitHome" on "project ':flexunit-single-project'", value: "/var/lib/jenkins/depen...".
+Using the flexHome convention
+Evaluating project ':merge-swc-packages' using build file '/var/lib/jenkins/workspace/GradleFx Testbed Build/merge-swc-packages/build.gradle'.
+Deprecated dynamic property: "spring_actionscript_core_version" on "project ':merge-swc-packages:domain'", value: "1.2-SNAPSHOT".
+Deprecated dynamic property: "as3commons_collections_version" on "project ':merge-swc-packages:domain'", value: "1.1".
+Deprecated dynamic property "as3commons_lang_version" created in multiple locations.
+Deprecated dynamic property: "graniteds_version" on "project ':merge-swc-packages:domain'", value: "2.2.0.SP1".
+Deprecated dynamic property "spring_actionscript_core_version" created in multiple locations.
+Deprecated dynamic property "as3commons_collections_version" created in multiple locations.
+Deprecated dynamic property "graniteds_version" created in multiple locations.
+Using the flexHome convention
+Evaluating project ':multiproject-all-conventions' using build file '/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/build.gradle'.
+Evaluating project ':multiproject-no-conventions' using build file '/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-no-conventions/build.gradle'.
+Evaluating project ':flex-java-war:flex' using build file '/var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/flex/build.gradle'.
+Evaluating project ':flex-java-war:java' using build file '/var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/java/build.gradle'.
+Evaluating project ':merge-swc-packages:domain' using build file '/var/lib/jenkins/workspace/GradleFx Testbed Build/merge-swc-packages/domain/build.gradle'.
+Using the flexHome convention
+Evaluating project ':merge-swc-packages:util' using build file '/var/lib/jenkins/workspace/GradleFx Testbed Build/merge-swc-packages/util/build.gradle'.
+Using the flexHome convention
+Evaluating project ':multiproject-all-conventions:assets' using build file '/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/assets/build.gradle'.
+Using the flexHome convention
+Evaluating project ':multiproject-all-conventions:client' using build file '/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/client/build.gradle'.
+Using the flexHome convention
+Evaluating project ':multiproject-all-conventions:domain' using build file '/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/domain/build.gradle'.
+Using the flexHome convention
+Evaluating project ':multiproject-all-conventions:util' using build file '/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/util/build.gradle'.
+Using the flexHome convention
+Evaluating project ':multiproject-no-conventions:client' using build file '/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-no-conventions/client/build.gradle'.
+Using the flexHome convention
+Evaluating project ':multiproject-no-conventions:domain' using build file '/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-no-conventions/domain/build.gradle'.
+Using the flexHome convention
+Evaluating project ':multiproject-no-conventions:util' using build file '/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-no-conventions/util/build.gradle'.
+Using the flexHome convention
+Evaluating project ':flex-java-war:flex:swc' using build file '/var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/flex/swc/build.gradle'.
+Using the flexHome convention
+Evaluating project ':flex-java-war:flex:swf' using build file '/var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/flex/swf/build.gradle'.
+Using the flexHome convention
+Evaluating project ':flex-java-war:java:dto' using empty build file.
+Evaluating project ':flex-java-war:java:war' using build file '/var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/java/war/build.gradle'.
+All projects evaluated.
+No tasks specified. Using project default tasks 'clean', 'flashbuilderClean', 'test', 'compileFlex', 'compileJava', 'package', 'war', 'asdoc', 'flashbuilder'
+Selected primary tasks 'clean', 'flashbuilderClean', 'test', 'compileFlex', 'compileJava', 'package', 'war', 'asdoc', 'flashbuilder'
+Tasks to be executed: [task ':air-single-project:clean', task ':flexunit-single-project:clean', task ':merge-swc-packages:clean', task ':merge-swc-packages:domain:clean', task ':merge-swc-packages:util:clean', task ':multiproject-all-conventions:assets:clean', task ':multiproject-all-conventions:client:clean', task ':multiproject-all-conventions:domain:clean', task ':multiproject-all-conventions:util:clean', task ':multiproject-no-conventions:client:clean', task ':multiproject-no-conventions:domain:clean', task ':multiproject-no-conventions:util:clean', task ':flex-java-war:flex:swc:clean', task ':flex-java-war:flex:swf:clean', task ':flex-java-war:java:dto:clean', task ':flex-java-war:java:war:clean', task ':multiproject-no-conventions:client:flashbuilderClean', task ':multiproject-no-conventions:domain:flashbuilderClean', task ':multiproject-no-conventions:util:flashbuilderClean', task ':air-single-project:test', task ':flexunit-single-project:test', task ':merge-swc-packages:test', task ':merge-swc-packages:domain:test', task ':merge-swc-packages:util:test', task ':multiproject-all-conventions:assets:test', task ':multiproject-all-conventions:client:test', task ':multiproject-all-conventions:domain:test', task ':multiproject-all-conventions:util:test', task ':multiproject-no-conventions:client:test', task ':multiproject-no-conventions:domain:test', task ':multiproject-no-conventions:util:test', task ':flex-java-war:flex:swc:test', task ':flex-java-war:flex:swf:test', task ':flex-java-war:java:dto:compileJava', task ':flex-java-war:java:dto:processResources', task ':flex-java-war:java:dto:classes', task ':flex-java-war:java:dto:compileTestJava', task ':flex-java-war:java:dto:processTestResources', task ':flex-java-war:java:dto:testClasses', task ':flex-java-war:java:dto:test', task ':flex-java-war:java:dto:jar', task ':flex-java-war:java:war:compileJava', task ':flex-java-war:java:war:processResources', task ':flex-java-war:java:war:classes', task ':flex-java-war:java:war:compileTestJava', task ':flex-java-war:java:war:processTestResources', task ':flex-java-war:java:war:testClasses', task ':flex-java-war:java:war:test', task ':air-single-project:copyresources', task ':air-single-project:compileFlex', task ':flexunit-single-project:compileFlex', task ':multiproject-all-conventions:util:compileFlex', task ':merge-swc-packages:domain:compileFlex', task ':merge-swc-packages:util:compileFlex', task ':merge-swc-packages:compileFlex', task ':multiproject-all-conventions:assets:compileFlex', task ':multiproject-all-conventions:client:copyresources', task ':multiproject-all-conventions:domain:compileFlex', task ':multiproject-all-conventions:client:compileFlex', task ':multiproject-no-conventions:client:copyresources', task ':multiproject-no-conventions:util:compileFlex', task ':multiproject-no-conventions:domain:asdoc', task ':multiproject-no-conventions:domain:compileFlex', task ':multiproject-no-conventions:client:compileFlex', task ':flex-java-war:flex:swc:compileFlex', task ':flex-java-war:flex:swf:copyresources', task ':flex-java-war:flex:swf:compileFlex', task ':air-single-project:package', task ':flex-java-war:java:war:war', task ':flexunit-single-project:asdoc', task ':merge-swc-packages:asdoc', task ':merge-swc-packages:domain:asdoc', task ':merge-swc-packages:util:asdoc', task ':multiproject-all-conventions:assets:asdoc', task ':multiproject-all-conventions:domain:asdoc', task ':multiproject-all-conventions:util:asdoc', task ':multiproject-no-conventions:util:asdoc', task ':flex-java-war:flex:swc:asdoc', task ':multiproject-no-conventions:client:scaffold', task ':multiproject-no-conventions:client:flashbuilder', task ':multiproject-no-conventions:domain:scaffold', task ':multiproject-no-conventions:domain:flashbuilder', task ':multiproject-no-conventions:util:scaffold', task ':multiproject-no-conventions:util:flashbuilder']
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:air-single-project:clean
+Task ':air-single-project:clean' has not declared any outputs, assuming that it is out-of-date.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flexunit-single-project:clean
+Task ':flexunit-single-project:clean' has not declared any outputs, assuming that it is out-of-date.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:merge-swc-packages:clean
+Task ':merge-swc-packages:clean' has not declared any outputs, assuming that it is out-of-date.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:merge-swc-packages:domain:clean
+Task ':merge-swc-packages:domain:clean' has not declared any outputs, assuming that it is out-of-date.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:merge-swc-packages:util:clean
+Task ':merge-swc-packages:util:clean' has not declared any outputs, assuming that it is out-of-date.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:multiproject-all-conventions:assets:clean
+Task ':multiproject-all-conventions:assets:clean' has not declared any outputs, assuming that it is out-of-date.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:multiproject-all-conventions:client:clean
+Task ':multiproject-all-conventions:client:clean' has not declared any outputs, assuming that it is out-of-date.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:multiproject-all-conventions:domain:clean
+Task ':multiproject-all-conventions:domain:clean' has not declared any outputs, assuming that it is out-of-date.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:multiproject-all-conventions:util:clean
+Task ':multiproject-all-conventions:util:clean' has not declared any outputs, assuming that it is out-of-date.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:multiproject-no-conventions:client:clean
+Task ':multiproject-no-conventions:client:clean' has not declared any outputs, assuming that it is out-of-date.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:multiproject-no-conventions:domain:clean
+Task ':multiproject-no-conventions:domain:clean' has not declared any outputs, assuming that it is out-of-date.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:multiproject-no-conventions:util:clean
+Task ':multiproject-no-conventions:util:clean' has not declared any outputs, assuming that it is out-of-date.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:flex:swc:clean
+Task ':flex-java-war:flex:swc:clean' has not declared any outputs, assuming that it is out-of-date.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:flex:swf:clean
+Task ':flex-java-war:flex:swf:clean' has not declared any outputs, assuming that it is out-of-date.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:java:dto:clean
+Task ':flex-java-war:java:dto:clean' has not declared any outputs, assuming that it is out-of-date.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:java:war:clean
+Task ':flex-java-war:java:war:clean' has not declared any outputs, assuming that it is out-of-date.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:multiproject-no-conventions:client:flashbuilderClean
+Task ':multiproject-no-conventions:client:flashbuilderClean' has not declared any outputs, assuming that it is out-of-date.
+Removing FlashBuilder project files
+	.project
+	.actionScriptProperties
+	.flexProperties
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:multiproject-no-conventions:domain:flashbuilderClean
+Task ':multiproject-no-conventions:domain:flashbuilderClean' has not declared any outputs, assuming that it is out-of-date.
+Removing FlashBuilder project files
+	.project
+	.actionScriptProperties
+	.flexLibProperties
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:multiproject-no-conventions:util:flashbuilderClean
+Task ':multiproject-no-conventions:util:flashbuilderClean' has not declared any outputs, assuming that it is out-of-date.
+Removing FlashBuilder project files
+	.project
+	.actionScriptProperties
+	.flexLibProperties
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:air-single-project:test
+Task ':air-single-project:test' has not declared any outputs, assuming that it is out-of-date.
+Skipping tests since no tests exist
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flexunit-single-project:test
+Task ':flexunit-single-project:test' has not declared any outputs, assuming that it is out-of-date.
+[ant:flexunit] Compiling test classes: [org.gradlefx.flexunitexample.Calculator2Test, org.gradlefx.flexunitexample.CalculatorTest]
+[ant:null] Loading configuration file /var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/flex-config.xml
+[ant:null] Required RSLs:
+[ant:null]     http://fpdownload.adobe.com/pub/swz/flex/4.6.0.23201/framework_4.6.0.23201.swz with 1 failover.
+[ant:null]     http://fpdownload.adobe.com/pub/swz/tlf/2.0.0.232/textLayout_2.0.0.232.swz with 1 failover.
+[ant:null]     http://fpdownload.adobe.com/pub/swz/flex/4.6.0.23201/spark_4.6.0.23201.swz with 1 failover.
+[ant:null] /var/lib/jenkins/workspace/GradleFx Testbed Build/flexunit-single-project/build/TestRunner.swf (108073 bytes)
+[ant:flexunit] 
+[ant:flexunit] Suite: org.gradlefx.flexunitexample.Calculator2Test
+[ant:flexunit] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
+[ant:flexunit] Suite: org.gradlefx.flexunitexample.CalculatorTest
+[ant:flexunit] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+[ant:flexunit] 
+[ant:flexunit] Results :
+[ant:flexunit] 
+[ant:flexunit] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+[ant:flexunit] 
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:merge-swc-packages:test
+Task ':merge-swc-packages:test' has not declared any outputs, assuming that it is out-of-date.
+Skipping tests since no tests exist
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:merge-swc-packages:domain:test
+Task ':merge-swc-packages:domain:test' has not declared any outputs, assuming that it is out-of-date.
+Skipping tests since no tests exist
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:merge-swc-packages:util:test
+Task ':merge-swc-packages:util:test' has not declared any outputs, assuming that it is out-of-date.
+Skipping tests since no tests exist
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:multiproject-all-conventions:assets:test
+Task ':multiproject-all-conventions:assets:test' has not declared any outputs, assuming that it is out-of-date.
+Skipping tests since no tests exist
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:multiproject-all-conventions:client:test
+Task ':multiproject-all-conventions:client:test' has not declared any outputs, assuming that it is out-of-date.
+Skipping tests since no tests exist
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:multiproject-all-conventions:domain:test
+Task ':multiproject-all-conventions:domain:test' has not declared any outputs, assuming that it is out-of-date.
+Skipping tests since no tests exist
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:multiproject-all-conventions:util:test
+Task ':multiproject-all-conventions:util:test' has not declared any outputs, assuming that it is out-of-date.
+Skipping tests since no tests exist
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:multiproject-no-conventions:client:test
+Task ':multiproject-no-conventions:client:test' has not declared any outputs, assuming that it is out-of-date.
+Skipping tests since no tests exist
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:multiproject-no-conventions:domain:test
+Task ':multiproject-no-conventions:domain:test' has not declared any outputs, assuming that it is out-of-date.
+Skipping tests since no tests exist
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:multiproject-no-conventions:util:test
+Task ':multiproject-no-conventions:util:test' has not declared any outputs, assuming that it is out-of-date.
+Skipping tests since no tests exist
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:flex:swc:test
+Task ':flex-java-war:flex:swc:test' has not declared any outputs, assuming that it is out-of-date.
+Skipping tests since no tests exist
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:flex:swf:test
+Task ':flex-java-war:flex:swf:test' has not declared any outputs, assuming that it is out-of-date.
+Skipping tests since no tests exist
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:java:dto:compileJava
+Executing task ':flex-java-war:java:dto:compileJava' due to:
+Output file /var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/java/dto/build/classes/main for task ':flex-java-war:java:dto:compileJava' has changed.
+Output file /var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/java/dto/build/dependency-cache for task ':flex-java-war:java:dto:compileJava' has changed.
+Output file /var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/java/dto/build/classes/main/org/gradlefx/Person.class has been removed for task ':flex-java-war:java:dto:compileJava'.
+Compiling with JDK 6 Java compiler API.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:java:dto:processResources
+Skipping task ':flex-java-war:java:dto:processResources' as it has no source files.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:java:dto:processResources UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:java:dto:classes
+Skipping task ':flex-java-war:java:dto:classes' as it has no actions.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:java:dto:compileTestJava
+Skipping task ':flex-java-war:java:dto:compileTestJava' as it has no source files.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:java:dto:compileTestJava UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:java:dto:processTestResources
+Skipping task ':flex-java-war:java:dto:processTestResources' as it has no source files.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:java:dto:processTestResources UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:java:dto:testClasses
+Skipping task ':flex-java-war:java:dto:testClasses' as it has no actions.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:java:dto:testClasses UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:java:dto:test
+file or directory '/var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/java/dto/build/classes/test', not found
+Executing task ':flex-java-war:java:dto:test' due to:
+Output file /var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/java/dto/build/test-results for task ':flex-java-war:java:dto:test' has changed.
+Output file /var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/java/dto/build/reports/tests for task ':flex-java-war:java:dto:test' has changed.
+Output file /var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/java/dto/build/reports/tests/index.html has been removed for task ':flex-java-war:java:dto:test'.
+Output file /var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/java/dto/build/reports/tests/report.js has been removed for task ':flex-java-war:java:dto:test'.
+Output file /var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/java/dto/build/reports/tests/style.css has been removed for task ':flex-java-war:java:dto:test'.
+Output file /var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/java/dto/build/reports/tests/css3-pie-1.0beta3.htc has been removed for task ':flex-java-war:java:dto:test'.
+Output file /var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/java/dto/build/reports/tests/base-style.css has been removed for task ':flex-java-war:java:dto:test'.
+file or directory '/var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/java/dto/build/classes/test', not found
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:java:dto:jar
+Executing task ':flex-java-war:java:dto:jar' due to:
+Output file /var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/java/dto/build/libs/dto-0.1-SNAPSHOT.jar for task ':flex-java-war:java:dto:jar' has changed.
+Output file /var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/java/dto/build/libs/dto-0.1-SNAPSHOT.jar has been removed for task ':flex-java-war:java:dto:jar'.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:java:war:compileJava
+Skipping task ':flex-java-war:java:war:compileJava' as it has no source files.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:java:war:compileJava UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:java:war:processResources
+Skipping task ':flex-java-war:java:war:processResources' as it has no source files.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:java:war:processResources UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:java:war:classes
+Skipping task ':flex-java-war:java:war:classes' as it has no actions.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:java:war:classes UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:java:war:compileTestJava
+Skipping task ':flex-java-war:java:war:compileTestJava' as it has no source files.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:java:war:compileTestJava UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:java:war:processTestResources
+Skipping task ':flex-java-war:java:war:processTestResources' as it has no source files.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:java:war:processTestResources UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:java:war:testClasses
+Skipping task ':flex-java-war:java:war:testClasses' as it has no actions.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:java:war:testClasses UP-TO-DATE
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:java:war:test
+file or directory '/var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/java/war/build/classes/test', not found
+Executing task ':flex-java-war:java:war:test' due to:
+Output file /var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/java/war/build/reports/tests for task ':flex-java-war:java:war:test' has changed.
+Output file /var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/java/war/build/test-results for task ':flex-java-war:java:war:test' has changed.
+Output file /var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/java/war/build/reports/tests/base-style.css has been removed for task ':flex-java-war:java:war:test'.
+Output file /var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/java/war/build/reports/tests/report.js has been removed for task ':flex-java-war:java:war:test'.
+Output file /var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/java/war/build/reports/tests/index.html has been removed for task ':flex-java-war:java:war:test'.
+Output file /var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/java/war/build/reports/tests/css3-pie-1.0beta3.htc has been removed for task ':flex-java-war:java:war:test'.
+Output file /var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/java/war/build/reports/tests/style.css has been removed for task ':flex-java-war:java:war:test'.
+file or directory '/var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/java/war/build/classes/test', not found
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:air-single-project:copyresources
+Task ':air-single-project:copyresources' has not declared any outputs, assuming that it is out-of-date.
+from /var/lib/jenkins/workspace/GradleFx Testbed Build/air-single-project/src/main/resources to /var/lib/jenkins/workspace/GradleFx Testbed Build/air-single-project/build
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:air-single-project:compileFlex
+Task ':air-single-project:compileFlex' has not declared any outputs, assuming that it is out-of-date.
+Compiling with mxmlc
+	+configname=air
+	-external-library-path+=/var/lib/jenkins/.gradle/gradleFx/sdks/9eba2c745792f4dfc86449f822ab73146ee2e16f/frameworks/libs/air/airglobal.swc
+	-source-path+=/var/lib/jenkins/workspace/GradleFx Testbed Build/air-single-project/src/main/actionscript
+	-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.as3commons/as3commons-lang/0.3.2/swc/727bc6546e79c3bb63ccc939b7ebefa1a1ae03c6/as3commons-lang-0.3.2.swc
+	-output=/var/lib/jenkins/workspace/GradleFx Testbed Build/air-single-project/build/air-single-project.swf
+	/var/lib/jenkins/workspace/GradleFx Testbed Build/air-single-project/src/main/actionscript/Main.mxml
+[mxmlc] Loading configuration file /var/lib/jenkins/.gradle/gradleFx/sdks/9eba2c745792f4dfc86449f822ab73146ee2e16f/frameworks/air-config.xml
+/var/lib/jenkins/workspace/GradleFx Testbed Build/air-single-project/build/air-single-project.swf (424190 bytes)
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flexunit-single-project:compileFlex
+Task ':flexunit-single-project:compileFlex' has not declared any outputs, assuming that it is out-of-date.
+Compiling with compc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/player/{targetPlayerMajorVersion}.{targetPlayerMinorVersion}/playerglobal.swc
+	-runtime-shared-library-path=
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/framework.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/textLayout.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/spark.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/sparkskins.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/rpc.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/charts.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/spark_dmv.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/osmf.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/mx/mx.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/advancedgrids.swc
+	-source-path+=/var/lib/jenkins/workspace/GradleFx Testbed Build/flexunit-single-project/src/main/actionscript
+	-include-sources+=/var/lib/jenkins/workspace/GradleFx Testbed Build/flexunit-single-project/src/main/actionscript
+	-include-lookup-only=false
+	-output=/var/lib/jenkins/workspace/GradleFx Testbed Build/flexunit-single-project/build/flexunit-single-project.swc
+[compc] Loading configuration file /var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/flex-config.xml
+/var/lib/jenkins/workspace/GradleFx Testbed Build/flexunit-single-project/build/flexunit-single-project.swc (2014 bytes)
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:multiproject-all-conventions:util:compileFlex
+Task ':multiproject-all-conventions:util:compileFlex' has not declared any outputs, assuming that it is out-of-date.
+Compiling with compc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/player/{targetPlayerMajorVersion}.{targetPlayerMinorVersion}/playerglobal.swc
+	-runtime-shared-library-path=
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/framework.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/textLayout.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/spark.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/sparkskins.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/rpc.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/charts.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/spark_dmv.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/osmf.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/mx/mx.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/advancedgrids.swc
+	-source-path+=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/util/src/main/actionscript
+	-include-sources+=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/util/src/main/actionscript
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.springextensions.actionscript/spring-actionscript-core/1.2-SNAPSHOT/swc/77a138a127ce33f7bea9ba3ab0ede43fd23845d5/spring-actionscript-core-1.2-SNAPSHOT.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.as3commons/as3commons-collections/1.1/swc/6f1afabb411dd065b8caae24d9886a8a268b5fbf/as3commons-collections-1.1.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.as3commons/as3commons-lang/0.3.2/swc/727bc6546e79c3bb63ccc939b7ebefa1a1ae03c6/as3commons-lang-0.3.2.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.graniteds/granite-swc/2.2.0.SP1/swc/9d925fb9da7d66ebe45578da4e5ad04161f89ffa/granite-swc-2.2.0.SP1.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.graniteds/granite-essentials-swc/2.2.0.SP1/swc/bc19d391f529458acb5864accad6ff2f51793261/granite-essentials-swc-2.2.0.SP1.swc
+	-output=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/util/build/util.swc
+[compc] Loading configuration file /var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/flex-config.xml
+/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/util/build/util.swc (2006 bytes)
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:merge-swc-packages:domain:compileFlex
+Task ':merge-swc-packages:domain:compileFlex' has not declared any outputs, assuming that it is out-of-date.
+Compiling with compc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/player/{targetPlayerMajorVersion}.{targetPlayerMinorVersion}/playerglobal.swc
+	-runtime-shared-library-path=
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/framework.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/textLayout.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/spark.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/sparkskins.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/rpc.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/charts.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/spark_dmv.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/osmf.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/mx/mx.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/advancedgrids.swc
+	-source-path+=/var/lib/jenkins/workspace/GradleFx Testbed Build/merge-swc-packages/domain/src/main/actionscript
+	-include-sources+=/var/lib/jenkins/workspace/GradleFx Testbed Build/merge-swc-packages/domain/src/main/actionscript
+	-include-file
+	test.txt
+	/var/lib/jenkins/workspace/GradleFx Testbed Build/merge-swc-packages/domain/src/main/resources/test.txt
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.springextensions.actionscript/spring-actionscript-core/1.2-SNAPSHOT/swc/77a138a127ce33f7bea9ba3ab0ede43fd23845d5/spring-actionscript-core-1.2-SNAPSHOT.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.as3commons/as3commons-collections/1.1/swc/6f1afabb411dd065b8caae24d9886a8a268b5fbf/as3commons-collections-1.1.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.as3commons/as3commons-lang/0.3.2/swc/727bc6546e79c3bb63ccc939b7ebefa1a1ae03c6/as3commons-lang-0.3.2.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.graniteds/granite-swc/2.2.0.SP1/swc/9d925fb9da7d66ebe45578da4e5ad04161f89ffa/granite-swc-2.2.0.SP1.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.graniteds/granite-essentials-swc/2.2.0.SP1/swc/bc19d391f529458acb5864accad6ff2f51793261/granite-essentials-swc-2.2.0.SP1.swc
+	-external-library-path+=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/util/build/util.swc
+	-output=/var/lib/jenkins/workspace/GradleFx Testbed Build/merge-swc-packages/domain/build/domain-0.1.swc
+[compc] Loading configuration file /var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/flex-config.xml
+/var/lib/jenkins/workspace/GradleFx Testbed Build/merge-swc-packages/domain/build/domain-0.1.swc (2101 bytes)
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:merge-swc-packages:util:compileFlex
+Task ':merge-swc-packages:util:compileFlex' has not declared any outputs, assuming that it is out-of-date.
+Compiling with compc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/player/{targetPlayerMajorVersion}.{targetPlayerMinorVersion}/playerglobal.swc
+	-runtime-shared-library-path=
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/framework.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/textLayout.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/spark.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/sparkskins.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/rpc.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/charts.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/spark_dmv.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/osmf.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/mx/mx.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/advancedgrids.swc
+	-source-path+=/var/lib/jenkins/workspace/GradleFx Testbed Build/merge-swc-packages/util/src/main/actionscript
+	-include-sources+=/var/lib/jenkins/workspace/GradleFx Testbed Build/merge-swc-packages/util/src/main/actionscript
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.springextensions.actionscript/spring-actionscript-core/1.2-SNAPSHOT/swc/77a138a127ce33f7bea9ba3ab0ede43fd23845d5/spring-actionscript-core-1.2-SNAPSHOT.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.as3commons/as3commons-collections/1.1/swc/6f1afabb411dd065b8caae24d9886a8a268b5fbf/as3commons-collections-1.1.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.as3commons/as3commons-lang/0.3.2/swc/727bc6546e79c3bb63ccc939b7ebefa1a1ae03c6/as3commons-lang-0.3.2.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.graniteds/granite-swc/2.2.0.SP1/swc/9d925fb9da7d66ebe45578da4e5ad04161f89ffa/granite-swc-2.2.0.SP1.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.graniteds/granite-essentials-swc/2.2.0.SP1/swc/bc19d391f529458acb5864accad6ff2f51793261/granite-essentials-swc-2.2.0.SP1.swc
+	-output=/var/lib/jenkins/workspace/GradleFx Testbed Build/merge-swc-packages/util/build/util-0.1.swc
+[compc] Loading configuration file /var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/flex-config.xml
+/var/lib/jenkins/workspace/GradleFx Testbed Build/merge-swc-packages/util/build/util-0.1.swc (2000 bytes)
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:merge-swc-packages:compileFlex
+Task ':merge-swc-packages:compileFlex' has not declared any outputs, assuming that it is out-of-date.
+Compiling with compc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/player/{targetPlayerMajorVersion}.{targetPlayerMinorVersion}/playerglobal.swc
+	-runtime-shared-library-path=
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/framework.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/textLayout.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/spark.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/sparkskins.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/rpc.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/charts.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/spark_dmv.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/osmf.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/mx/mx.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/advancedgrids.swc
+	-include-libraries+=/var/lib/jenkins/workspace/GradleFx Testbed Build/merge-swc-packages/util/build/util-0.1.swc
+	-include-libraries+=/var/lib/jenkins/workspace/GradleFx Testbed Build/merge-swc-packages/domain/build/domain-0.1.swc
+	-output=/var/lib/jenkins/workspace/GradleFx Testbed Build/merge-swc-packages/build/combinedPackage-0.1.swc
+[compc] Loading configuration file /var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/flex-config.xml
+/var/lib/jenkins/workspace/GradleFx Testbed Build/merge-swc-packages/build/combinedPackage-0.1.swc (2649 bytes)
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:multiproject-all-conventions:assets:compileFlex
+Task ':multiproject-all-conventions:assets:compileFlex' has not declared any outputs, assuming that it is out-of-date.
+Compiling with compc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/player/{targetPlayerMajorVersion}.{targetPlayerMinorVersion}/playerglobal.swc
+	-runtime-shared-library-path=
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/framework.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/textLayout.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/spark.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/sparkskins.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/rpc.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/charts.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/spark_dmv.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/osmf.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/mx/mx.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/advancedgrids.swc
+	-include-file
+	images/warning-icon.png
+	/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/assets/src/main/resources/images/warning-icon.png
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.springextensions.actionscript/spring-actionscript-core/1.2-SNAPSHOT/swc/77a138a127ce33f7bea9ba3ab0ede43fd23845d5/spring-actionscript-core-1.2-SNAPSHOT.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.as3commons/as3commons-collections/1.1/swc/6f1afabb411dd065b8caae24d9886a8a268b5fbf/as3commons-collections-1.1.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.as3commons/as3commons-lang/0.3.2/swc/727bc6546e79c3bb63ccc939b7ebefa1a1ae03c6/as3commons-lang-0.3.2.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.graniteds/granite-swc/2.2.0.SP1/swc/9d925fb9da7d66ebe45578da4e5ad04161f89ffa/granite-swc-2.2.0.SP1.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.graniteds/granite-essentials-swc/2.2.0.SP1/swc/bc19d391f529458acb5864accad6ff2f51793261/granite-essentials-swc-2.2.0.SP1.swc
+	-output=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/assets/build/assets.swc
+[compc] Loading configuration file /var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/flex-config.xml
+/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/assets/build/assets.swc (4097 bytes)
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:multiproject-all-conventions:client:copyresources
+Task ':multiproject-all-conventions:client:copyresources' has not declared any outputs, assuming that it is out-of-date.
+from /var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/client/src/main/resources to /var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/client/build
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:multiproject-all-conventions:domain:compileFlex
+Task ':multiproject-all-conventions:domain:compileFlex' has not declared any outputs, assuming that it is out-of-date.
+Compiling with compc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/player/{targetPlayerMajorVersion}.{targetPlayerMinorVersion}/playerglobal.swc
+	-runtime-shared-library-path=
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/framework.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/textLayout.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/spark.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/sparkskins.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/rpc.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/charts.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/spark_dmv.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/osmf.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/mx/mx.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/advancedgrids.swc
+	-source-path+=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/domain/src/main/actionscript
+	-include-sources+=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/domain/src/main/actionscript
+	-include-file
+	test.txt
+	/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/domain/src/main/resources/test.txt
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.springextensions.actionscript/spring-actionscript-core/1.2-SNAPSHOT/swc/77a138a127ce33f7bea9ba3ab0ede43fd23845d5/spring-actionscript-core-1.2-SNAPSHOT.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.as3commons/as3commons-collections/1.1/swc/6f1afabb411dd065b8caae24d9886a8a268b5fbf/as3commons-collections-1.1.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.as3commons/as3commons-lang/0.3.2/swc/727bc6546e79c3bb63ccc939b7ebefa1a1ae03c6/as3commons-lang-0.3.2.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.graniteds/granite-swc/2.2.0.SP1/swc/9d925fb9da7d66ebe45578da4e5ad04161f89ffa/granite-swc-2.2.0.SP1.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.graniteds/granite-essentials-swc/2.2.0.SP1/swc/bc19d391f529458acb5864accad6ff2f51793261/granite-essentials-swc-2.2.0.SP1.swc
+	-external-library-path+=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/util/build/util.swc
+	-output=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/domain/build/domain.swc
+[compc] Loading configuration file /var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/flex-config.xml
+/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/domain/build/domain.swc (2107 bytes)
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:multiproject-all-conventions:client:compileFlex
+Task ':multiproject-all-conventions:client:compileFlex' has not declared any outputs, assuming that it is out-of-date.
+WARNING: The -locale option is being used internally by GradleFx. Alternative: add the locale to the 'locales' flexConvention property. e.g. locales.add('EN_US')
+Compiling with mxmlc
+	+configname=flex
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/player/{targetPlayerMajorVersion}.{targetPlayerMinorVersion}/playerglobal.swc
+	-source-path+=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/client/src/main/actionscript
+	-source-path+=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/client/src/main/locales/{locale}
+	-include-libraries+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.graniteds/granite-essentials-swc/2.2.0.SP1/swc/bc19d391f529458acb5864accad6ff2f51793261/granite-essentials-swc-2.2.0.SP1.swc
+	-library-path+=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/util/build/util.swc
+	-library-path+=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/domain/build/domain.swc
+	-library-path+=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/assets/build/assets.swc
+	-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.graniteds/granite-swc/2.2.0.SP1/swc/9d925fb9da7d66ebe45578da4e5ad04161f89ffa/granite-swc-2.2.0.SP1.swc
+	-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.springextensions.actionscript/spring-actionscript-core/1.2-SNAPSHOT/swc/77a138a127ce33f7bea9ba3ab0ede43fd23845d5/spring-actionscript-core-1.2-SNAPSHOT.swc
+	-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.as3commons/as3commons-collections/1.1/swc/6f1afabb411dd065b8caae24d9886a8a268b5fbf/as3commons-collections-1.1.swc
+	-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.as3commons/as3commons-lang/0.3.2/swc/727bc6546e79c3bb63ccc939b7ebefa1a1ae03c6/as3commons-lang-0.3.2.swc
+	-locale=en_US
+	-output=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/client/build/client.swf
+	/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/client/src/main/actionscript/Main.mxml
+[mxmlc] Loading configuration file /var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/flex-config.xml
+Required RSLs:
+    http://fpdownload.adobe.com/pub/swz/flex/4.6.0.23201/framework_4.6.0.23201.swz with 1 failover.
+    http://fpdownload.adobe.com/pub/swz/tlf/2.0.0.232/textLayout_2.0.0.232.swz with 1 failover.
+    http://fpdownload.adobe.com/pub/swz/flex/4.6.0.23201/spark_4.6.0.23201.swz with 1 failover.
+    http://fpdownload.adobe.com/pub/swz/flex/4.6.0.23201/sparkskins_4.6.0.23201.swz with 1 failover.
+    http://fpdownload.adobe.com/pub/swz/flex/4.6.0.23201/mx_4.6.0.23201.swz with 1 failover.
+/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/client/build/client.swf (64768 bytes)
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:multiproject-no-conventions:client:copyresources
+Task ':multiproject-no-conventions:client:copyresources' has not declared any outputs, assuming that it is out-of-date.
+from /var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-no-conventions/client/src/main/flexresources to /var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-no-conventions/client/build
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:multiproject-no-conventions:util:compileFlex
+Task ':multiproject-no-conventions:util:compileFlex' has not declared any outputs, assuming that it is out-of-date.
+Compiling with compc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/player/{targetPlayerMajorVersion}.{targetPlayerMinorVersion}/playerglobal.swc
+	-runtime-shared-library-path=
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/framework.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/textLayout.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/spark.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/sparkskins.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/rpc.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/charts.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/spark_dmv.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/osmf.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/mx/mx.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/advancedgrids.swc
+	-source-path+=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-no-conventions/util/src/main/as
+	-include-sources+=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-no-conventions/util/src/main/as
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.springextensions.actionscript/spring-actionscript-core/1.2-SNAPSHOT/swc/77a138a127ce33f7bea9ba3ab0ede43fd23845d5/spring-actionscript-core-1.2-SNAPSHOT.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.as3commons/as3commons-collections/1.1/swc/6f1afabb411dd065b8caae24d9886a8a268b5fbf/as3commons-collections-1.1.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.as3commons/as3commons-lang/0.3.2/swc/727bc6546e79c3bb63ccc939b7ebefa1a1ae03c6/as3commons-lang-0.3.2.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.graniteds/granite-swc/2.2.0.SP1/swc/9d925fb9da7d66ebe45578da4e5ad04161f89ffa/granite-swc-2.2.0.SP1.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.graniteds/granite-essentials-swc/2.2.0.SP1/swc/bc19d391f529458acb5864accad6ff2f51793261/granite-essentials-swc-2.2.0.SP1.swc
+	-output=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-no-conventions/util/build/util-1.0-SNAPSHOT.swc
+[compc] Loading configuration file /var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/flex-config.xml
+/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-no-conventions/util/build/util-1.0-SNAPSHOT.swc (2001 bytes)
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:multiproject-no-conventions:domain:asdoc
+Task ':multiproject-no-conventions:domain:asdoc' has not declared any outputs, assuming that it is out-of-date.
+Compiling with asdoc
+	-source-path+=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-no-conventions/domain/src/main/as
+	-doc-sources+=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-no-conventions/domain/src/main/as
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.springextensions.actionscript/spring-actionscript-core/1.2-SNAPSHOT/swc/77a138a127ce33f7bea9ba3ab0ede43fd23845d5/spring-actionscript-core-1.2-SNAPSHOT.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.as3commons/as3commons-collections/1.1/swc/6f1afabb411dd065b8caae24d9886a8a268b5fbf/as3commons-collections-1.1.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.as3commons/as3commons-lang/0.3.2/swc/727bc6546e79c3bb63ccc939b7ebefa1a1ae03c6/as3commons-lang-0.3.2.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.graniteds/granite-swc/2.2.0.SP1/swc/9d925fb9da7d66ebe45578da4e5ad04161f89ffa/granite-swc-2.2.0.SP1.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.graniteds/granite-essentials-swc/2.2.0.SP1/swc/bc19d391f529458acb5864accad6ff2f51793261/granite-essentials-swc-2.2.0.SP1.swc
+	-external-library-path+=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-no-conventions/util/build/util-1.0-SNAPSHOT.swc
+	-keep-xml=true
+	-output=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-no-conventions/domain/doc
+[asdoc] Loading configuration file /var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/flex-config.xml
+Documentation was created in /var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-no-conventions/domain/doc/
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:multiproject-no-conventions:domain:compileFlex
+Task ':multiproject-no-conventions:domain:compileFlex' has not declared any outputs, assuming that it is out-of-date.
+Compiling with compc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/player/{targetPlayerMajorVersion}.{targetPlayerMinorVersion}/playerglobal.swc
+	-runtime-shared-library-path=
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/framework.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/textLayout.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/spark.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/sparkskins.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/rpc.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/charts.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/spark_dmv.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/osmf.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/mx/mx.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/advancedgrids.swc
+	-source-path+=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-no-conventions/domain/src/main/as
+	-include-sources+=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-no-conventions/domain/src/main/as
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.springextensions.actionscript/spring-actionscript-core/1.2-SNAPSHOT/swc/77a138a127ce33f7bea9ba3ab0ede43fd23845d5/spring-actionscript-core-1.2-SNAPSHOT.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.as3commons/as3commons-collections/1.1/swc/6f1afabb411dd065b8caae24d9886a8a268b5fbf/as3commons-collections-1.1.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.as3commons/as3commons-lang/0.3.2/swc/727bc6546e79c3bb63ccc939b7ebefa1a1ae03c6/as3commons-lang-0.3.2.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.graniteds/granite-swc/2.2.0.SP1/swc/9d925fb9da7d66ebe45578da4e5ad04161f89ffa/granite-swc-2.2.0.SP1.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.graniteds/granite-essentials-swc/2.2.0.SP1/swc/bc19d391f529458acb5864accad6ff2f51793261/granite-essentials-swc-2.2.0.SP1.swc
+	-external-library-path+=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-no-conventions/util/build/util-1.0-SNAPSHOT.swc
+	-output=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-no-conventions/domain/build/domain-1.0-SNAPSHOT.swc
+[compc] Loading configuration file /var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/flex-config.xml
+/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-no-conventions/domain/build/domain-1.0-SNAPSHOT.swc (1980 bytes)
+[ant:zip] Updating zip: /var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-no-conventions/domain/build/domain-1.0-SNAPSHOT.swc
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:multiproject-no-conventions:client:compileFlex
+Task ':multiproject-no-conventions:client:compileFlex' has not declared any outputs, assuming that it is out-of-date.
+Compiling with mxmlc
+	+configname=flex
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/player/{targetPlayerMajorVersion}.{targetPlayerMinorVersion}/playerglobal.swc
+	-source-path+=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-no-conventions/client/src/main/flex
+	-source-path+=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-no-conventions/client/src/main/locales/{locale}
+	-locale=en_US
+	-include-libraries+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.graniteds/granite-essentials-swc/2.2.0.SP1/swc/bc19d391f529458acb5864accad6ff2f51793261/granite-essentials-swc-2.2.0.SP1.swc
+	-library-path+=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-no-conventions/util/build/util-1.0-SNAPSHOT.swc
+	-library-path+=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-no-conventions/domain/build/domain-1.0-SNAPSHOT.swc
+	-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.graniteds/granite-swc/2.2.0.SP1/swc/9d925fb9da7d66ebe45578da4e5ad04161f89ffa/granite-swc-2.2.0.SP1.swc
+	-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.springextensions.actionscript/spring-actionscript-core/1.2-SNAPSHOT/swc/77a138a127ce33f7bea9ba3ab0ede43fd23845d5/spring-actionscript-core-1.2-SNAPSHOT.swc
+	-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.as3commons/as3commons-collections/1.1/swc/6f1afabb411dd065b8caae24d9886a8a268b5fbf/as3commons-collections-1.1.swc
+	-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.as3commons/as3commons-lang/0.3.2/swc/727bc6546e79c3bb63ccc939b7ebefa1a1ae03c6/as3commons-lang-0.3.2.swc
+	-theme+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/themes/Wireframe/wireframe.swc
+	-runtime-shared-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/framework.swc,framework_4.6.0.23201.swf
+	-runtime-shared-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/textLayout.swc,textLayout_2.0.0.232.swf
+	-runtime-shared-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/spark.swc,spark_4.6.0.23201.swf
+	-runtime-shared-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/sparkskins.swc,sparkskins_4.6.0.23201.swf
+	-runtime-shared-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/rpc.swc,rpc_4.6.0.23201.swf
+	-runtime-shared-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/charts.swc,charts_4.6.0.23201.swf
+	-runtime-shared-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/spark_dmv.swc,spark_dmv_4.6.0.23201.swf
+	-runtime-shared-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/osmf.swc,osmf_1.0.0.16316.swf
+	-runtime-shared-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/mx/mx.swc,mx_4.6.0.23201.swf
+	-runtime-shared-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/advancedgrids.swc,advancedgrids_4.6.0.23201.swf
+	-use-network=true
+	-keep-as3-metadata+=Autowired,RemoteClass
+	-output=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-no-conventions/client/build/client-1.0-SNAPSHOT.swf
+	/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-no-conventions/client/src/main/flex/org/gradlefx/MyProgram.mxml
+[mxmlc] Loading configuration file /var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/flex-config.xml
+Required RSLs:
+    http://fpdownload.adobe.com/pub/swz/flex/4.6.0.23201/framework_4.6.0.23201.swz with 1 failover.
+    http://fpdownload.adobe.com/pub/swz/tlf/2.0.0.232/textLayout_2.0.0.232.swz with 1 failover.
+    http://fpdownload.adobe.com/pub/swz/flex/4.6.0.23201/spark_4.6.0.23201.swz with 1 failover.
+    http://fpdownload.adobe.com/pub/swz/flex/4.6.0.23201/sparkskins_4.6.0.23201.swz with 1 failover.
+    http://fpdownload.adobe.com/pub/swz/flex/4.6.0.23201/mx_4.6.0.23201.swz with 1 failover.
+    framework_4.6.0.23201.swf
+    textLayout_2.0.0.232.swf
+    spark_4.6.0.23201.swf
+    sparkskins_4.6.0.23201.swf
+    mx_4.6.0.23201.swf
+/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-no-conventions/client/build/client-1.0-SNAPSHOT.swf (75683 bytes)
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:flex:swc:compileFlex
+Task ':flex-java-war:flex:swc:compileFlex' has not declared any outputs, assuming that it is out-of-date.
+Compiling with compc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/player/{targetPlayerMajorVersion}.{targetPlayerMinorVersion}/playerglobal.swc
+	-runtime-shared-library-path=
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/framework.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/textLayout.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/spark.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/sparkskins.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/rpc.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/charts.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/spark_dmv.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/osmf.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/mx/mx.swc
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/advancedgrids.swc
+	-source-path+=/var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/flex/swc/src/main/actionscript
+	-include-sources+=/var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/flex/swc/src/main/actionscript
+	-output=/var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/flex/swc/build/swc.swc
+[compc] Loading configuration file /var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/flex-config.xml
+/var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/flex/swc/build/swc.swc (2167 bytes)
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:flex:swf:copyresources
+Task ':flex-java-war:flex:swf:copyresources' has not declared any outputs, assuming that it is out-of-date.
+from /var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/flex/swf/src/main/resources to /var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/flex/swf/build
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:flex:swf:compileFlex
+Task ':flex-java-war:flex:swf:compileFlex' has not declared any outputs, assuming that it is out-of-date.
+Compiling with mxmlc
+	+configname=flex
+	-external-library-path+=/var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/libs/player/{targetPlayerMajorVersion}.{targetPlayerMinorVersion}/playerglobal.swc
+	-source-path+=/var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/flex/swf/src/main/actionscript
+	-library-path+=/var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/flex/swc/build/swc.swc
+	-output=/var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/flex/swf/build/swf.swf
+	/var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/flex/swf/src/main/actionscript/Main.mxml
+[mxmlc] Loading configuration file /var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/flex-config.xml
+Required RSLs:
+    http://fpdownload.adobe.com/pub/swz/flex/4.6.0.23201/framework_4.6.0.23201.swz with 1 failover.
+    http://fpdownload.adobe.com/pub/swz/tlf/2.0.0.232/textLayout_2.0.0.232.swz with 1 failover.
+    http://fpdownload.adobe.com/pub/swz/flex/4.6.0.23201/spark_4.6.0.23201.swz with 1 failover.
+    http://fpdownload.adobe.com/pub/swz/flex/4.6.0.23201/sparkskins_4.6.0.23201.swz with 1 failover.
+    http://fpdownload.adobe.com/pub/swz/flex/4.6.0.23201/mx_4.6.0.23201.swz with 1 failover.
+/var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/flex/swf/build/swf.swf (45601 bytes)
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:air-single-project:package
+Task ':air-single-project:package' has not declared any outputs, assuming that it is out-of-date.
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:java:war:war
+Executing task ':flex-java-war:java:war:war' due to:
+Output file /var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/java/war/build/libs/war-0.1-SNAPSHOT.war for task ':flex-java-war:java:war:war' has changed.
+Output file /var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/java/war/build/libs/war-0.1-SNAPSHOT.war has been removed for task ':flex-java-war:java:war:war'.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flexunit-single-project:asdoc
+Task ':flexunit-single-project:asdoc' has not declared any outputs, assuming that it is out-of-date.
+Compiling with asdoc
+	-source-path+=/var/lib/jenkins/workspace/GradleFx Testbed Build/flexunit-single-project/src/main/actionscript
+	-doc-sources+=/var/lib/jenkins/workspace/GradleFx Testbed Build/flexunit-single-project/src/main/actionscript
+	-include-lookup-only=false
+	-output=/var/lib/jenkins/workspace/GradleFx Testbed Build/flexunit-single-project/doc
+[asdoc] Loading configuration file /var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/flex-config.xml
+Documentation was created in /var/lib/jenkins/workspace/GradleFx Testbed Build/flexunit-single-project/doc/
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:merge-swc-packages:asdoc
+Task ':merge-swc-packages:asdoc' has not declared any outputs, assuming that it is out-of-date.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:merge-swc-packages:domain:asdoc
+Task ':merge-swc-packages:domain:asdoc' has not declared any outputs, assuming that it is out-of-date.
+Compiling with asdoc
+	-source-path+=/var/lib/jenkins/workspace/GradleFx Testbed Build/merge-swc-packages/domain/src/main/actionscript
+	-doc-sources+=/var/lib/jenkins/workspace/GradleFx Testbed Build/merge-swc-packages/domain/src/main/actionscript
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.springextensions.actionscript/spring-actionscript-core/1.2-SNAPSHOT/swc/77a138a127ce33f7bea9ba3ab0ede43fd23845d5/spring-actionscript-core-1.2-SNAPSHOT.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.as3commons/as3commons-collections/1.1/swc/6f1afabb411dd065b8caae24d9886a8a268b5fbf/as3commons-collections-1.1.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.as3commons/as3commons-lang/0.3.2/swc/727bc6546e79c3bb63ccc939b7ebefa1a1ae03c6/as3commons-lang-0.3.2.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.graniteds/granite-swc/2.2.0.SP1/swc/9d925fb9da7d66ebe45578da4e5ad04161f89ffa/granite-swc-2.2.0.SP1.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.graniteds/granite-essentials-swc/2.2.0.SP1/swc/bc19d391f529458acb5864accad6ff2f51793261/granite-essentials-swc-2.2.0.SP1.swc
+	-external-library-path+=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/util/build/util.swc
+	-output=/var/lib/jenkins/workspace/GradleFx Testbed Build/merge-swc-packages/domain/doc
+[asdoc] Loading configuration file /var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/flex-config.xml
+Documentation was created in /var/lib/jenkins/workspace/GradleFx Testbed Build/merge-swc-packages/domain/doc/
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:merge-swc-packages:util:asdoc
+Task ':merge-swc-packages:util:asdoc' has not declared any outputs, assuming that it is out-of-date.
+Compiling with asdoc
+	-source-path+=/var/lib/jenkins/workspace/GradleFx Testbed Build/merge-swc-packages/util/src/main/actionscript
+	-doc-sources+=/var/lib/jenkins/workspace/GradleFx Testbed Build/merge-swc-packages/util/src/main/actionscript
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.springextensions.actionscript/spring-actionscript-core/1.2-SNAPSHOT/swc/77a138a127ce33f7bea9ba3ab0ede43fd23845d5/spring-actionscript-core-1.2-SNAPSHOT.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.as3commons/as3commons-collections/1.1/swc/6f1afabb411dd065b8caae24d9886a8a268b5fbf/as3commons-collections-1.1.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.as3commons/as3commons-lang/0.3.2/swc/727bc6546e79c3bb63ccc939b7ebefa1a1ae03c6/as3commons-lang-0.3.2.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.graniteds/granite-swc/2.2.0.SP1/swc/9d925fb9da7d66ebe45578da4e5ad04161f89ffa/granite-swc-2.2.0.SP1.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.graniteds/granite-essentials-swc/2.2.0.SP1/swc/bc19d391f529458acb5864accad6ff2f51793261/granite-essentials-swc-2.2.0.SP1.swc
+	-output=/var/lib/jenkins/workspace/GradleFx Testbed Build/merge-swc-packages/util/doc
+[asdoc] Loading configuration file /var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/flex-config.xml
+Documentation was created in /var/lib/jenkins/workspace/GradleFx Testbed Build/merge-swc-packages/util/doc/
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:multiproject-all-conventions:assets:asdoc
+Task ':multiproject-all-conventions:assets:asdoc' has not declared any outputs, assuming that it is out-of-date.
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:multiproject-all-conventions:domain:asdoc
+Task ':multiproject-all-conventions:domain:asdoc' has not declared any outputs, assuming that it is out-of-date.
+Compiling with asdoc
+	-source-path+=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/domain/src/main/actionscript
+	-doc-sources+=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/domain/src/main/actionscript
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.springextensions.actionscript/spring-actionscript-core/1.2-SNAPSHOT/swc/77a138a127ce33f7bea9ba3ab0ede43fd23845d5/spring-actionscript-core-1.2-SNAPSHOT.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.as3commons/as3commons-collections/1.1/swc/6f1afabb411dd065b8caae24d9886a8a268b5fbf/as3commons-collections-1.1.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.as3commons/as3commons-lang/0.3.2/swc/727bc6546e79c3bb63ccc939b7ebefa1a1ae03c6/as3commons-lang-0.3.2.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.graniteds/granite-swc/2.2.0.SP1/swc/9d925fb9da7d66ebe45578da4e5ad04161f89ffa/granite-swc-2.2.0.SP1.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.graniteds/granite-essentials-swc/2.2.0.SP1/swc/bc19d391f529458acb5864accad6ff2f51793261/granite-essentials-swc-2.2.0.SP1.swc
+	-external-library-path+=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/util/build/util.swc
+	-output=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/domain/doc
+[asdoc] Loading configuration file /var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/flex-config.xml
+Documentation was created in /var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/domain/doc/
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:multiproject-all-conventions:util:asdoc
+Task ':multiproject-all-conventions:util:asdoc' has not declared any outputs, assuming that it is out-of-date.
+Compiling with asdoc
+	-source-path+=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/util/src/main/actionscript
+	-doc-sources+=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/util/src/main/actionscript
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.springextensions.actionscript/spring-actionscript-core/1.2-SNAPSHOT/swc/77a138a127ce33f7bea9ba3ab0ede43fd23845d5/spring-actionscript-core-1.2-SNAPSHOT.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.as3commons/as3commons-collections/1.1/swc/6f1afabb411dd065b8caae24d9886a8a268b5fbf/as3commons-collections-1.1.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.as3commons/as3commons-lang/0.3.2/swc/727bc6546e79c3bb63ccc939b7ebefa1a1ae03c6/as3commons-lang-0.3.2.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.graniteds/granite-swc/2.2.0.SP1/swc/9d925fb9da7d66ebe45578da4e5ad04161f89ffa/granite-swc-2.2.0.SP1.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.graniteds/granite-essentials-swc/2.2.0.SP1/swc/bc19d391f529458acb5864accad6ff2f51793261/granite-essentials-swc-2.2.0.SP1.swc
+	-output=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/util/doc
+[asdoc] Loading configuration file /var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/flex-config.xml
+Documentation was created in /var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-all-conventions/util/doc/
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:multiproject-no-conventions:util:asdoc
+Task ':multiproject-no-conventions:util:asdoc' has not declared any outputs, assuming that it is out-of-date.
+Compiling with asdoc
+	-source-path+=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-no-conventions/util/src/main/as
+	-doc-sources+=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-no-conventions/util/src/main/as
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.springextensions.actionscript/spring-actionscript-core/1.2-SNAPSHOT/swc/77a138a127ce33f7bea9ba3ab0ede43fd23845d5/spring-actionscript-core-1.2-SNAPSHOT.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.as3commons/as3commons-collections/1.1/swc/6f1afabb411dd065b8caae24d9886a8a268b5fbf/as3commons-collections-1.1.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.as3commons/as3commons-lang/0.3.2/swc/727bc6546e79c3bb63ccc939b7ebefa1a1ae03c6/as3commons-lang-0.3.2.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.graniteds/granite-swc/2.2.0.SP1/swc/9d925fb9da7d66ebe45578da4e5ad04161f89ffa/granite-swc-2.2.0.SP1.swc
+	-external-library-path+=/var/lib/jenkins/.gradle/caches/artifacts-14/filestore/org.graniteds/granite-essentials-swc/2.2.0.SP1/swc/bc19d391f529458acb5864accad6ff2f51793261/granite-essentials-swc-2.2.0.SP1.swc
+	-output=/var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-no-conventions/util/doc
+[asdoc] Loading configuration file /var/lib/jenkins/dependencies/sdks/Flex4.6/frameworks/flex-config.xml
+Documentation was created in /var/lib/jenkins/workspace/GradleFx Testbed Build/multiproject-no-conventions/util/doc/
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:flex-java-war:flex:swc:asdoc
+Task ':flex-java-war:flex:swc:asdoc' has not declared any outputs, assuming that it is out-of-date.
+Compiling with asdoc
+	-source-path+=/var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/flex/swc/src/main/actionscript
+	-doc-sources+=/var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/flex/swc/src/main/actionscript
+	-output=/var/lib/jenkins/workspace/GradleFx Testbed Build/flex-java-war/flex/swc/doc

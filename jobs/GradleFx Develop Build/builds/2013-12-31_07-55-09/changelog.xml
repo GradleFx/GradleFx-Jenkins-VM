@@ -1,0 +1,20 @@
+Changes in branch origin/develop, between c24fef7bb3583a09d88e38a02382254fe12610f5 and 90ecf8b737e003f4e412664e5964d59b033de03a
+commit 90ecf8b737e003f4e412664e5964d59b033de03a
+tree 95070cf1b58133b6f8e72a6649b2af270ef8b75f
+parent 4e9fb9eada7a072f34d6d1d83ede65e7a68bfe4a
+author Yennick Trevels <yennick.trevels@gmail.com> 1388472894 +0100
+committer Yennick Trevels <yennick.trevels@gmail.com> 1388472894 +0100
+
+    Upping the version number to 0.8.1
+
+:100644 100644 c776e2822cebf6e01db1cb50a966cd1de13cba92 d49ad570422779f455d689642ae8cccd4311d2dd M	build.gradle
+
+commit 4e9fb9eada7a072f34d6d1d83ede65e7a68bfe4a
+tree 0450aa9e38a1d4839630d05d945fb8f553b2e19f
+parent c24fef7bb3583a09d88e38a02382254fe12610f5
+author Yennick Trevels <yennick.trevels@gmail.com> 1388472879 +0100
+committer Yennick Trevels <yennick.trevels@gmail.com> 1388472879 +0100
+
+    fixed issue #115: Unable to automatically run unit tests on SWC project that have external dependencies
+
+:100644 100644 f458b019a062edb475894287b05e5ba93f854400 2da850de1c59122575fd06e89e0dfc1819273197 M	src/main/groovy/org/gradlefx/cli/CompileFlexUnitCommandLineInstruction.groovy

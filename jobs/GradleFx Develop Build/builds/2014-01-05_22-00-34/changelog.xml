@@ -1,0 +1,20 @@
+Changes in branch origin/develop, between 774d3b4ffb98aab5b031960b2f1868efc5ebd33b and 6385ad459dc4bbb8cbd975f2f26c696a20a5d3e1
+commit 6385ad459dc4bbb8cbd975f2f26c696a20a5d3e1
+tree 7431ddc2e97380bc18604fb060091f9db1d313fe
+parent f248cf72d2294eda0e56ecc598c5353b23eb5ea6
+author Yennick Trevels <yennick.trevels@gmail.com> 1388952205 +0100
+committer Yennick Trevels <yennick.trevels@gmail.com> 1388952205 +0100
+
+    upping the version number to 0.8.2
+
+:100644 100644 d49ad570422779f455d689642ae8cccd4311d2dd 393cee2395ecc1cc2006c7cf137709a9064c8292 M	build.gradle
+
+commit 8a9fba3015913aa971669d89a97a0fd39bd61bfd
+tree c46f1f7660029b62b943a74f64fc79d1e0148b98
+parent 774d3b4ffb98aab5b031960b2f1868efc5ebd33b
+author Yennick Trevels <yennick.trevels@gmail.com> 1388952110 +0100
+committer Yennick Trevels <yennick.trevels@gmail.com> 1388952110 +0100
+
+    fixed issue #117: Launch ADL task only works on windows
+
+:100644 100644 b2b503a4288c0959bd413ef2caf94ad95a4f53f5 d4b9b5546dc1e6e01359cdd90b6c9ed0d1127504 M	src/main/groovy/org/gradlefx/tasks/adl/AdlTask.groovy

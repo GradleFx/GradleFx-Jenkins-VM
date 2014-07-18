@@ -1,0 +1,10 @@
+Changes in branch origin/develop, between beb46a38767b413b8b87222b7d609da54eb05512 and cecb152fb02d05950b786d5270b99544df019694
+commit cecb152fb02d05950b786d5270b99544df019694
+tree fdabed91d098a7d9f23b0e06966fe1518fd681e0
+parent beb46a38767b413b8b87222b7d609da54eb05512
+author Yennick Trevels <yennick.trevels@gmail.com> 1388246055 +0100
+committer Yennick Trevels <yennick.trevels@gmail.com> 1388246055 +0100
+
+    fixed a removed method call which was still being used after a refactoring
+
+:100644 100644 7a98a69b337e9c75a3398d4c28f48b348d69ef7b 430e2f140e421e7ad44aadef5d75e9e7b6891384 M	src/main/groovy/org/gradlefx/cli/LibraryCommandLineInstruction.groovy

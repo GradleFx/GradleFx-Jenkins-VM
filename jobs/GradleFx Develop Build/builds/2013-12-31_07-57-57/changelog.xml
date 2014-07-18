@@ -1,0 +1,10 @@
+Changes in branch origin/develop, between 90ecf8b737e003f4e412664e5964d59b033de03a and 774d3b4ffb98aab5b031960b2f1868efc5ebd33b
+commit 774d3b4ffb98aab5b031960b2f1868efc5ebd33b
+tree 1b45b0b68115f4f297bfb99cdf31e4c675f20fc6
+parent 90ecf8b737e003f4e412664e5964d59b033de03a
+author Yennick Trevels <yennick.trevels@gmail.com> 1388473066 +0100
+committer Yennick Trevels <yennick.trevels@gmail.com> 1388473066 +0100
+
+    updating the changelog for the 0.8.1 release
+
+:100644 100644 561002be62d1f46003b2edc3ceed25ea4cad3e44 d94f65167c7ed5a16f9e243e4ce98c5c4a2cd987 M	CHANGELOG.textile

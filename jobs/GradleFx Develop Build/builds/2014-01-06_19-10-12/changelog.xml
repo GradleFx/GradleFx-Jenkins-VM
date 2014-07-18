@@ -1,0 +1,10 @@
+Changes in branch origin/develop, between 6385ad459dc4bbb8cbd975f2f26c696a20a5d3e1 and cbcabd77ae0ffce6490bea4fdb235d80b2ab27c7
+commit e01c1031960e8228cdd9281224b4be14afbeffac
+tree 7a79a3ec12c2e875f04a0f6f58160afbe13f9686
+parent 8a9fba3015913aa971669d89a97a0fd39bd61bfd
+author Yennick Trevels <yennick.trevels@gmail.com> 1389031782 +0100
+committer Yennick Trevels <yennick.trevels@gmail.com> 1389031782 +0100
+
+    LaunchAdl: changing the root directory to the project directory
+
+:100644 100644 d4b9b5546dc1e6e01359cdd90b6c9ed0d1127504 d3534037dedcf79dffd1cfef0b24263377fcc25b M	src/main/groovy/org/gradlefx/tasks/adl/AdlTask.groovy

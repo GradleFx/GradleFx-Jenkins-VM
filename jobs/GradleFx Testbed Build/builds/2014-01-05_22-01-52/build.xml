@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causes>
+        <hudson.model.Cause_-UpstreamCause>
+          <upstreamProject>GradleFx Develop Build</upstreamProject>
+          <upstreamUrl>job/GradleFx%20Develop%20Build/</upstreamUrl>
+          <upstreamBuild>120</upstreamBuild>
+          <upstreamCauses>
+            <hudson.model.Cause_-UserIdCause>
+              <userId>SlevinBE</userId>
+            </hudson.model.Cause_-UserIdCause>
+          </upstreamCauses>
+        </hudson.model.Cause_-UpstreamCause>
+      </causes>
+    </hudson.model.CauseAction>
+    <hudson.plugins.git.util.BuildData>
+      <buildsByBranchName>
+        <entry>
+          <string>origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <revision>
+              <sha1>4589fddc03521e3f6f2df9d478ba9be97594080f</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>91</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <scmName></scmName>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction>
+      <build class="build" reference="../../.."/>
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <no-comparator/>
+        <entry>
+          <string>origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/var/lib/jenkins/workspace/GradleFx Testbed Build</ws>
+    </hudson.plugins.git.GitTagAction>
+    <hudson.scm.SCMRevisionState_-None/>
+  </actions>
+  <number>91</number>
+  <result>SUCCESS</result>
+  <duration>420512</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/lib/jenkins/workspace/GradleFx Testbed Build</workspace>
+  <hudsonVersion>1.462</hudsonVersion>
+  <scm class="hudson.plugins.git.GitChangeLogParser">
+    <authorOrCommitter>false</authorOrCommitter>
+  </scm>
+  <culprits class="com.google.common.collect.RegularImmutableSortedSet">
+    <string>yennick.trevels</string>
+  </culprits>
+</build>

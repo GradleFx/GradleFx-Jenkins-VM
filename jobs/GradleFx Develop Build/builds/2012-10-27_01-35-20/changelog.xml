@@ -1,0 +1,10 @@
+Changes in branch origin/develop, between 0a966057fde13d24e5dbabc1dec5f57808f5aadd and 63231815427dd8a78ada879b2f226c43faa5a1b4
+commit 63231815427dd8a78ada879b2f226c43faa5a1b4
+tree 9692d9838bf6a97140b1999c9448bc9675c58d5e
+parent 0a966057fde13d24e5dbabc1dec5f57808f5aadd
+author Yennick Trevels <yennick.trevels@gmail.com> 1351294508 +0200
+committer Yennick Trevels <yennick.trevels@gmail.com> 1351294508 +0200
+
+    updating README
+
+:100644 100644 a4a89c67a57e55a7b1f760d744dab400b04ec153 21b34e8cc6c34ff93259c61ba425b054e8633b3a M	README.textile

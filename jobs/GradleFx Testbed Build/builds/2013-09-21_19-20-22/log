@@ -1,0 +1,20 @@
+Started by user [8mha:AAAAjh+LCAAAAAAAAABb85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyT1dMUiOWdZ/mImBiZPBrac1Lz0kgwfBubSopwSBiGfrMSyRP2cxLx0/eCSosy8dOuKIgYpNOOcITTIMAYIYGRiYKgoADL4Sxj49EuLU4v0g3NSyzLznFwBC6cCpZMAAAA=[0mYennick Trevels
+Building in workspace /var/lib/jenkins/workspace/GradleFx Testbed Build
+Checkout:GradleFx Testbed Build / /var/lib/jenkins/workspace/GradleFx Testbed Build - hudson.remoting.LocalChannel@612067b0
+Using strategy: Default
+Last Built Revision: Revision cdb0e9decb0c0c4c6de46eb726dc63c317ffd149 (origin/master)
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from git@github.com:GradleFx/GradleFx-testbed.git
+Commencing build of Revision cdb0e9decb0c0c4c6de46eb726dc63c317ffd149 (origin/master)
+Checking out Revision cdb0e9decb0c0c4c6de46eb726dc63c317ffd149 (origin/master)
+Starting xvnc
+[GradleFx Testbed Build] $ vncserver :11
+
+New 'server.augnite.com:11 (jenkins)' desktop is server.augnite.com:11
+
+Starting applications specified in /var/lib/jenkins/.vnc/xstartup
+Log file is /var/lib/jenkins/.vnc/server.augnite.com:11.log
+
+[GradleFx Testbed Build] $ "/var/lib/jenkins/workspace/GradleFx Testbed Build/gradlew" -info --stacktrace
+Starting Build
+================================================ Start building buildSrc

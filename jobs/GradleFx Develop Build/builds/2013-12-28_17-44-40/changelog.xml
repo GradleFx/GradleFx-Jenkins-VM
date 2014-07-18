@@ -1,0 +1,10 @@
+Changes in branch origin/develop, between 9aa053a49882030543df55c2fb5884f67fec281f and c24fef7bb3583a09d88e38a02382254fe12610f5
+commit c24fef7bb3583a09d88e38a02382254fe12610f5
+tree 15d53af6096e182d610954f568070511dc6a75cf
+parent 9aa053a49882030543df55c2fb5884f67fec281f
+author Yennick Trevels <yennick.trevels@gmail.com> 1388249082 +0100
+committer Yennick Trevels <yennick.trevels@gmail.com> 1388249082 +0100
+
+    Adjusting the CopyTestResources task to use the new ouput directory property for FlexUnit
+
+:100644 100644 c807368468ff493c736f42e65e7a99997ca7acc7 3eff476387416a56c5d7453384bb24041b9255ea M	src/main/groovy/org/gradlefx/tasks/CopyTestResources.groovy

@@ -1,0 +1,960 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<result>
+  <suites>
+    <suite>
+      <file>/var/lib/jenkins/workspace/GradleFx Develop Build/build/test-results/TEST-org.gradlefx.cli.ASDocCommandLineInstructionTest.xml</file>
+      <name>org.gradlefx.cli.ASDocCommandLineInstructionTest</name>
+      <stdout>17:24:09.777 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+</stdout>
+      <stderr></stderr>
+      <duration>0.281</duration>
+      <timestamp>1970-01-01T00:00:00</timestamp>
+      <cases>
+        <case>
+          <duration>0.281</duration>
+          <className>org.gradlefx.cli.ASDocCommandLineInstructionTest</className>
+          <testName>call keepXML, should add -keep-xml with value true to compiler arguments</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/GradleFx Develop Build/build/test-results/TEST-org.gradlefx.cli.CommandLineInstructionTest.xml</file>
+      <name>org.gradlefx.cli.CommandLineInstructionTest</name>
+      <stdout>17:24:09.916 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+17:24:10.068 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+</stdout>
+      <stderr></stderr>
+      <duration>0.29799998</duration>
+      <timestamp>1970-01-01T00:00:00</timestamp>
+      <cases>
+        <case>
+          <duration>0.154</duration>
+          <className>org.gradlefx.cli.CommandLineInstructionTest</className>
+          <testName>call addFramework with FrameworkLinkage.none, should have playerglobal.swc on external classpath</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.144</duration>
+          <className>org.gradlefx.cli.CommandLineInstructionTest</className>
+          <testName>call addLibraries, should add valid swc locations to compiler arguments</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/GradleFx Develop Build/build/test-results/TEST-org.gradlefx.cli.LibraryCommandLineInstructionTest.xml</file>
+      <name>org.gradlefx.cli.LibraryCommandLineInstructionTest</name>
+      <stdout>17:24:10.221 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+</stdout>
+      <stderr></stderr>
+      <duration>0.137</duration>
+      <timestamp>1970-01-01T00:00:00</timestamp>
+      <cases>
+        <case>
+          <duration>0.137</duration>
+          <className>org.gradlefx.cli.LibraryCommandLineInstructionTest</className>
+          <testName>call addResources, should add all resource file locations to compiler arguments with -include-file</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/GradleFx Develop Build/build/test-results/TEST-org.gradlefx.conventions.FlexTypeTest.xml</file>
+      <name>org.gradlefx.conventions.FlexTypeTest</name>
+      <stdout></stdout>
+      <stderr></stderr>
+      <duration>0.001</duration>
+      <timestamp>2013-12-28T16:24:10</timestamp>
+      <cases>
+        <case>
+          <duration>0.001</duration>
+          <className>org.gradlefx.conventions.FlexTypeTest</className>
+          <testName>swf is an app and more specifically a web app</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>org.gradlefx.conventions.FlexTypeTest</className>
+          <testName>swc is a library and not any kind of app</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>org.gradlefx.conventions.FlexTypeTest</className>
+          <testName>air is an app and more specifically a native app</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>org.gradlefx.conventions.FlexTypeTest</className>
+          <testName>mobile is an app and more specifically a native app</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/GradleFx Develop Build/build/test-results/TEST-org.gradlefx.conventions.FrameworkLinkageTest.xml</file>
+      <name>org.gradlefx.conventions.FrameworkLinkageTest</name>
+      <stdout></stdout>
+      <stderr></stderr>
+      <duration>0.014000001</duration>
+      <timestamp>2013-12-28T16:24:10</timestamp>
+      <cases>
+        <case>
+          <duration>0.0</duration>
+          <className>org.gradlefx.conventions.FrameworkLinkageTest</className>
+          <testName>external refers to -external-library-path compiler option</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>org.gradlefx.conventions.FrameworkLinkageTest</className>
+          <testName>external uses the Flex framework</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.006</duration>
+          <className>org.gradlefx.conventions.FrameworkLinkageTest</className>
+          <testName>external and FlexType.swf can&apos;t be combined</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>org.gradlefx.conventions.FrameworkLinkageTest</className>
+          <testName>external and FlexType.air can&apos;t be combined</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>org.gradlefx.conventions.FrameworkLinkageTest</className>
+          <testName>external and FlexType.mobile can&apos;t be combined</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>org.gradlefx.conventions.FrameworkLinkageTest</className>
+          <testName>external is default for FlexType.swc</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>org.gradlefx.conventions.FrameworkLinkageTest</className>
+          <testName>merged refers to -library-path compiler option</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>org.gradlefx.conventions.FrameworkLinkageTest</className>
+          <testName>merged uses the Flex framework</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>org.gradlefx.conventions.FrameworkLinkageTest</className>
+          <testName>merged is not default for FlexType.swf</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>org.gradlefx.conventions.FrameworkLinkageTest</className>
+          <testName>merged is not default for FlexType.air</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>org.gradlefx.conventions.FrameworkLinkageTest</className>
+          <testName>merged is not default for FlexType.mobile</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>org.gradlefx.conventions.FrameworkLinkageTest</className>
+          <testName>merged is not default for FlexType.swc</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>org.gradlefx.conventions.FrameworkLinkageTest</className>
+          <testName>rsl refers to -runtime-shared-library-path compiler option</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>org.gradlefx.conventions.FrameworkLinkageTest</className>
+          <testName>rsl uses the Flex framework</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>org.gradlefx.conventions.FrameworkLinkageTest</className>
+          <testName>rsl is default for FlexType.swf</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>org.gradlefx.conventions.FrameworkLinkageTest</className>
+          <testName>rsl is default for FlexType.air</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>org.gradlefx.conventions.FrameworkLinkageTest</className>
+          <testName>rsl is default for FlexType.mobile</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>org.gradlefx.conventions.FrameworkLinkageTest</className>
+          <testName>rsl and FlexType.swc can&apos;t be combined</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>org.gradlefx.conventions.FrameworkLinkageTest</className>
+          <testName>none refers to no compiler option</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>org.gradlefx.conventions.FrameworkLinkageTest</className>
+          <testName>none doesn&apos;t use the Flex framework</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>org.gradlefx.conventions.FrameworkLinkageTest</className>
+          <testName>none defaults to merged and is default for FlexType.swf</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>org.gradlefx.conventions.FrameworkLinkageTest</className>
+          <testName>none defaults to merged and is default for FlexType.air</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>org.gradlefx.conventions.FrameworkLinkageTest</className>
+          <testName>none defaults to merged and is default for FlexType.mobile</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>org.gradlefx.conventions.FrameworkLinkageTest</className>
+          <testName>none defaults to merged and is default for FlexType.swc</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/GradleFx Develop Build/build/test-results/TEST-org.gradlefx.conventions.GradleFxConventionTest.xml</file>
+      <name>org.gradlefx.conventions.GradleFxConventionTest</name>
+      <stdout>17:24:10.436 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+17:24:10.544 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+17:24:10.647 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using defaul...[truncated 1880 chars]....a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+17:24:11.940 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+17:24:12.041 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+</stdout>
+      <stderr></stderr>
+      <duration>1.7059999</duration>
+      <timestamp>1970-01-01T00:00:00</timestamp>
+      <cases>
+        <case>
+          <duration>0.104</duration>
+          <className>org.gradlefx.conventions.GradleFxConventionTest</className>
+          <testName>default output must be project name</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.105</duration>
+          <className>org.gradlefx.conventions.GradleFxConventionTest</className>
+          <testName>default frameworkLinkage for swc type must be external</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.11</duration>
+          <className>org.gradlefx.conventions.GradleFxConventionTest</className>
+          <testName>default frameworkLinkage for swf type must be rsl</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.105</duration>
+          <className>org.gradlefx.conventions.GradleFxConventionTest</className>
+          <testName>default frameworkLinkage for air type must be rsl</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.107</duration>
+          <className>org.gradlefx.conventions.GradleFxConventionTest</className>
+          <testName>default frameworkLinkage for mobile type must be rsl</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.108</duration>
+          <className>org.gradlefx.conventions.GradleFxConventionTest</className>
+          <testName>all air properties should be set when defining all of them in the air closure</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.107</duration>
+          <className>org.gradlefx.conventions.GradleFxConventionTest</className>
+          <testName>only applicationDescriptor air property should be set when defining it in the air closure</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.107</duration>
+          <className>org.gradlefx.conventions.GradleFxConventionTest</className>
+          <testName>all asdoc properties should be set when defining all of them in the asdoc closure</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.103</duration>
+          <className>org.gradlefx.conventions.GradleFxConventionTest</className>
+          <testName>only outputDirValue asdoc property should be set when defining it in the asdoc closure</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.104</duration>
+          <className>org.gradlefx.conventions.GradleFxConventionTest</className>
+          <testName>all flexunit properties should be set when defining all of them in the flexunit closure</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.121</duration>
+          <className>org.gradlefx.conventions.GradleFxConventionTest</className>
+          <testName>only playerValue flexunit property should be set when defining it in the flexunit closure</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.109</duration>
+          <className>org.gradlefx.conventions.GradleFxConventionTest</className>
+          <testName>all htmlWrapper properties should be set when defining all of them in the htmlWrapper closure</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.104</duration>
+          <className>org.gradlefx.conventions.GradleFxConventionTest</className>
+          <testName>only title htmlWrapper property should be set when defining it in the htmlWrapper closure</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.104</duration>
+          <className>org.gradlefx.conventions.GradleFxConventionTest</className>
+          <testName>default target for mobile type must be apk</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.101</duration>
+          <className>org.gradlefx.conventions.GradleFxConventionTest</className>
+          <testName>default simulatorTarget for mobile type must be apk</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.107</duration>
+          <className>org.gradlefx.conventions.GradleFxConventionTest</className>
+          <testName>all airmobile properties should be set when defining all of them in the air closure</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/GradleFx Develop Build/build/test-results/TEST-org.gradlefx.conventions.GradleFxDerivedPropertiesTest.xml</file>
+      <name>org.gradlefx.conventions.GradleFxDerivedPropertiesTest</name>
+      <stdout>17:24:12.156 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+17:24:12.229 [Test worker] INFO  o.g.c.BuildScriptProcessor - Evaluating root project &apos;test&apos; using empty build file.
+17:24:12.274 [Test worker] DEBUG o.g.c.BuildScriptProcessor - Timing: Running the build script took 0.044 secs
+17:24:12.639 [Test worker] INFO  gradlefx - Using the flexHome convention
+17:24:12.724 [Test...[truncated 4410 chars]...ns/.m2/repository
+17:24:14.851 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+17:24:14.917 [Test worker] INFO  o.g.c.BuildScriptProcessor - Evaluating root project &apos;test&apos; using empty build file.
+17:24:14.918 [Test worker] DEBUG o.g.c.BuildScriptProcessor - Timing: Running the build script took 0.001 secs
+17:24:14.951 [Test worker] INFO  gradlefx - Using the flexHome convention
+</stdout>
+      <stderr></stderr>
+      <duration>2.8200002</duration>
+      <timestamp>1970-01-01T00:00:00</timestamp>
+      <cases>
+        <case>
+          <duration>0.555</duration>
+          <className>org.gradlefx.conventions.GradleFxDerivedPropertiesTest</className>
+          <testName>default values derived from mainClass are: Main/Main.mxml/Main/[no package]</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.165</duration>
+          <className>org.gradlefx.conventions.GradleFxDerivedPropertiesTest</className>
+          <testName>values derived from mainClass in a pure AS project are: Main/Main.as/Main/[no package]</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.145</duration>
+          <className>org.gradlefx.conventions.GradleFxDerivedPropertiesTest</className>
+          <testName>a path as mainclass overrides default extension</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.135</duration>
+          <className>org.gradlefx.conventions.GradleFxDerivedPropertiesTest</className>
+          <testName>a path as mainclass sets packageName</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.326</duration>
+          <className>org.gradlefx.conventions.GradleFxDerivedPropertiesTest</className>
+          <testName>a class with package as mainclass sets packageName</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.089</duration>
+          <className>org.gradlefx.conventions.GradleFxDerivedPropertiesTest</className>
+          <testName>defaultExtension is .as for pure AS projects</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.101</duration>
+          <className>org.gradlefx.conventions.GradleFxDerivedPropertiesTest</className>
+          <testName>defaultExtension is .mxml for Flex projects (and thus by default)</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.102</duration>
+          <className>org.gradlefx.conventions.GradleFxDerivedPropertiesTest</className>
+          <testName>applicationId is project name by default</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.087</duration>
+          <className>org.gradlefx.conventions.GradleFxDerivedPropertiesTest</className>
+          <testName>applicationId uses main class&apos; package, if any</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.099</duration>
+          <className>org.gradlefx.conventions.GradleFxDerivedPropertiesTest</className>
+          <testName>version is &apos;0.0.0&apos; by default</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.106</duration>
+          <className>org.gradlefx.conventions.GradleFxDerivedPropertiesTest</className>
+          <testName>version is stripped of anything that is not a dot or a digit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.091</duration>
+          <className>org.gradlefx.conventions.GradleFxDerivedPropertiesTest</className>
+          <testName>IDE gets compilerArgs if locales is defined</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.1</duration>
+          <className>org.gradlefx.conventions.GradleFxDerivedPropertiesTest</className>
+          <testName>IDE gets compilerArgs if additionalCompilerOptions are defined</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.107</duration>
+          <className>org.gradlefx.conventions.GradleFxDerivedPropertiesTest</className>
+          <testName>IDE gets no compilerArgs if locales and additionalCompilerOptions are not defined</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.094</duration>
+          <className>org.gradlefx.conventions.GradleFxDerivedPropertiesTest</className>
+          <testName>defaultFrameworkLinkage for swc type must be external for Flex projects</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.103</duration>
+          <className>org.gradlefx.conventions.GradleFxDerivedPropertiesTest</className>
+          <testName>defaultFrameworkLinkage for swc type must be external for pure AS projects</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.102</duration>
+          <className>org.gradlefx.conventions.GradleFxDerivedPropertiesTest</className>
+          <testName>defaultFrameworkLinkage for Flex application projects must be rsl</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.088</duration>
+          <className>org.gradlefx.conventions.GradleFxDerivedPropertiesTest</className>
+          <testName>defaultFrameworkLinkage for pure AS application projects must be merged</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.098</duration>
+          <className>org.gradlefx.conventions.GradleFxDerivedPropertiesTest</className>
+          <testName>allSrcDirs is a flat list of dirs from srcDirs/resourceDirs/testDirs/testResourceDirs</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.127</duration>
+          <className>org.gradlefx.conventions.GradleFxDerivedPropertiesTest</className>
+          <testName>packageMobile exists for airMobile type</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/GradleFx Develop Build/build/test-results/TEST-org.gradlefx.ide.tasks.AbstractIDEProjectTest.xml</file>
+      <name>org.gradlefx.ide.tasks.AbstractIDEProjectTest</name>
+      <stdout>17:24:05.005 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+</stdout>
+      <stderr></stderr>
+      <duration>0.108</duration>
+      <timestamp>1970-01-01T00:00:00</timestamp>
+      <cases>
+        <case>
+          <duration>0.108</duration>
+          <className>org.gradlefx.ide.tasks.AbstractIDEProjectTest</className>
+          <testName>editXmlFile should save closure changes</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/GradleFx Develop Build/build/test-results/TEST-org.gradlefx.ide.tasks.IdeaProjectModuleTest.xml</file>
+      <name>org.gradlefx.ide.tasks.IdeaProjectModuleTest</name>
+      <stdout>17:24:05.158 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+17:24:05.284 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+17:24:05.415 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using defaul...[truncated 4283 chars]...nRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+17:24:08.740 [Test worker] INFO  o.g.a.i.f.c.DirectoryFileTree - file or directory &apos;/var/lib/jenkins/workspace/GradleFx Develop Build/build/resources/test/stub-project-dir/sub-resource-dir&apos;, not found
+17:24:08.846 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+</stdout>
+      <stderr></stderr>
+      <duration>3.777</duration>
+      <timestamp>1970-01-01T00:00:00</timestamp>
+      <cases>
+        <case>
+          <duration>0.133</duration>
+          <className>org.gradlefx.ide.tasks.IdeaProjectModuleTest</className>
+          <testName>test generation empty project</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.129</duration>
+          <className>org.gradlefx.ide.tasks.IdeaProjectModuleTest</className>
+          <testName>config for pure web lib</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.124</duration>
+          <className>org.gradlefx.ide.tasks.IdeaProjectModuleTest</className>
+          <testName>config for flex web lib</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.176</duration>
+          <className>org.gradlefx.ide.tasks.IdeaProjectModuleTest</className>
+          <testName>config with swc dependency</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.258</duration>
+          <className>org.gradlefx.ide.tasks.IdeaProjectModuleTest</className>
+          <testName>config with project dependency</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.824</duration>
+          <className>org.gradlefx.ide.tasks.IdeaProjectModuleTest</className>
+          <testName>setup dependency type</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.575</duration>
+          <className>org.gradlefx.ide.tasks.IdeaProjectModuleTest</className>
+          <testName>setup flex sdk</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.092</duration>
+          <className>org.gradlefx.ide.tasks.IdeaProjectModuleTest</className>
+          <testName>setup flex sdk with custom name</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.102</duration>
+          <className>org.gradlefx.ide.tasks.IdeaProjectModuleTest</className>
+          <testName>setup web app project</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.112</duration>
+          <className>org.gradlefx.ide.tasks.IdeaProjectModuleTest</className>
+          <testName>setup empty air app project </testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.108</duration>
+          <className>org.gradlefx.ide.tasks.IdeaProjectModuleTest</className>
+          <testName>setup air app project</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.308</duration>
+          <className>org.gradlefx.ide.tasks.IdeaProjectModuleTest</className>
+          <testName>setup air mobile project</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.098</duration>
+          <className>org.gradlefx.ide.tasks.IdeaProjectModuleTest</className>
+          <testName>setup air mobile ios specific values</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.089</duration>
+          <className>org.gradlefx.ide.tasks.IdeaProjectModuleTest</className>
+          <testName>setup air lib project</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.171</duration>
+          <className>org.gradlefx.ide.tasks.IdeaProjectModuleTest</className>
+          <testName>setup air certificate options for android and air</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.392</duration>
+          <className>org.gradlefx.ide.tasks.IdeaProjectModuleTest</className>
+          <testName>include file in air package</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.086</duration>
+          <className>org.gradlefx.ide.tasks.IdeaProjectModuleTest</className>
+          <testName>additional compiler options</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/GradleFx Develop Build/build/test-results/TEST-org.gradlefx.ide.tasks.IdeaProjectTest.xml</file>
+      <name>org.gradlefx.ide.tasks.IdeaProjectTest</name>
+      <stdout>17:24:02.263 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+17:24:03.705 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+17:24:03.889 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using defaul...[truncated 260 chars]....a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+17:24:04.624 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+17:24:04.757 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+</stdout>
+      <stderr></stderr>
+      <duration>3.7960002</duration>
+      <timestamp>1970-01-01T00:00:00</timestamp>
+      <cases>
+        <case>
+          <duration>2.594</duration>
+          <className>org.gradlefx.ide.tasks.IdeaProjectTest</className>
+          <testName>should_add_test_src_dirs</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.193</duration>
+          <className>org.gradlefx.ide.tasks.IdeaProjectTest</className>
+          <testName>should_have_correct_output_file</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.367</duration>
+          <className>org.gradlefx.ide.tasks.IdeaProjectTest</className>
+          <testName>should_create_correct_target_player_version</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.146</duration>
+          <className>org.gradlefx.ide.tasks.IdeaProjectTest</className>
+          <testName>should_create_top_xml_tags</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.133</duration>
+          <className>org.gradlefx.ide.tasks.IdeaProjectTest</className>
+          <testName>should_create_iml_file</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.222</duration>
+          <className>org.gradlefx.ide.tasks.IdeaProjectTest</className>
+          <testName>should_be_only_one_content_url</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.141</duration>
+          <className>org.gradlefx.ide.tasks.IdeaProjectTest</className>
+          <testName>should_add_src_dirs</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/GradleFx Develop Build/build/test-results/TEST-org.gradlefx.util.TemplateUtilTest.xml</file>
+      <name>org.gradlefx.util.TemplateUtilTest</name>
+      <stdout>17:24:08.947 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+</stdout>
+      <stderr></stderr>
+      <duration>0.664</duration>
+      <timestamp>1970-01-01T00:00:00</timestamp>
+      <cases>
+        <case>
+          <duration>0.664</duration>
+          <className>org.gradlefx.util.TemplateUtilTest</className>
+          <testName>writeContent should retain backslashes</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/GradleFx Develop Build/build/test-results/TEST-org.gradlefx.validators.CompcAdditionalPropertiesValidatorTest.xml</file>
+      <name>org.gradlefx.validators.CompcAdditionalPropertiesValidatorTest</name>
+      <stdout>17:24:14.994 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+17:24:15.047 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+17:24:15.077 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using defaul...[truncated 260 chars]....a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+17:24:15.178 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+17:24:15.225 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+</stdout>
+      <stderr></stderr>
+      <duration>0.268</duration>
+      <timestamp>1970-01-01T00:00:00</timestamp>
+      <cases>
+        <case>
+          <duration>0.268</duration>
+          <className>org.gradlefx.validators.CompcAdditionalPropertiesValidatorTest</className>
+          <testName>use of compiler option used in Compc task should add warning message</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/GradleFx Develop Build/build/test-results/TEST-org.gradlefx.validators.FlexSDKSpecifiedValidatorTest.xml</file>
+      <name>org.gradlefx.validators.FlexSDKSpecifiedValidatorTest</name>
+      <stdout>17:24:15.268 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+17:24:15.317 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+17:24:15.349 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using defaul...[truncated 80 chars]....a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+17:24:15.427 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+17:24:15.752 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+</stdout>
+      <stderr></stderr>
+      <duration>0.516</duration>
+      <timestamp>1970-01-01T00:00:00</timestamp>
+      <cases>
+        <case>
+          <duration>0.037</duration>
+          <className>org.gradlefx.validators.FlexSDKSpecifiedValidatorTest</className>
+          <testName>if the &apos;flexHome&apos; property isn&apos;t specified, add an error message</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.048</duration>
+          <className>org.gradlefx.validators.FlexSDKSpecifiedValidatorTest</className>
+          <testName>if the &apos;flexHome&apos; property contains an invalid path, add an error message</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.033</duration>
+          <className>org.gradlefx.validators.FlexSDKSpecifiedValidatorTest</className>
+          <testName>if the &apos;flexHome&apos; dir contains no config-xml, add an error message</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.044</duration>
+          <className>org.gradlefx.validators.FlexSDKSpecifiedValidatorTest</className>
+          <testName>if the &apos;flexHome&apos; dir contains no libs, add an error message</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.029</duration>
+          <className>org.gradlefx.validators.FlexSDKSpecifiedValidatorTest</className>
+          <testName>if the &apos;flexHome&apos; dir contains no config-xml and no libs, add 2 error messages</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.325</duration>
+          <className>org.gradlefx.validators.FlexSDKSpecifiedValidatorTest</className>
+          <testName>if the &apos;flexHome&apos; property is valid, add no error messages</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/GradleFx Develop Build/build/test-results/TEST-org.gradlefx.validators.FrameworkLinkageValidatorTest.xml</file>
+      <name>org.gradlefx.validators.FrameworkLinkageValidatorTest</name>
+      <stdout>17:24:15.795 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+17:24:15.843 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+17:24:15.871 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+17:24:15.900 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+17:24:15.943 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+</stdout>
+      <stderr></stderr>
+      <duration>0.182</duration>
+      <timestamp>1970-01-01T00:00:00</timestamp>
+      <cases>
+        <case>
+          <duration>0.032</duration>
+          <className>org.gradlefx.validators.FrameworkLinkageValidatorTest</className>
+          <testName>a combination of library project and RSL linkage should add error message</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.047</duration>
+          <className>org.gradlefx.validators.FrameworkLinkageValidatorTest</className>
+          <testName>a combination of webapp project and external linkage should add error message</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.029</duration>
+          <className>org.gradlefx.validators.FrameworkLinkageValidatorTest</className>
+          <testName>a combination of AIR project and external linkage should add error message</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.029</duration>
+          <className>org.gradlefx.validators.FrameworkLinkageValidatorTest</className>
+          <testName>a combination of mobile project and external linkage should add error message</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.045</duration>
+          <className>org.gradlefx.validators.FrameworkLinkageValidatorTest</className>
+          <testName>any other combination should not add error messages</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/GradleFx Develop Build/build/test-results/TEST-org.gradlefx.validators.RequiredProjectPropertiesValidatorTest.xml</file>
+      <name>org.gradlefx.validators.RequiredProjectPropertiesValidatorTest</name>
+      <stdout>17:24:15.982 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+17:24:16.026 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /var/lib/jenkins/.m2/repository
+</stdout>
+      <stderr></stderr>
+      <duration>0.072</duration>
+      <timestamp>1970-01-01T00:00:00</timestamp>
+      <cases>
+        <case>
+          <duration>0.029</duration>
+          <className>org.gradlefx.validators.RequiredProjectPropertiesValidatorTest</className>
+          <testName>if the &apos;type&apos; property isn&apos;t specified, add an error message</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.043</duration>
+          <className>org.gradlefx.validators.RequiredProjectPropertiesValidatorTest</className>
+          <testName>if the &apos;type&apos; property is specified, add no error messages</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+  </suites>
+  <duration>14.639999</duration>
+  <keepLongStdio>false</keepLongStdio>
+</result>

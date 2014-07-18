@@ -1,0 +1,20 @@
+Changes in branch origin/master, between 02dda0bc259146e517d71573a12537de396597a2 and 4589fddc03521e3f6f2df9d478ba9be97594080f
+commit 4589fddc03521e3f6f2df9d478ba9be97594080f
+tree bc9a8d90377ae6ef226ce7720a5d6b6a0fa842b3
+parent f94be6140179f29b2f61157e8a5237b3f3ba575d
+author Yennick Trevels <yennick.trevels@gmail.com> 1388952258 +0100
+committer Yennick Trevels <yennick.trevels@gmail.com> 1388952258 +0100
+
+    using GradleFx 0.8.2-SNAPSHOT
+
+:100755 100755 ee405e127697b556777b2c1fe28b57b72fbcb326 62657890ce55d7fd20e677de19d7493c12a794cd M	build.gradle
+
+commit f94be6140179f29b2f61157e8a5237b3f3ba575d
+tree 13a864da956ec02a5b73e523851bd2b3934175c6
+parent 02dda0bc259146e517d71573a12537de396597a2
+author Yennick Trevels <yennick.trevels@gmail.com> 1388473200 +0100
+committer Yennick Trevels <yennick.trevels@gmail.com> 1388473200 +0100
+
+    Start using the 0.8.1-SNAPSHOT
+
+:100755 100755 fafc1c962c045582a4406185e5c95e9f14b340c0 ee405e127697b556777b2c1fe28b57b72fbcb326 M	build.gradle
